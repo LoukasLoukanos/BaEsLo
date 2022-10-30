@@ -1,0 +1,212 @@
+body {
+	background: linear-gradient(90deg, rgba(0,56,49,1) 0%, rgba(0,134,115,1) 15%, rgba(0,182,158,1) 50%, rgba(0,134,115,1) 85%, rgba(0,56,49,1) 100%);
+	font-family: 'Libre Baskerville', serif;
+}
+
+
+/*________página home__________*/
+
+.mapa {
+    padding: 3em 0;
+}
+
+/*________página home__________*/
+
+
+/*________página barbearia______*/
+.video_barbearia {
+    width: 100%;
+    margin: 60px 0 40px 0;
+	text-align: center;
+}
+
+.barbearia {
+	margin: 0 60px;
+	padding: 30px 0 40px 0;
+}
+
+.cards {
+	height: 380px;
+	width: 250px;
+    background-repeat: no-repeat;
+	background-size: 105% 105%;
+}
+
+#imagens-cabelo {
+	background-image: url('images/corte_front.jpg');
+}
+#imagens-cabelo:hover {
+	background-image: url('images/corte_back.jpg');
+}
+
+#imagens-barba {
+	background-image: url('images/barba_front.jpg');
+}
+#imagens-barba:hover {
+	background-image: url('images/barba_back.jpg');
+}
+
+#imagens-completo {
+	background-image: url('images/completo_front.jpg');
+}
+#imagens-completo:hover {
+	background-image: url('images/completo_back.jpg');
+}
+
+.barbearia li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}   /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
+
+.barbearia li:hover {
+	border-color: #ffffff;
+	box-shadow: 0 5px 10px #ffffff;
+	transition: 1s all;
+}
+
+.barbearia li:active {
+	border-color: green;
+}
+
+.barbearia h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.barbearia li:hover {
+	color: #C78C19;
+	text-shadow: 1px 1px 2px #000000;
+	transition: 0.7s all;
+}
+
+.barbearia-descricao {
+	font-size: 18px;
+	margin-top: 210px;
+}
+
+.barbearia-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+/*________página barbearia______*/
+
+
+/*____________contato___________*/
+.video_contato {
+    width: 60%;
+    margin: 70px 0 40px 0;
+}
+
+form {
+    padding: 10px 0 20px 0;
+	color: #f0f0f0;
+}
+
+form label, form legend  {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+	background: #000000;
+	color: #f0f0f0;
+	border-radius: 10px
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+	background: -moz-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+	width:27%;
+    padding: 9px 0;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 18px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+	color: #C78C19;
+	text-shadow: 2px 2px 5px #C78C19;
+    background: -moz-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    transform: rotate(-3deg) scale(1.1);
+	box-shadow: 0 3px 30px #ffffff;
+
+	/*animação do gradiente*/
+	animation: animateBg 9s infinite linear;
+	background-size: 120% 100%;
+}
+
+table {
+    margin: 20px 0 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+/*____________contato___________*/
+
+
+/*____animação de gradiente____*/
+@keyframes animateBg {
+	0% {
+	  background-position: 0 0;
+	}
+	100% {
+	  background-position: 100% 0;
+	}
+}
+/*____animação de gradiente____*/
+
+
+/*___________rodapé____________*/
+footer {
+	text-align: center;
+	padding: 10px 0;
+	background: -moz-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    background: -webkit-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
+    box-shadow: 0 10px 15px 15px #ffffff;
+	border-bottom: 1px;
+	position:relative; /*para a sombra (box-shadow) aparecer*/
+
+	/*animação do gradiente*/
+	animation: animateBg 15s infinite linear;
+	background-size: 110% 100%;
+}
+
+.copyright {
+	color: #000000;
+	font-size: 15px;
+	margin: 20px 0 0;
+}
+/*___________rodapé____________*/
