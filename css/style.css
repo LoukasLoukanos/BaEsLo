@@ -1,30 +1,11 @@
-body {
-	background: linear-gradient(90deg, rgba(0,56,49,1) 0%, rgba(0,134,115,1) 15%, rgba(0,182,158,1) 50%, rgba(0,134,115,1) 85%, rgba(0,56,49,1) 100%);
-	font-family: 'Libre Baskerville', serif;
+.gradient-laranja {
+	background: linear-gradient(90deg, rgba(186,30,19,1) 0%, rgba(255,112,81,1) 17%, rgba(236,87,56,1) 100%);
+}
+.cor-laranja {
+	color: rgba(236,87,56,1)
 }
 
-
-/*________página home__________*/
-
-.mapa {
-    padding: 3em 0;
-}
-
-/*________página home__________*/
-
-
-/*________página barbearia______*/
-.video_barbearia {
-    width: 100%;
-    margin: 60px 0 40px 0;
-	text-align: center;
-}
-
-.barbearia {
-	margin: 0 60px;
-	padding: 30px 0 40px 0;
-}
-
+/*___________↓barbearias↓_________*/
 .cards {
 	height: 380px;
 	width: 250px;
@@ -61,13 +42,12 @@ body {
 	margin: 0 1.5%;
 	padding: 30px 20px;
 	box-sizing: border-box;
-	border: 2px solid #000000;
+	border: 1px solid #5f5f5f;
 	border-radius: 10px;
 }   /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
 
 .barbearia li:hover {
-	border-color: #ffffff;
-	box-shadow: 0 5px 10px #ffffff;
+	box-shadow: 0 3px 6px #ffffff;
 	transition: 1s all;
 }
 
@@ -81,7 +61,7 @@ body {
 }
 
 .barbearia li:hover {
-	color: #C78C19;
+	color: rgba(236,87,56,1);
 	text-shadow: 1px 1px 2px #000000;
 	transition: 0.7s all;
 }
@@ -96,7 +76,7 @@ body {
 	font-weight: bold;
 	margin-top: 10px;
 }
-/*________página barbearia______*/
+/*___________↑barbearias↑_________*/
 
 
 /*____________contato___________*/
@@ -188,25 +168,26 @@ td, th {
 /*____animação de gradiente____*/
 
 
+
+
+
+
+
+
+
+
+
+/*________página home__________*/
+
+.localizacao {
+    padding: 90px 0px;
+	text-align: center;
+}
+
+/*________página home__________*/
+
 /*___________rodapé____________*/
 footer {
 	text-align: center;
-	padding: 10px 0;
-	background: -moz-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-    background: -webkit-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-    background: linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-    box-shadow: 0 10px 15px 15px #ffffff;
-	border-bottom: 1px;
-	position:relative; /*para a sombra (box-shadow) aparecer*/
-
-	/*animação do gradiente*/
-	animation: animateBg 15s infinite linear;
-	background-size: 110% 100%;
-}
-
-.copyright {
-	color: #000000;
-	font-size: 15px;
-	margin: 20px 0 0;
 }
 /*___________rodapé____________*/
