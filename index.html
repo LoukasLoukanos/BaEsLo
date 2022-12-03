@@ -8,27 +8,32 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<!--___________________↓Bootstrap↓___________________-->
+	<!--_______________________↓Bootstrap↓_______________________-->
 	<meta name="Ver fotosport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-	<!--___________________↑Bootstrap↑___________________-->
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+	<!--_______________________↓Google Fonts↓_______________________-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
 </head>
 
-<body style="font-family: Trirong, serif;">
+
+<body class="fonte-letras-google">
 
 	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
 	<!--Acessibilidade-->
 
-	<!--___________________↓Menu↓___________________-->
+	<!--___________________________↓Menu↓___________________________-->
 	<header>
-		<nav class="navbar navbar-expand-lg gradient-laranja">
+		<nav class="navbar navbar-expand-lg gradient-menu">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html">
-					<img src="images/logo-menu.png" alt="logo-menu VipStyle - Loja, Barbearia & Estúdio"></img>
+					<img class="neon-logo" src="images/logo-menu.png"
+						alt="logo-menu VipStyle - Loja, Barbearia & Estúdio"></img>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
 					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,10 +75,10 @@
 			</div>
 		</nav>
 	</header>
-	<!--___________________↑Menu↑___________________-->
+	<!--___________________________↑Menu↑___________________________-->
 
 
-	<!--___________________↓Carrocel↓___________________-->
+	<!--_________________________↓Carrocel↓_________________________-->
 	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 		<!-- data-bs-ride="false" -->
 		<div class="carousel-indicators">
@@ -88,7 +93,7 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img class="d-block w-100" src="images/1.jpg" alt="Primeiro Slide">
-				<div class="carousel-caption d-none d-md-block bg-dark opacity-75">
+				<div class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75">
 					<h3>Barbearias profissionais com preços imperdíveis</h3>
 					<p>Atendimentos especializados para todos os públicos!</p>
 				</div>
@@ -96,7 +101,7 @@
 
 			<div class="carousel-item">
 				<img class="d-block w-100" src="images/2.jpg" alt="Segundo Slide">
-				<div class="carousel-caption d-none d-md-block bg-dark opacity-75">
+				<div class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75">
 					<h3>Os melhores tatuadores reconhecidos em todo Brasil</h3>
 					<p>Nos diferenciamos por realizar serviços da melhor qualidade!</p>
 				</div>
@@ -104,7 +109,7 @@
 
 			<div class="carousel-item">
 				<img class="d-block w-100" src="images/3.jpg" alt="Terceiro Slide">
-				<div class="carousel-caption d-none d-md-block bg-dark opacity-75">
+				<div class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75">
 					<h3>Roupas, acessórios e produtos para seu estilo e cuidados pessoais!</h3>
 					<p>Compre em nossa Loja online e receba em todo o brasil com frete grátis!</p>
 				</div>
@@ -122,22 +127,23 @@
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
-	<!--___________________↑Carrocel↑___________________-->
+	<!--_________________________↑Carrocel↑_________________________-->
 
 
 	<main>
-		<!--___________________↓Benefícios↓___________________-->
-		<section>
+		<!--________________________↓Benefícios↓________________________-->
+		<section class="bg-dark borda-inferior">
 			<div class="container px-4 py-5" id="hanging-icons">
 
 				<!--Acessibilidade → id="conteudoPrincipal"-->
-				<h1 class="mt-4 mb-4 pb-2 border-bottom secaoDestaque-titulo" id="conteudoPrincipal"><img
-						src="images/logo.png" alt="Logo marca VipStyle" width="50px"> Seja Vip</h1>
-				<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+				<h1 class="mt-4 mb-4 pb-3 border-bottom secaoDestaque-titulo neon-ouro" id="conteudoPrincipal"><img
+						class="neon-logo" src="images/logo.png" alt="Logo marca VipStyle" width="50px"> Seja
+					Vip</h1>
+				<div class="row g-4 py-5 row-cols-1 row-cols-lg-3 cor-texto-prata">
 					<!--Acessibilidade → id="conteudoPrincipal"-->
 					<div class="col d-flex align-items-start">
 						<div
-							class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+							class="icon-square bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 								class="bi bi-calendar-check-fill" Ver fotosBox="0 0 16 16">
 								<path
@@ -152,7 +158,7 @@
 					</div>
 					<div class="col d-flex align-items-start">
 						<div
-							class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+							class="icon-square bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 								class="bi bi-geo-alt-fill" Ver fotosBox="0 0 16 16">
 								<path
@@ -167,7 +173,7 @@
 					</div>
 					<div class="col d-flex align-items-start">
 						<div
-							class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+							class="icon-square bg-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 								class="bi bi-gift-fill" Ver fotosBox="0 0 16 16">
 								<path
@@ -183,13 +189,16 @@
 				</div>
 			</div>
 		</section>
-		<!--___________________↑Benefícios↑___________________-->
+		<!--________________________↑Benefícios↑________________________-->
 
 
-		<!--___________________↓Serviços Barbearia↓___________________-->
-		<section class="pb-5 pt-5 bg-dark">
+		<!--_________________________↓Serviços↓_________________________-->
+		<section class="pb-5 pt-5 bg-preto borda-inferior">
+			<!--______↓Serviços Barbearia↓______-->
 			<div class="container p-4">
-				<h1 class="pt-2 pb-4 cor-laranja secaoDestaque-titulo align-items-center text-center neon-laranja"> Serviços em alta</h1>
+				<h1
+					class="pt-2 pb-4 secaoDestaque-titulo align-items-center text-center neon-roxo display-1">
+					Serviços em alta</h1>
 				<div class="text-center align-items-center">
 					<ul class="barbearia pt-4">
 						<li class="cards" id="imagens-cabelo">
@@ -199,7 +208,7 @@
 						</li>
 						<li class="cards" id="imagens-barba">
 							<h2>Barba</h2>
-							<p class="barbearia-descricao">Serviços de barba</p>
+							<p class="barbearia-descricao">Corte e reparo de barba</p>
 							<p class="barbearia-preco">R$ 0,00</p>
 						</li>
 						<li class="cards" id="imagens-completo">
@@ -210,253 +219,252 @@
 					</ul>
 				</div>
 			</div>
-		</section>
-		<!--___________________↑Serviços Barbearia↑___________________-->
+			<!--______↑Serviços Barbearia↑______-->
 
+			<!--______↓Serviços Estúdio↓______-->
+			<div class="album pb-5 bg-preto">
+				<div class="container">
+					<div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-3">
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/01.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/02.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/03.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/04.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
+									</div>
+								</div>
+							</div>
+						</div>
 
-		<!--___________________↓Serviços Estúdio↓___________________-->
-		<div class="album pb-5 bg-dark">
-			<div class="container">
-				<div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-3">
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/01.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/05.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/02.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/06.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/03.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/07.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/04.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/08.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/05.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/09.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/06.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/10.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/07.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/11.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/08.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/12.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/09.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/13.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/10.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/14.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/11.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/15.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/12.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
+						<div class="col">
+							<div class="card neon-cards gradient-roxo">
+								<img src="images/tattoo/16.jpg" class="card-img-top" alt="...">
+								<div class="card-body">
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-light">Ver
+												fotos</button>
+										</div>
+										<small class="text-light">R$ 0,00</small>
 									</div>
-									<small class="text-light">R$ 0,00</small>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/13.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
-									</div>
-									<small class="text-light">R$ 0,00</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/14.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
-									</div>
-									<small class="text-light">R$ 0,00</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/15.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
-									</div>
-									<small class="text-light">R$ 0,00</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="card shadow-sm gradient-laranja">
-							<img src="images/tattoo/16.jpg" class="card-img-top" alt="...">
-							<div class="card-body">
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-light">Ver
-											fotos</button>
-									</div>
-									<small class="text-light">R$ 0,00</small>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-		<!--___________________↑Serviços Estúdio↑___________________-->
+			<!--______↑Serviços Estúdio↑______-->
+		</section>
+		<!--_________________________↑Serviços↑_________________________-->
 
 
 		<!--___________________↓Produtos em destaque↓___________________-->
-		<!--Primeira fileira de destaques-->
-		<section class="p-5 gradient-laranja">
+		<section class="p-5 gradient-roxo borda-inferior">
 			<div>
-				<h1 class="pt-4 pb-5 secaoDestaque-titulo align-items-center text-center neon-preto"> Produtos mais vendidos</h1>
+				<h1 class="pt-4 pb-5 secaoDestaque-titulo align-items-center text-center neon-laranja display-1">
+					Produtos mais vendidos</h1>
 			</div>
 			<div class="container">
 				<div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-4 justify-content-center">
@@ -559,11 +567,11 @@
 		<!--___________________↑Produtos em destaque↑___________________-->
 
 
-		<!--___________________↓Localização↓___________________-->
-		<section class="pt-5 pb-5 mt-4 mb-4">
+		<!--_______________________↓Localização↓_______________________-->
+		<section class="pt-4 pb-5 bg-dark borda-inferior">
 			<div>
-				<h1 class="pb-5 text-dark secaoDestaque-titulo align-items-center text-center"><img
-						src="images/logo.png" alt="Logo marca VipStyle" width="50px"> Venha nos conhecer</h1>
+				<h1 class="p-5 secaoDestaque-titulo neon-ouro"><img class="neon-logo" src="images/logo.png"
+						alt="Logo marca VipStyle" width="50px"> Venha nos conhecer</h1>
 			</div>
 			<div class="localizacao">
 				<iframe class="m-1" width="470px" height="265px" src="https://www.youtube.com/embed/Ff68WwJxmg4"
@@ -584,12 +592,14 @@
 				</iframe>
 			</div>
 		</section>
-		<!--___________________↑Localização↑___________________-->
+		<!--_______________________↑Localização↑______________________-->
 	</main>
 
-	<footer class="bg-dark p-5">
+
+	<!--___________________________↓Rodapé↓__________________________-->
+	<footer class="bg-preto p-5">
 		<div class="d-flex align-items-center">
-			<a class="mb-3 me-2 mb-md-0 text-decoration-none lh-1 text-light">
+			<a class="mb-3 me-2 mb-md-0 text-decoration-none lh-1 cor-texto-prata">
 				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 					class="bi bi-instagram" Ver fotosBox="0 0 16 16">
 					<path
@@ -614,8 +624,9 @@
 			<li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
 			<li class="nav-item"><a href="#" class="nav-link px-2 text-light">Sobre</a></li>
 		</ul>
-		<img src="images/logo-principal.png" alt="Logo marca VipStyle" width="100px">
+		<img class="pt-5 neon-logo" src="images/logo-principal.png" alt="Logo marca VipStyle" width="100px">
 	</footer>
+	<!--___________________________↑Rodapé↑__________________________-->
 
 </body>
 

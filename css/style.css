@@ -1,52 +1,103 @@
-body {
-	font-family: Trirong, serif;
+/*fonte Google fonts*/
+.fonte-letras-google {
+	font-family: 'Raleway', sans-serif;
 }
 
-.gradient-laranja {
-	background: linear-gradient(90deg, rgba(186,30,19,1) 0%, rgba(255,112,81,1) 17%, rgba(236,87,56,1) 100%);
+
+/*________Acessibilidade__________*/
+.pularNavegacao {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	display: block;
+	color: transparent;
+	position: absolute;
 }
-.cor-laranja {
-	color: rgba(236,87,56,1);
+
+
+/* Cores */
+.gradient-menu {background: rgb(39,0,65);
+	background: linear-gradient(90deg, rgba(39,0,65,1) 0%, rgba(255,94,30,1) 15%, rgba(255,94,30,1) 16%, rgba(195,79,47,1) 39%, rgba(52,6,85,1) 77%, rgba(52,6,85,1) 100%);
 }
+.gradient-roxo {
+	background: linear-gradient(90deg, rgba(21,0,36,1) 0%, rgba(68,0,115,1) 53%, rgba(119,0,204,1) 100%);
+}
+.bg-preto{
+	background: #000000;
+}
+.bg-laranja-carousel {
+	background: rgba(195,79,47,1);
+}
+.cor-texto-prata {
+	color: #e5e5e5;
+}
+
+
+/* Logo com neon laranja*/
+.neon-logo {
+	filter: drop-shadow(0px 0px 30px rgba(255,94,30,1));
+}
+
+
+/* Texto com neon ouro*/
+.neon-ouro {
+	color: #b58e70;
+	text-shadow: 0px 0px 20px rgba(255,94,30,1);
+}
+
+.neon-cards:hover {
+	border: 0.5px solid #9900ff;
+	box-shadow: 0px 0px 10px #9900ff;
+	transition: 0.5s all;
+}
+
+/* Texto com neon roxo*/
+.neon-roxo {
+	color: #9900ff;
+	font-weight: bold;
+	animation: neon-roxo 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon-roxo {
+	from {
+		text-shadow: 0px 0px 30px #9900ff,
+					 0px 0px 18px #9900ff;
+	}
+	to {
+		text-shadow: 0 0 6px #9900ff,
+					 0 0 6px #9900ff, 
+					 0 0 6px #9900ff;
+	}
+}
+
 
 /* Texto com neon laranja*/
 .neon-laranja {
-	color: rgba(236,87,56,1);
-	animation: neon-laranja 1s ease-in-out infinite alternate;
+	color: rgba(255,94,30,1);
+	font-weight: bold;
+	animation: neon-laranja 2s ease-in-out infinite alternate;
 }
 @-webkit-keyframes neon-laranja {
 	from {
-		text-shadow: 0px 0px 9px rgba(236,87,56,1),
-					 0px 0px 6px rgba(236,87,56,1);
+		text-shadow: 0px 0px 30px rgba(255,94,30,1),
+					 0px 0px 18px rgba(255,94,30,1);
 	}
 	to {
-		text-shadow: 0 0 2px rgba(236,87,56,1),
-					 0 0 2px rgba(236,87,56,1), 
-					 0 0 2px rgba(236,87,56,1);
+		text-shadow: 0 0 6px rgba(255,94,30,1),
+					 0 0 6px rgba(255,94,30,1), 
+					 0 0 6px rgba(255,94,30,1);
 	}
 }
-/* Texto com neon laranja*/
 
-/* Texto com neon preto*/
-.neon-preto {
-	color: #f9f9f9;
-	animation: neon-preto 1s ease-in-out infinite alternate;
+
+/* Borda no final de caixas */
+.borda-inferior {
+	border-bottom: 0.1px solid #5e5e5e;
 }
-@-webkit-keyframes neon-preto {
-	from {
-		text-shadow: 0px 0px 9px #f9f9f9,
-					 0px 0px 6px #f9f9f9;
-	}
-	to {
-		text-shadow: 0 0 2px #f9f9f9,
-					 0 0 2px #f9f9f9, 
-					 0 0 2px #f9f9f9;
-	}
-}
-/* Texto com neon preto*/
 
 
-/*___________↓barbearias↓_________*/
+/*___↓ Cards da barbearia ↓___ */
 .cards {
 	height: 320px;
 	width: 300px;
@@ -81,14 +132,17 @@ body {
 	vertical-align: top;
 	padding: 0px;
 	margin: 10px;
-	border: 0.5px solid rgba(236,87,56,1);
+	border: 0.5px solid #9900ff;
 	border-radius: 15px;
 	box-sizing: border-box;
+	color: #000000;
 }   /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
 
 .barbearia li:hover {
-	box-shadow: 0px 0px 30px rgba(236,87,56,1);
-	transition: 1s all;
+	color: #ff3a09;
+	box-shadow: 0px 0px 30px #9900ff;
+	text-shadow: 3px 3px 6px #000000;
+	transition: 0.5s all;
 }
 
 .barbearia li:active {
@@ -101,16 +155,10 @@ body {
 	font-weight: bold;
 }
 
-.barbearia li:hover {
-	color: rgba(236,87,56,1);
-	text-shadow: 0px 0px 12px #000000;
-	transition: 0.7s all;
-}
-
 .barbearia-descricao {
-	font-size: 18px;
+	font-size: 21px;
 	font-weight: bold;
-	margin-top: 200px;
+	margin-top: 190px;
 }
 
 .barbearia-preco {
@@ -118,7 +166,14 @@ body {
 	font-weight: bold;
 	margin-top: 10px;
 }
-/*___________↑barbearias↑_________*/
+/*___↑ Cards da barbearia ↑___ */
+
+
+/* Centraliza elementos, não o texto*/
+.localizacao {
+	text-align: center;
+}
+
 
 
 /*____________contato___________*/
@@ -198,47 +253,6 @@ td, th {
 /*____________contato___________*/
 
 
-/*____animação de gradiente____*/
-@keyframes animateBg {
-	0% {
-	  background-position: 0 0;
-	}
-	100% {
-	  background-position: 100% 0;
-	}
-}
-/*____animação de gradiente____*/
-
-
-
-
-
-
-
-
-
-
-
-/*________página home________________________________________*/
-
-/*________Acessibilidade__________*/
-.pularNavegacao {
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	width: 1px;
-	height: 1px;
-	display: block;
-	color: transparent;
-	position: absolute;
-}
-
-/*________Acessibilidade__________*/
-.localizacao {
-	text-align: center;
-}
-
-/*________página home________________________________________*/
 
 /*___________rodapé____________*/
 footer {
