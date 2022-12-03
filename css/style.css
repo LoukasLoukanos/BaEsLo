@@ -1,9 +1,50 @@
+body {
+	font-family: Trirong, serif;
+}
+
 .gradient-laranja {
 	background: linear-gradient(90deg, rgba(186,30,19,1) 0%, rgba(255,112,81,1) 17%, rgba(236,87,56,1) 100%);
 }
 .cor-laranja {
-	color: rgba(236,87,56,1)
+	color: rgba(236,87,56,1);
 }
+
+/* Texto com neon laranja*/
+.neon-laranja {
+	color: rgba(236,87,56,1);
+	animation: neon-laranja 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon-laranja {
+	from {
+		text-shadow: 0px 0px 9px rgba(236,87,56,1),
+					 0px 0px 6px rgba(236,87,56,1);
+	}
+	to {
+		text-shadow: 0 0 2px rgba(236,87,56,1),
+					 0 0 2px rgba(236,87,56,1), 
+					 0 0 2px rgba(236,87,56,1);
+	}
+}
+/* Texto com neon laranja*/
+
+/* Texto com neon preto*/
+.neon-preto {
+	color: #f9f9f9;
+	animation: neon-preto 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes neon-preto {
+	from {
+		text-shadow: 0px 0px 9px #f9f9f9,
+					 0px 0px 6px #f9f9f9;
+	}
+	to {
+		text-shadow: 0 0 2px #f9f9f9,
+					 0 0 2px #f9f9f9, 
+					 0 0 2px #f9f9f9;
+	}
+}
+/* Texto com neon preto*/
+
 
 /*___________↓barbearias↓_________*/
 .cards {
@@ -40,13 +81,13 @@
 	vertical-align: top;
 	padding: 0px;
 	margin: 10px;
-	box-sizing: border-box;
-	border: 0px;
+	border: 0.5px solid rgba(236,87,56,1);
 	border-radius: 15px;
+	box-sizing: border-box;
 }   /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
 
 .barbearia li:hover {
-	box-shadow: 0 3px 6px #ffffff;
+	box-shadow: 0px 0px 30px rgba(236,87,56,1);
 	transition: 1s all;
 }
 
@@ -62,7 +103,7 @@
 
 .barbearia li:hover {
 	color: rgba(236,87,56,1);
-	text-shadow: 1px 1px 2px #000000;
+	text-shadow: 0px 0px 12px #000000;
 	transition: 0.7s all;
 }
 
@@ -194,7 +235,6 @@ td, th {
 
 /*________Acessibilidade__________*/
 .localizacao {
-    padding: 90px 0px;
 	text-align: center;
 }
 
