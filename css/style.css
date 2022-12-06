@@ -40,6 +40,10 @@
 	filter: drop-shadow(0px 0px 30px rgba(255,94,30,1));
 }
 
+/* menu com neon para página barbearia*/
+.menu-neon {
+	box-shadow: 0px 0px 33px #1f1f1f;
+}
 
 /* Texto com neon ouro*/
 .neon-ouro {
@@ -136,6 +140,7 @@
 	border-radius: 15px;
 	box-sizing: border-box;
 	color: #000000;
+	box-shadow: 0px 0px 6px #9900ff;
 }   /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
 
 .barbearia li:hover {

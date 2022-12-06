@@ -3,28 +3,36 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Barbear & Studio Vip</title>
+	<title>PseudoSite: VipStyle - Loja, Barbearia & Estúdio</title>
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<!--___________________↓Bootstrap↓___________________-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--_______________________↓Bootstrap↓_______________________-->
+	<meta name="Ver fotosport" content="width=device-width, initial-scale=1">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-	<!--___________________↑Bootstrap↑___________________-->
 
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+	<!--_______________________↓Google Fonts↓_______________________-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
-	<!--___________________↓Menu↓___________________-->
+<body class="fonte-letras-google">
+
+	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
+	<!--Acessibilidade-->
+
+	<!--___________________________↓Menu↓___________________________-->
 	<header>
-		<nav class="navbar navbar-expand-lg bg-light">
+		<nav class="navbar navbar-expand-lg gradient-menu menu-neon">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html">
-					<img src="images/logo-menu.png" alt="logo-menu VipStyle - Loja, Barbearia & Estúdio"></img>
+					<img class="neon-logo" src="images/logo-menu.png"
+						alt="logo-menu VipStyle - Loja, Barbearia & Estúdio"></img>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
 					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,18 +41,18 @@
 				<div class="collapse navbar-collapse" id="navbarScroll">
 					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="index.html">Home</a>
+							<a class="nav-link" aria-current="page" href="index.html"><b>Home</b></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="barbearia.html">Barbearia</a>
+							<a class="nav-link active" aria-current="page" href="barbearia.html"><b>Barbearia</b></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#">Estúdio</a>
+							<a class="nav-link" aria-current="page" href="#"><b>Estúdio</b></a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
-								Loja
+								<b>Loja</b>
 							</a>
 							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#">Roupas</a></li>
@@ -58,40 +66,45 @@
 						</li>
 					</ul>
 					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success" type="submit">Search</button>
+						<input class="form-control me-2 bg-dark text-light" type="search" placeholder="Search"
+							aria-label="Search">
+						<button class="btn btn-dark" type="submit">Search</button>
 					</form>
 				</div>
 			</div>
 		</nav>
 	</header>
-	<!--___________________↑Menu↑___________________-->
+	<!--___________________________↑Menu↑___________________________-->
 
 	<main>
-		<div class="video_barbearia">
-			<iframe width="50%" height="410px" src="https://www.youtube.com/embed/SiGcMX5CVdk" title="BROLL BARBER"
-				frameborder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen></iframe>
-		</div>
-
-		<ul class="barbearia">
-			<li class="cards" id="s">
-				<h2>Cabelo</h2>
-				<p class="barbearia-descricao">Cortes profissionais</p>
-				<p class="barbearia-preco">R$ 25,00</p>
-			</li>
-			<li class="cards" id="imagens-barba">
-				<h2>Barba</h2>
-				<p class="barbearia-descricao">Corte e desenho de barba</p>
-				<p class="barbearia-preco">R$ 18,00</p>
-			</li>
-			<li class="cards" id="imagens-completo">
-				<h2>Cabelo + Barba</h2>
-				<p class="barbearia-descricao">Pacote completo</p>
-				<p class="barbearia-preco">R$ 35,00</p>
-			</li>
-		</ul>
+		<!--_________________________↓Serviços↓_________________________-->
+		<section class="pb-5 pt-5 bg-preto borda-inferior">
+			<!--______↓Serviços Barbearia↓______-->
+			<div class="container p-4">
+				<h1 class="pt-2 pb-4 secaoDestaque-titulo align-items-center text-center neon-roxo display-1">
+					Serviços</h1>
+				<div class="text-center align-items-center">
+					<ul class="barbearia pt-4">
+						<li class="cards" id="imagens-cabelo">
+							<h2>Cabelo</h2>
+							<p class="barbearia-descricao">Cortes profissionais</p>
+							<p class="barbearia-preco">R$ 0,00</p>
+						</li>
+						<li class="cards" id="imagens-barba">
+							<h2>Barba</h2>
+							<p class="barbearia-descricao">Corte e reparo de barba</p>
+							<p class="barbearia-preco">R$ 0,00</p>
+						</li>
+						<li class="cards" id="imagens-completo">
+							<h2>Cabelo + Barba</h2>
+							<p class="barbearia-descricao">Pacote completo</p>
+							<p class="barbearia-preco">R$ 0,00</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--______↑Serviços Barbearia↑______-->
+		</section>
 
 		<form>
 			<!-- quando label não encapsula, precisa de for e o que está sendo encapsulado de id para que o 'click' no label se relacione ao seu elemento-->
