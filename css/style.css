@@ -19,17 +19,21 @@
 
 /* Cores */
 .gradient-menu {
-	background: linear-gradient(90deg, rgba(39,0,65,1) 0%, rgba(255,94,30,1) 15%, rgba(255,94,30,1) 16%, rgba(195,79,47,1) 39%, rgba(52,6,85,1) 77%, rgba(52,6,85,1) 100%);
+	background: linear-gradient(90deg, rgba(39, 0, 65, 1) 0%, rgba(255, 94, 30, 1) 15%, rgba(255, 94, 30, 1) 16%, rgba(195, 79, 47, 1) 39%, rgba(52, 6, 85, 1) 77%, rgba(52, 6, 85, 1) 100%);
 }
+
 .gradient-roxo {
-	background: linear-gradient(90deg, rgba(21,0,36,1) 0%, rgba(68,0,115,1) 53%, rgba(119,0,204,1) 100%);
+	background: linear-gradient(90deg, rgba(21, 0, 36, 1) 0%, rgba(68, 0, 115, 1) 53%, rgba(119, 0, 204, 1) 100%);
 }
-.bg-preto{
+
+.bg-preto {
 	background: #0f0f0f;
 }
+
 .bg-laranja-carousel {
-	background: rgba(195,79,47,1);
+	background: rgba(195, 79, 47, 1);
 }
+
 .cor-texto-prata {
 	color: #e5e5e5;
 }
@@ -37,19 +41,22 @@
 
 /* Logo com neon laranja*/
 .neon-logo {
-	filter: drop-shadow(0px 0px 30px rgba(255,94,30,1));
+	filter: drop-shadow(0px 0px 30px rgba(255, 94, 30, 1));
 }
+
 
 /* menu com neon para página barbearia*/
 .menu-neon {
 	box-shadow: 0px 0px 33px #1f1f1f;
 }
 
+
 /* Texto com neon ouro*/
 .neon-ouro {
 	color: #b58e70;
-	text-shadow: 0px 0px 20px rgba(255,94,30,1);
+	text-shadow: 0px 0px 20px rgba(255, 94, 30, 1);
 }
+
 
 /* sombra tipo neon roxo nos cards*/
 .neon-cards:hover {
@@ -57,11 +64,117 @@
 	box-shadow: 0px 0px 10px #9900ff;
 	transition: 0.5s all;
 }
+
 .cardpointer:hover {
 	cursor: pointer;
 }
 
-#seja-vip{
+
+
+/*_________↓parte de apresentação (abaixo do carrocel)↓_________*/
+/*textos animados*/
+.texto-animado {
+	animation-duration: 3s;
+	animation-name: texto_anim;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes texto_anim {
+	0% {
+      margin-left: 10%;
+	  width: 120%;
+	}
+	20% {
+		margin-left: 10%;
+		width: 120%;
+	  }
+	100% {
+	  margin-left: 0%;
+      width: 100%;
+	}
+}
+
+
+/*icones animados*/
+.icon-animado {
+	width: 100%;
+	height:100%;
+	scale: 0.2;
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: relative;
+	animation-name: ico_move;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+  
+#b_icon-1 {
+	background-image: url('ico/barber/b_icon1.png');
+}
+  
+@keyframes ico_move {
+	0% {
+		left: 300px;
+		transform: rotate(60deg);
+	}
+	20% {
+		left: 300px;
+		transform: rotate(60deg);
+	}
+	100% {
+		left: 0px;
+		transform: rotate(-200deg) scale(0.5);
+	}
+
+}
+
+/*imagens circulares*/
+.conf-img-circulo{
+	width: 500px;
+	height: 500px;
+	scale: 0.8;
+	background-repeat: no-repeat;
+	border-radius: 100%;
+	display: inline-block;
+	vertical-align: top;
+	animation-name: img_circulo;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#img-circulo-A {
+	background-image: url('images/circuloA.jpg');
+}
+#img-circulo-A:hover {
+	background-image: url('images/circuloA.jpg');
+	
+}
+@keyframes img_circulo {
+	0% {
+		transform: scale(1.1) rotate(7deg);
+		opacity: 1;
+	}
+	25% {
+		transform: scale(1.1) rotate(7deg);
+		opacity: 1;
+	}
+	60% {
+		transform: scale(0.8) rotate(0deg);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(0.8) rotate(0deg);
+		opacity: 0.5;
+	}
+
+}
+
+
+
+/*área de planos*/
+#seja-vip {
 	margin: 30px;
 	border: 0px solid #ffffff;
 	box-shadow: 0px 0px 6px #f0f0f0;
@@ -77,7 +190,7 @@
 	border: 0.5px solid #000000;
 	filter: blur(0px);
 	transform: scale(1.04);
-	box-shadow: 1px 1px 15px rgba(255,94,30,1);
+	box-shadow: 1px 1px 15px rgba(255, 94, 30, 1);
 	transition: 0.5s all;
 }
 
@@ -87,34 +200,38 @@
 	font-weight: bold;
 	animation: neon-roxo 2s ease-in-out infinite alternate;
 }
+
 @-webkit-keyframes neon-roxo {
 	from {
 		text-shadow: 0px 0px 30px #9900ff,
-					 0px 0px 18px #9900ff;
+			0px 0px 18px #9900ff;
 	}
+
 	to {
 		text-shadow: 0 0 6px #9900ff,
-					 0 0 6px #9900ff, 
-					 0 0 6px #9900ff;
+			0 0 6px #9900ff,
+			0 0 6px #9900ff;
 	}
 }
 
 
 /* Texto com neon laranja*/
 .neon-laranja {
-	color: rgba(255,94,30,1);
+	color: rgba(255, 94, 30, 1);
 	font-weight: bold;
 	animation: neon-laranja 2s ease-in-out infinite alternate;
 }
+
 @-webkit-keyframes neon-laranja {
 	from {
-		text-shadow: 0px 0px 30px rgba(255,94,30,1),
-					 0px 0px 18px rgba(255,94,30,1);
+		text-shadow: 0px 0px 30px rgba(255, 94, 30, 1),
+			0px 0px 18px rgba(255, 94, 30, 1);
 	}
+
 	to {
-		text-shadow: 0 0 6px rgba(255,94,30,1),
-					 0 0 6px rgba(255,94,30,1), 
-					 0 0 6px rgba(255,94,30,1);
+		text-shadow: 0 0 6px rgba(255, 94, 30, 1),
+			0 0 6px rgba(255, 94, 30, 1),
+			0 0 6px rgba(255, 94, 30, 1);
 	}
 }
 
@@ -129,13 +246,14 @@
 .cards {
 	height: 380px;
 	width: 350px;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-size: 105% 105%;
 }
 
 #imagens-cabelo {
 	background-image: url('images/corte_front.jpg');
 }
+
 #imagens-cabelo:hover {
 	background-image: url('images/corte_back.jpg');
 }
@@ -143,6 +261,7 @@
 #imagens-barba {
 	background-image: url('images/barba_front.jpg');
 }
+
 #imagens-barba:hover {
 	background-image: url('images/barba_back.jpg');
 }
@@ -150,6 +269,7 @@
 #imagens-completo {
 	background-image: url('images/completo_front.jpg');
 }
+
 #imagens-completo:hover {
 	background-image: url('images/completo_back.jpg');
 }
@@ -165,7 +285,9 @@
 	box-sizing: border-box;
 	color: #000000;
 	box-shadow: 0px 0px 6px #9900ff;
-}   /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
+}
+
+/*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
 
 .barbearia li:hover {
 	color: #ff3a09;
@@ -197,6 +319,7 @@
 	font-weight: bold;
 	margin-top: 10px;
 }
+
 /*___↑ Cards da barbearia ↑___ */
 
 
@@ -209,57 +332,58 @@
 
 /*____________contato___________*/
 .video_contato {
-    width: 60%;
-    margin: 70px 0 40px 0;
+	width: 60%;
+	margin: 70px 0 40px 0;
 }
 
 form {
-    padding: 10px 0 20px 0;
+	padding: 10px 0 20px 0;
 	color: #f0f0f0;
 }
 
-form label, form legend  {
-    display:block;
-    font-size: 20px;
-    margin: 0 0 10px;
+form label,
+form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
 }
 
 .input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
 	background: #000000;
 	color: #f0f0f0;
 	border-radius: 10px
 }
 
 .checkbox {
-    margin: 20px 0;
+	margin: 20px 0;
 }
 
 .enviar {
-	background: -moz-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-    background: -webkit-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-    background: linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-	width:27%;
-    padding: 9px 0;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 18px;
-    transition: 1s all;
-    cursor: pointer;
+	background: -moz-linear-gradient(216deg, rgba(0, 34, 255, 1) 0%, rgba(0, 34, 255, 1) 10%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 25%, rgba(255, 0, 0, 1) 30%, rgba(255, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(0, 34, 255, 1) 60%, rgba(0, 43, 255, 1) 70%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 85%, rgba(255, 0, 0, 1) 90%, rgba(255, 0, 0, 1) 100%);
+	background: -webkit-linear-gradient(216deg, rgba(0, 34, 255, 1) 0%, rgba(0, 34, 255, 1) 10%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 25%, rgba(255, 0, 0, 1) 30%, rgba(255, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(0, 34, 255, 1) 60%, rgba(0, 43, 255, 1) 70%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 85%, rgba(255, 0, 0, 1) 90%, rgba(255, 0, 0, 1) 100%);
+	background: linear-gradient(216deg, rgba(0, 34, 255, 1) 0%, rgba(0, 34, 255, 1) 10%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 25%, rgba(255, 0, 0, 1) 30%, rgba(255, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(0, 34, 255, 1) 60%, rgba(0, 43, 255, 1) 70%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 85%, rgba(255, 0, 0, 1) 90%, rgba(255, 0, 0, 1) 100%);
+	width: 27%;
+	padding: 9px 0;
+	color: black;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 18px;
+	transition: 1s all;
+	cursor: pointer;
 }
 
 .enviar:hover {
 	color: #C78C19;
 	text-shadow: 2px 2px 5px #C78C19;
-    background: -moz-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-    background: -webkit-linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-    background: linear-gradient(216deg, rgba(0,34,255,1) 0%, rgba(0,34,255,1) 10%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 25%, rgba(255,0,0,1) 30%, rgba(255,0,0,1) 40%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 55%, rgba(0,34,255,1) 60%, rgba(0,43,255,1) 70%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 85%, rgba(255,0,0,1) 90%, rgba(255,0,0,1) 100%);
-    transform: rotate(-3deg) scale(1.1);
+	background: -moz-linear-gradient(216deg, rgba(0, 34, 255, 1) 0%, rgba(0, 34, 255, 1) 10%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 25%, rgba(255, 0, 0, 1) 30%, rgba(255, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(0, 34, 255, 1) 60%, rgba(0, 43, 255, 1) 70%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 85%, rgba(255, 0, 0, 1) 90%, rgba(255, 0, 0, 1) 100%);
+	background: -webkit-linear-gradient(216deg, rgba(0, 34, 255, 1) 0%, rgba(0, 34, 255, 1) 10%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 25%, rgba(255, 0, 0, 1) 30%, rgba(255, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(0, 34, 255, 1) 60%, rgba(0, 43, 255, 1) 70%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 85%, rgba(255, 0, 0, 1) 90%, rgba(255, 0, 0, 1) 100%);
+	background: linear-gradient(216deg, rgba(0, 34, 255, 1) 0%, rgba(0, 34, 255, 1) 10%, rgba(255, 255, 255, 1) 15%, rgba(255, 255, 255, 1) 25%, rgba(255, 0, 0, 1) 30%, rgba(255, 0, 0, 1) 40%, rgba(255, 255, 255, 1) 45%, rgba(255, 255, 255, 1) 55%, rgba(0, 34, 255, 1) 60%, rgba(0, 43, 255, 1) 70%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1) 85%, rgba(255, 0, 0, 1) 90%, rgba(255, 0, 0, 1) 100%);
+	transform: rotate(-3deg) scale(1.1);
 	box-shadow: 0 3px 30px #ffffff;
 
 	/*animação do gradiente*/
@@ -268,19 +392,21 @@ form label, form legend  {
 }
 
 table {
-    margin: 20px 0 40px;
+	margin: 20px 0 40px;
 }
 
 thead {
-    background: #555555;
-    color: white;
-    font-weight: bold;
+	background: #555555;
+	color: white;
+	font-weight: bold;
 }
 
-td, th {
-    border: 1px solid #000000;
-    padding: 8px 15px;
+td,
+th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
 }
+
 /*____________contato___________*/
 
 
@@ -289,4 +415,5 @@ td, th {
 footer {
 	text-align: center;
 }
+
 /*___________rodapé____________*/
