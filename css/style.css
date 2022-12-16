@@ -74,103 +74,198 @@
 /*_________↓parte de apresentação (abaixo do carrocel)↓_________*/
 /*textos animados*/
 .texto-animado {
-	animation-duration: 3s;
+	animation-duration: 4s;
 	animation-name: texto_anim;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
+
 @keyframes texto_anim {
 	0% {
-      margin-left: 10%;
-	  width: 120%;
+		margin-left: 10%;
+		width: 120%;
 	}
+
 	20% {
 		margin-left: 10%;
 		width: 120%;
-	  }
+	}
+
 	100% {
-	  margin-left: 0%;
-      width: 100%;
+		margin-left: 0%;
+		width: 100%;
 	}
 }
+/*↑textos animados↑*/
 
-
-/*icones animados*/
+/*↓icones animados↓*/
 .icon-animado {
+	padding: 0px;
+	margin: 0px;
 	width: 100%;
-	height:100%;
-	scale: 0.2;
+	height: 12%;
 	background-repeat: no-repeat;
 	display: inline-block;
 	position: relative;
 	animation-name: ico_move;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
-  
-#b_icon-1 {
-	background-image: url('ico/barber/b_icon1.png');
-}
-  
+
 @keyframes ico_move {
 	0% {
-		left: 300px;
-		transform: rotate(60deg);
+		left: 550px;
+		height: 0%;
+		opacity: 0;
 	}
+
 	20% {
-		left: 300px;
-		transform: rotate(60deg);
+		left: 550px;
+		height: 8%;
+		opacity: 0;
+	
 	}
+
 	100% {
-		left: 0px;
-		transform: rotate(-200deg) scale(0.5);
+		left: 400px;
+		height: 12%;
+		opacity: 0.5;
 	}
 
 }
 
+#b_icon-1 {
+	background-image: url('ico/barber/b_icon1.png');
+	animation-timing-function: ease-in-out;
+}
+#b_icon-2 {
+	background-image: url('ico/barber/b_icon2.png');
+	animation-timing-function: ease;
+}
+#b_icon-3 {
+	background-image: url('ico/barber/b_icon3.png');
+	animation-timing-function: linear;
+}
+#b_icon-4 {
+	background-image: url('ico/barber/b_icon4.png');
+	animation-timing-function: ease-in;
+}
+#b_icon-5 {
+	background-image: url('ico/barber/b_icon5.png');
+	animation-timing-function: ease-out;
+}
+#t_icon-1 {
+	background-image: url('ico/estudio/t_icon1.png');
+	animation-timing-function: ease-in-out;
+}
+#t_icon-2 {
+	background-image: url('ico/estudio/t_icon2.png');
+	animation-timing-function: ease;
+}
+#t_icon-3 {
+	background-image: url('ico/estudio/t_icon3.png');
+	animation-timing-function: linear;
+}
+#t_icon-4 {
+	background-image: url('ico/estudio/t_icon4.png');
+	animation-timing-function: ease-in;
+}
+#t_icon-5 {
+	background-image: url('ico/estudio/t_icon5.png');
+	animation-timing-function: ease-out;
+}
+#l_icon-1 {
+	background-image: url('ico/loja/l_icon1.png');
+	animation-timing-function: ease-in-out;
+}
+#l_icon-2 {
+	background-image: url('ico/loja/l_icon2.png');
+	animation-timing-function: ease;
+}
+#l_icon-3 {
+	background-image: url('ico/loja/l_icon3.png');
+	animation-timing-function: linear;
+}
+#l_icon-4 {
+	background-image: url('ico/loja/l_icon4.png');
+	animation-timing-function: ease-in;
+}
+#l_icon-5 {
+	background-image: url('ico/loja/l_icon5.png');
+	animation-timing-function: ease-out;
+}
+/*↑icones animados↑*/
+
 /*imagens circulares*/
-.conf-img-circulo{
+.conf-img-circulo {
 	width: 500px;
 	height: 500px;
 	scale: 0.8;
 	background-repeat: no-repeat;
 	border-radius: 100%;
 	display: inline-block;
+	position: relative;
 	vertical-align: top;
 	animation-name: img_circulo;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+}
+
+@keyframes img_circulo {
+	0% {
+		left: -200px;
+		transform: scale(1.0) rotate(6deg) rotateY(-18deg);
+		opacity: 1;
+		border: 6px solid #b58e70;
+  		box-shadow: inset 0 0 40px #b58e70, 0 0 40px #b58e70;
+  		outline: 1px solid;
+  		outline-color: #b58e70;
+  		outline-offset: 40px;
+	}
+
+	25% {
+		left: -200px;
+		transform: scale(0.9) rotate(6deg) rotateY(18deg);
+		opacity: 1;
+		border: 1px solid #f0f0f0;
+  		box-shadow: inset 0 0 20px #f0f0f0, 0 0 20px #f0f0f0;
+  		outline-color: #f0f0f0;
+  		outline-offset: 15px;
+	}
+
+	60% {
+		left: -50px;
+		transform: scale(0.8) rotate(0deg);
+		opacity: 0.5;
+		border: 2px solid #f0f0f0;
+	}
+
+	100% {
+		left: -50px;
+		transform: scale(0.8) rotate(4deg);
+		opacity: 0.5;
+		border: 1px solid #f0f0f0;
+		outline: 18px solid;
+  		outline-color: #f0f0f0;
+  		outline-offset: 12px;
+	}
+
 }
 
 #img-circulo-A {
 	background-image: url('images/circuloA.jpg');
 }
-#img-circulo-A:hover {
-	background-image: url('images/circuloA.jpg');
-	
-}
-@keyframes img_circulo {
-	0% {
-		transform: scale(1.1) rotate(7deg);
-		opacity: 1;
-	}
-	25% {
-		transform: scale(1.1) rotate(7deg);
-		opacity: 1;
-	}
-	60% {
-		transform: scale(0.8) rotate(0deg);
-		opacity: 0.5;
-	}
-	100% {
-		transform: scale(0.8) rotate(0deg);
-		opacity: 0.5;
-	}
 
+#img-circulo-B {
+	background-image: url('images/circuloB.jpg');
 }
 
+#img-circulo-C {
+	background-image: url('images/circuloC.jpg');
+}
+/*_________↑parte de apresentação (abaixo do carrocel)↑_________*/
 
 
 /*área de planos*/
@@ -201,7 +296,7 @@
 	animation: neon-roxo 2s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes neon-roxo {
+@keyframes neon-roxo {
 	from {
 		text-shadow: 0px 0px 30px #9900ff,
 			0px 0px 18px #9900ff;
@@ -222,7 +317,7 @@
 	animation: neon-laranja 2s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes neon-laranja {
+@keyframes neon-laranja {
 	from {
 		text-shadow: 0px 0px 30px rgba(255, 94, 30, 1),
 			0px 0px 18px rgba(255, 94, 30, 1);
@@ -244,8 +339,8 @@
 
 /*___↓ Cards da barbearia ↓___ */
 .cards {
-	height: 380px;
-	width: 350px;
+	height: 360px;
+	width: 315px;
 	background-repeat: no-repeat;
 	background-size: 105% 105%;
 }

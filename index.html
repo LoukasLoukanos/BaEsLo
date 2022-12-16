@@ -42,7 +42,7 @@
 				<div class="collapse navbar-collapse" id="navbarScroll">
 					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 						<li class="nav-item">
-							<a class="nav-link  active" aria-current="page" href="index.html"><b>Home</b></a>
+							<a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="barbearia.html"><b>Barbearia</b></a>
@@ -95,7 +95,7 @@
 				<img class="d-block w-100" src="images/1.jpg" alt="Primeiro Slide">
 				<div class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
 					<h3>Barbearia</h3>
-					<p>Serviços com os melhores profissionais por preços imperdíveis</p>
+					<p class="texto-animado">Serviços com os melhores profissionais por preços imperdíveis</p>
 				</div>
 			</div>
 
@@ -103,7 +103,7 @@
 				<img class="d-block w-100" src="images/2.jpg" alt="Segundo Slide">
 				<div class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
 					<h3>Estúdio</h3>
-					<p>Tatuadores reconhecidos em todo Brasil</p>
+					<p class="texto-animado">Tatuadores reconhecidos em todo Brasil</p>
 				</div>
 			</div>
 
@@ -111,7 +111,7 @@
 				<img class="d-block w-100" src="images/3.jpg" alt="Terceiro Slide">
 				<div class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
 					<h3>Loja</h3>
-					<p>Roupas, acessórios e produtos para seu estilo e cuidados pessoais!</p>
+					<p class="texto-animado">Roupas, acessórios e produtos para seu estilo e cuidados pessoais!</p>
 				</div>
 			</div>
 		</div>
@@ -131,14 +131,47 @@
 
 
 	<main>
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+			Launch static backdrop modal
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+			aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Understood</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!--________________________↓Apresentação↓________________________-->
 		<section class="bg-dark borda-inferior p-5">
 			<div class="row featurette p-5 cor-texto-prata text-center">
 				<div class="col-md-7">
-					<h2 class="featurette-heading fw-normal lh-1 texto-animado">A melhor Barbearia. <span
-							class="text-muted texto-animado">Uma super Barbearia.</span></h2>
+					<h2 class="featurette-heading fw-normal lh-1 texto-animado neon-ouro">A melhor Barbearia. <span
+							class="texto-animado cor-texto-prata">Uma super Barbearia!</span></h2>
 					<p class="lead texto-animado">Atendimentos especializados para todos os públicos!</p>
-					<div class="icon-animado" id="b_icon-1"></div>
+					<span class="icon-animado" id="b_icon-1"></span>
+					<span class="icon-animado" id="b_icon-2"></span>
+					<span class="icon-animado" id="b_icon-3"></span>
+					<span class="icon-animado" id="b_icon-4"></span>
+					<span class="icon-animado" id="b_icon-5"></span>
+					<span class="icon-animado" id="b_icon-6"></span>
+					<span class="icon-animado" id="b_icon-7"></span>
+					<span class="icon-animado" id="b_icon-8"></span>
+					<span class="icon-animado" id="b_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
 					<div class="conf-img-circulo w-100" id="img-circulo-A">
@@ -151,12 +184,21 @@
 
 			<div class="row featurette p-5 cor-texto-prata text-center">
 				<div class="col-md-7 order-md-2">
-					<h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See
-							for yourself.</span></h2>
-					<p class="lead">Nos diferenciamos por realizar serviços da melhor qualidade!</p>
+					<h2 class="featurette-heading fw-normal lh-1 texto-animado neon-ouro">A melhor Barbearia. <span
+							class="texto-animado cor-texto-prata">Uma super Barbearia!</span></h2>
+					<p class="lead texto-animado">Atendimentos especializados para todos os públicos!</p>
+					<span class="icon-animado" id="t_icon-1"></span>
+					<span class="icon-animado" id="t_icon-2"></span>
+					<span class="icon-animado" id="t_icon-3"></span>
+					<span class="icon-animado" id="t_icon-4"></span>
+					<span class="icon-animado" id="t_icon-5"></span>
+					<span class="icon-animado" id="t_icon-6"></span>
+					<span class="icon-animado" id="t_icon-7"></span>
+					<span class="icon-animado" id="t_icon-8"></span>
+					<span class="icon-animado" id="t_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<div class="conf-img-circulo w-100" id="img-circulo-A">
+					<div class="conf-img-circulo w-100" id="img-circulo-B">
 						<p>teste</p>
 					</div>
 				</div>
@@ -166,12 +208,21 @@
 
 			<div class="row featurette p-5 cor-texto-prata text-center">
 				<div class="col-md-7">
-					<h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
-							class="text-muted">Checkmate.</span></h2>
-					<p class="lead">Compre em nossa Loja online e receba em todo o brasil com frete grátis!</p>
+					<h2 class="featurette-heading fw-normal lh-1 texto-animado neon-ouro">A melhor Barbearia. <span
+							class="texto-animado cor-texto-prata">Uma super Barbearia!</span></h2>
+					<p class="lead texto-animado">Atendimentos especializados para todos os públicos!</p>
+					<span class="icon-animado" id="l_icon-1"></span>
+					<span class="icon-animado" id="l_icon-2"></span>
+					<span class="icon-animado" id="l_icon-3"></span>
+					<span class="icon-animado" id="l_icon-4"></span>
+					<span class="icon-animado" id="l_icon-5"></span>
+					<span class="icon-animado" id="l_icon-6"></span>
+					<span class="icon-animado" id="l_icon-7"></span>
+					<span class="icon-animado" id="l_icon-8"></span>
+					<span class="icon-animado" id="l_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<div class="conf-img-circulo w-100" id="img-circulo-A">
+					<div class="conf-img-circulo w-100" id="img-circulo-C">
 						<p>teste</p>
 					</div>
 				</div>
