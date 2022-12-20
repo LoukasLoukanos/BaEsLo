@@ -4,9 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>PseudoSite: VipStyle - Loja, Barbearia & Estúdio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script language="javascript" src="assets/js/main.js"></script>
 
 	<!--_______________________↓Bootstrap↓_______________________-->
 	<meta name="Ver fotosport" content="width=device-width, initial-scale=1">
@@ -18,7 +23,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-
 </head>
 
 <body class="fonte-letras-google">
@@ -79,6 +83,33 @@
 	<main>
 		<!--_________________________↓Serviços↓_________________________-->
 		<section class="pb-5 pt-5 bg-preto borda-inferior">
+			<!--Botão do modal de aviso PseudoSite-->
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+				Launch static backdrop modal
+			</button>
+
+			<!--↓Modal de aviso PseudoSite↓-->
+			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+				aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							...
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary">Understood</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--↑Modal de aviso PseudoSite↑-->
+
+
 			<!--______↓Serviços Barbearia↓______-->
 			<div class="container p-4">
 				<h1 class="pt-2 pb-4 secaoDestaque-titulo align-items-center text-center neon-roxo display-1">
