@@ -4,14 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>PseudoSite: VipStyle - Loja, Barbearia & Estúdio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script language="javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script language="javascript" src="assets/js/main.js"></script>
 
 	<!--_______________________↓Bootstrap↓_______________________-->
 	<meta name="Ver fotosport" content="width=device-width, initial-scale=1">
@@ -26,10 +26,10 @@
 </head>
 
 
-<body class="fonte-letras-google">
+<body class="google-fonts">
 
-	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
-	<!--Acessibilidade-->
+	<!--accessibility-->
+	<a href="#main-content" class="accessibility">Pular para conteúdo principal</a>
 
 	<!--___________________________↓Menu↓___________________________-->
 	<header>
@@ -83,7 +83,7 @@
 
 
 	<!--_________________________↓Carrocel↓_________________________-->
-	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+	<div id="carouselExampleCaptions" class="carousel slide bg-dark" data-bs-ride="carousel">
 		<!-- data-bs-ride="false" -->
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -99,7 +99,7 @@
 				<img class="d-block w-100" src="assets/img/1.jpg" alt="Primeiro Slide">
 				<figcaption class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
 					<h3>Barbearia</h3>
-					<p class="texto-animado">Serviços com os melhores profissionais por preços imperdíveis</p>
+					<p class="animated-text">Serviços com os melhores profissionais por preços imperdíveis</p>
 				</figcaption>
 			</figure>
 
@@ -107,7 +107,7 @@
 				<img class="d-block w-100" src="assets/img/2.jpg" alt="Segundo Slide">
 				<figcaption class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
 					<h3>Estúdio</h3>
-					<p class="texto-animado">Tatuadores reconhecidos em todo Brasil</p>
+					<p class="animated-text">Tatuadores reconhecidos em todo Brasil</p>
 				</figcaption>
 			</figure>
 
@@ -115,7 +115,7 @@
 				<img class="d-block w-100" src="assets/img/3.jpg" alt="Terceiro Slide">
 				<figcaption class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
 					<h3>Loja</h3>
-					<p class="texto-animado">Roupas, acessórios e produtos para seu estilo e cuidados pessoais!</p>
+					<p class="animated-text">Roupas, acessórios e produtos para seu estilo e cuidados pessoais!</p>
 				</figcaption>
 			</figure>
 		</div>
@@ -136,70 +136,72 @@
 
 	<main>
 		<!--________________________↓Apresentação↓________________________-->
-		<section class="bg-dark borda-inferior p-5">
-			<div class="row featurette p-5 cor-texto-prata text-center">
-				<div class="col-md-7">
-					<h2 class="featurette-heading fw-normal lh-1 texto-animado neon-ouro">A melhor Barbearia. <span
-							class="texto-animado cor-texto-prata">Uma super Barbearia!</span></h2>
-					<p class="lead texto-animado">Atendimentos especializados para todos os públicos!</p>
-					<span class="icon-animado" id="b_icon-1"></span>
-					<span class="icon-animado" id="b_icon-2"></span>
-					<span class="icon-animado" id="b_icon-3"></span>
-					<span class="icon-animado" id="b_icon-4"></span>
-					<span class="icon-animado" id="b_icon-5"></span>
-					<span class="icon-animado" id="b_icon-6"></span>
-					<span class="icon-animado" id="b_icon-7"></span>
-					<span class="icon-animado" id="b_icon-8"></span>
-					<span class="icon-animado" id="b_icon-9"></span>
+		<!--accessibility → id="accessibility"-->
+		<section class="bg-dark p-5   bottom-edge" id="main-content">
+
+			<div class="row featurette p-5 text-center   color-text-silver">
+				<div class="col-md-7 ">
+					<h2 class="featurette-heading fw-normal lh-1   animated-text neon-gold">A melhor Barbearia. <span
+							class="   color-text-silver animated-text">Uma super Barbearia!</span></h2>
+					<p class="lead   animated-text">Atendimentos especializados para todos os públicos!</p>
+					<span class="   animated-icon" id="b_icon-1"></span>
+					<span class="   animated-icon" id="b_icon-2"></span>
+					<span class="   animated-icon" id="b_icon-3"></span>
+					<span class="   animated-icon" id="b_icon-4"></span>
+					<span class="   animated-icon" id="b_icon-5"></span>
+					<span class="   animated-icon" id="b_icon-6"></span>
+					<span class="   animated-icon" id="b_icon-7"></span>
+					<span class="   animated-icon" id="b_icon-8"></span>
+					<span class="   animated-icon" id="b_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<div class="conf-img-circulo w-100" id="img-circulo-A">
+					<div class="w-100   conf-img-circle" id="img-circle-A">
 					</div>
 				</div>
 			</div>
 
 			<hr class="featurette-divider">
 
-			<div class="row featurette p-5 cor-texto-prata text-center">
-				<div class="col-md-7 order-md-2">
-					<h2 class="featurette-heading fw-normal lh-1 texto-animado neon-ouro">A melhor Barbearia. <span
-							class="texto-animado cor-texto-prata">Uma super Barbearia!</span></h2>
-					<p class="lead texto-animado">Atendimentos especializados para todos os públicos!</p>
-					<span class="icon-animado" id="t_icon-1"></span>
-					<span class="icon-animado" id="t_icon-2"></span>
-					<span class="icon-animado" id="t_icon-3"></span>
-					<span class="icon-animado" id="t_icon-4"></span>
-					<span class="icon-animado" id="t_icon-5"></span>
-					<span class="icon-animado" id="t_icon-6"></span>
-					<span class="icon-animado" id="t_icon-7"></span>
-					<span class="icon-animado" id="t_icon-8"></span>
-					<span class="icon-animado" id="t_icon-9"></span>
+			<div class="row featurette p-5 text-center   color-text-silver">
+				<div class="col-md-7">
+					<h2 class="featurette-heading fw-normal lh-1   animated-text neon-gold">A melhor Barbearia. <span
+							class="   color-text-silver animated-text">Uma super Barbearia!</span></h2>
+					<p class="lead animated-text">Atendimentos especializados para todos os públicos!</p>
+					<span class="   animated-icon" id="t_icon-1"></span>
+					<span class="   animated-icon" id="t_icon-2"></span>
+					<span class="   animated-icon" id="t_icon-3"></span>
+					<span class="   animated-icon" id="t_icon-4"></span>
+					<span class="   animated-icon" id="t_icon-5"></span>
+					<span class="   animated-icon" id="t_icon-6"></span>
+					<span class="   animated-icon" id="t_icon-7"></span>
+					<span class="   animated-icon" id="t_icon-8"></span>
+					<span class="   animated-icon" id="t_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<div class="conf-img-circulo w-100" id="img-circulo-B">
+					<div class="w-100   conf-img-circle" id="img-circle-B">
 					</div>
 				</div>
 			</div>
 
 			<hr class="featurette-divider">
 
-			<div class="row featurette p-5 cor-texto-prata text-center">
+			<div class="row featurette p-5 text-center   color-text-silver">
 				<div class="col-md-7">
-					<h2 class="featurette-heading fw-normal lh-1 texto-animado neon-ouro">A melhor Barbearia. <span
-							class="texto-animado cor-texto-prata">Uma super Barbearia!</span></h2>
-					<p class="lead texto-animado">Atendimentos especializados para todos os públicos!</p>
-					<span class="icon-animado" id="l_icon-1"></span>
-					<span class="icon-animado" id="l_icon-2"></span>
-					<span class="icon-animado" id="l_icon-3"></span>
-					<span class="icon-animado" id="l_icon-4"></span>
-					<span class="icon-animado" id="l_icon-5"></span>
-					<span class="icon-animado" id="l_icon-6"></span>
-					<span class="icon-animado" id="l_icon-7"></span>
-					<span class="icon-animado" id="l_icon-8"></span>
-					<span class="icon-animado" id="l_icon-9"></span>
+					<h2 class="featurette-heading fw-normal lh-1 animated-text neon-gold">A melhor Barbearia. <span
+							class="animated-text   color-text-silver">Uma super Barbearia!</span></h2>
+					<p class="lead animated-text">Atendimentos especializados para todos os públicos!</p>
+					<span class="   animated-icon" id="l_icon-1"></span>
+					<span class="   animated-icon" id="l_icon-2"></span>
+					<span class="   animated-icon" id="l_icon-3"></span>
+					<span class="   animated-icon" id="l_icon-4"></span>
+					<span class="   animated-icon" id="l_icon-5"></span>
+					<span class="   animated-icon" id="l_icon-6"></span>
+					<span class="   animated-icon" id="l_icon-7"></span>
+					<span class="   animated-icon" id="l_icon-8"></span>
+					<span class="   animated-icon" id="l_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<div class="conf-img-circulo w-100" id="img-circulo-C">
+					<div class="w-100   conf-img-circle" id="img-circle-C">
 					</div>
 				</div>
 			</div>
@@ -238,7 +240,7 @@
 			<!--______↓Serviços Estúdio↓______-->
 			<div class="album pb-5 bg-preto">
 				<div class="container">
-					<div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 g-3">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
 						<div class="col">
 							<figure class="card neon-cards gradient-roxo">
 								<img src="assets/img/tattoo/01.jpg" class="card-img-top" alt="...">
@@ -475,13 +477,13 @@
 
 
 		<!--___________________↓Produtos em destaque↓___________________-->
-		<section class="p-5 bg-preto">
+		<section class="p-0 bg-preto">
 			<div>
 				<h2 class="pt-4 pb-5 secaoDestaque-titulo align-items-center text-center neon-laranja display-1">
 					Produtos mais vendidos</h2>
 			</div>
 			<div class="container">
-				<div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-4 justify-content-center">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 justify-content-center">
 					<div>
 						<figure class="card mt-3 mb-3 bg-dark cardpointer">
 							<img src="assets/img/loja/5.jpg" class="card-img-top" alt="...">
@@ -530,7 +532,7 @@
 			</div>
 
 			<div class="container">
-				<div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-4 justify-content-center">
+				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 justify-content-center">
 					<div>
 						<figure class="card mt-3 mb-3 bg-dark cardpointer">
 							<img src="assets/img/loja/1.jpg" class="card-img-top" alt="...">
@@ -582,20 +584,17 @@
 
 
 		<!--________________________↓Seja Vip↓________________________-->
-		<section class="pt-4 pb-4 bg-preto borda-inferior">
+		<section class="pt-4 pb-4 bg-preto bottom-edge">
 			<div class="gradient-roxo" id="seja-vip">
 				<div class="container px-4 py-5" id="hanging-icons">
-
-					<!--Acessibilidade → id="conteudoPrincipal"-->
-					<h2 class="mt-4 mb-4 pb-3 border-bottom secaoDestaque-titulo neon-ouro display-3"
-						id="conteudoPrincipal"><img class="neon-logo" src="assets/img/logo.png" alt="Logo marca VipStyle"
-							width="60"> Seja
+					<h2 class="mt-4 mb-4 pb-3 border-bottom secaoDestaque-titulo neon-gold display-3"><img
+							class="neon-logo" src="assets/img/logo.png" alt="Logo marca VipStyle" width="60"> Seja
 						Vip</h2>
 
-					<div class="row g-4 py-5 row-cols-1 row-cols-lg-4 cor-texto-prata">
+					<div class="row g-4 py-5 row-cols-1 row-cols-lg-4   color-text-silver">
 						<div class="col  pb-5 d-flex align-items-start">
 							<div
-								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-ouro">
+								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-gold">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-calendar-week-fill" viewBox="0 0 16 16">
 									<path
@@ -603,7 +602,7 @@
 								</svg>
 							</div>
 							<div>
-								<h2 class="fs-1 neon-ouro">Atendimento</h2>
+								<h2 class="fs-1 neon-gold">Atendimento</h2>
 								<p>Converse, combine preços e agende serviços com os melhores profissionais on-line e
 									tenha
 									descontos exclusivos.</p>
@@ -611,7 +610,7 @@
 						</div>
 						<div class="col d-flex align-items-start">
 							<div
-								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-ouro">
+								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-gold">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
 									<path
@@ -619,14 +618,14 @@
 								</svg>
 							</div>
 							<div>
-								<h2 class="fs-1 neon-ouro">Localização</h2>
+								<h2 class="fs-1 neon-gold">Localização</h2>
 								<p>Estamos cituados em locais de fácil localização nas maiores capitais do país com
 									estacionamento próprio para nossos clientes.</p>
 							</div>
 						</div>
 						<div class="col d-flex align-items-start">
 							<div
-								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-ouro">
+								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-gold">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									<path
@@ -634,7 +633,7 @@
 								</svg>
 							</div>
 							<div>
-								<h2 class="fs-1 neon-ouro">Praticidade</h2>
+								<h2 class="fs-1 neon-gold">Praticidade</h2>
 								<p>Faça suas compras online e entregaremos para qualquer lugar do Brasil com frete
 									grátis ou
 									retire na loja mais próxima a você.</p>
@@ -642,7 +641,7 @@
 						</div>
 						<div class="col d-flex align-items-start">
 							<div
-								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-ouro">
+								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-gold">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-award-fill" viewBox="0 0 16 16">
 									<path
@@ -651,7 +650,7 @@
 								</svg>
 							</div>
 							<div>
-								<h2 class="fs-1 neon-ouro">Exclusividade</h2>
+								<h2 class="fs-1 neon-gold">Exclusividade</h2>
 								<p>Faça seu cadastro e receba mais benefícios, participe de sorteios, concorra a vários
 									prêmios e ganhe muitos descontos!</p>
 							</div>
@@ -672,9 +671,9 @@
 								<h3 class="my-0 fw-normal">Vip Standard</h3>
 							</div>
 							<div class="card-body bg-preto">
-								<h3 class="card-title neon-ouro">R$ 0<small class="text-muted fw-light">/mês</small>
+								<h3 class="card-title neon-gold">R$ 0<small class="text-muted fw-light">/mês</small>
 								</h3>
-								<ul class="list-unstyled mt-3 mb-4 cor-texto-prata text-start">
+								<ul class="list-unstyled mt-3 mb-4 text-start   color-text-silver">
 									<li>✓ Agende sem prioridade em Barbearia</li>
 									<li>✓ Até 20% de desconto em uma tattoo</li>
 									<li>✓ Preços por serviço em Barbearia</li>
@@ -691,10 +690,10 @@
 								<h3 class="my-0 fw-normal">Vip Pro</h3>
 							</div>
 							<div class="card-body bg-preto">
-								<h3 class="card-title neon-ouro">R$ 189,90<small
+								<h3 class="card-title neon-gold">R$ 189,90<small
 										class="text-muted fw-light">/mês</small>
 								</h3>
-								<ul class="list-unstyled mt-3 mb-4 cor-texto-prata text-start">
+								<ul class="list-unstyled mt-3 mb-4 text-start   color-text-silver">
 									<li>✓ Agende com prioridade em Barbearia</li>
 									<li>✓ Sorteio em uma tattoo 100% gratuita</li>
 									<li>✓ Até 3 pacotes completos de Barbearia</li>
@@ -711,10 +710,10 @@
 								<h3 class="my-0 fw-normal">Vip Premium</h3>
 							</div>
 							<div class="card-body bg-preto">
-								<h3 class="card-title neon-ouro">R$ 229,90<small
+								<h3 class="card-title neon-gold">R$ 229,90<small
 										class="text-muted fw-light">/mês</small>
 								</h3>
-								<ul class="list-unstyled mt-3 mb-4 cor-texto-prata text-start">
+								<ul class="list-unstyled mt-3 mb-4 text-start   color-text-silver">
 									<li>✓ Agende com prioridade em Barbearia</li>
 									<li>✓ Sorteio em duas tattoo 100% gratuitas</li>
 									<li>✓ Serviços ilimitados de Barbearia</li>
@@ -733,10 +732,11 @@
 
 
 		<!--_______________________↓Localização↓_______________________-->
-		<section class="pt-4 pb-5 bg-dark borda-inferior">
+		<section class="pt-4 pb-5 bg-dark bottom-edge">
 			<div>
-				<h2 class="p-5 secaoDestaque-titulo neon-ouro">
-					<img class="neon-logo" src="assets/img/logo.png" alt="Logo marca VipStyle" width="50"> Venha nos conhecer
+				<h2 class="p-5 secaoDestaque-titulo neon-gold">
+					<img class="neon-logo" src="assets/img/logo.png" alt="Logo marca VipStyle" width="50"> Venha nos
+					conhecer
 				</h2>
 			</div>
 			<div class="localizacao">
@@ -764,7 +764,7 @@
 	<!--___________________________↓Rodapé↓__________________________-->
 	<footer class="bg-preto p-5">
 		<div class="d-flex align-items-center">
-			<a class="mb-3 me-2 mb-md-0 text-decoration-none lh-1 cor-texto-prata">
+			<a class="mb-3 me-2 mb-md-0 text-decoration-none lh-1   color-text-silver">
 				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 					class="bi bi-instagram" viewBox="0 0 16 16">
 					<path

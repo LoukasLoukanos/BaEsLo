@@ -1,11 +1,10 @@
 /*fonte Google fonts*/
-.fonte-letras-google {
+.google-fonts {
 	font-family: 'Raleway', sans-serif;
 }
 
-
 /*________Acessibilidade__________*/
-.pularNavegacao {
+.accessibility {
 	text-indent: 100%;
 	white-space: nowrap;
 	overflow: hidden;
@@ -18,7 +17,7 @@
 
 
 /* Borda no final de seções */
-.borda-inferior {
+.bottom-edge {
 	border-bottom: 0.1px solid #5e5e5e;
 }
 
@@ -40,7 +39,7 @@
 	background: rgba(195, 79, 47, 1);
 }
 
-.cor-texto-prata {
+.color-text-silver {
 	color: #e5e5e5;
 }
 
@@ -58,7 +57,7 @@
 
 
 /* Texto com neon ouro*/
-.neon-ouro {
+.neon-gold {
 	color: #b58e70;
 	text-shadow: 0px 0px 20px rgba(255, 94, 30, 1);
 }
@@ -79,7 +78,7 @@
 
 /*_________↓Área de apresentação (abaixo do carrocel)↓_________*/
 /*textos animados*/
-.texto-animado {
+.animated-text {
 	animation-duration: 4s;
 	animation-name: texto_anim;
 	animation-iteration-count: infinite;
@@ -106,7 +105,7 @@
 
 
 /*↓icones animados↓*/
-.icon-animado {
+.animated-icon {
 	padding: 0px;
 	margin: 0px;
 	width: 100%;
@@ -206,7 +205,7 @@
 
 
 /*imagens circulares*/
-.conf-img-circulo {
+.conf-img-circle {
 	width: 500px;
 	height: 500px;
 	scale: 0.8;
@@ -262,15 +261,15 @@
 
 }
 
-#img-circulo-A {
+#img-circle-A {
 	background-image: url('images/circuloA.jpg');
 }
 
-#img-circulo-B {
+#img-circle-B {
 	background-image: url('images/circuloB.jpg');
 }
 
-#img-circulo-C {
+#img-circle-C {
 	background-image: url('images/circuloC.jpg');
 }
 /*_________↑Área de apresentação (abaixo do carrocel)↑_________*/
