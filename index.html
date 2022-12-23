@@ -31,12 +31,12 @@
 	<!--accessibility-->
 	<a href="#main-content" class="accessibility">Pular para conteúdo principal</a>
 
-	<!--___________________________↓Menu↓___________________________-->
 	<header>
-		<nav class="navbar navbar-expand-lg gradient-menu menu-neon">
+		<!--___________________________↓Menu↓___________________________-->
+		<nav class="c-menu navbar navbar-expand-lg">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html">
-					<img class="neon-logo" src="assets/img/logo-menu.png"
+					<img class="c-menu__logo" src="assets/img/logo-menu.png"
 						alt="logo-menu VipStyle - Loja, Barbearia & Estúdio">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -78,171 +78,176 @@
 				</div>
 			</div>
 		</nav>
+		<!--___________________________↑Menu↑___________________________-->
+
+
+		<!--_________________________↓Carousel↓_________________________-->
+		<div class="carousel slide bg-dark" id="carouselExampleCaptions" data-bs-ride="carousel">
+			<!-- data-bs-ride="false" -->
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+					aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+					aria-label="Slide 3"></button>
+			</div>
+
+			<div class="carousel-inner">
+				<figure class="carousel-item active">
+					<img class="d-block w-100" src="assets/img/1.jpg" alt="Primeiro Slide">
+					<figcaption class="c-carousel carousel-caption d-none d-md-block opacity-75 ms-5 me-5">
+						<h3>Barbearia</h3>
+						<p class="animated-text">Serviços com os melhores profissionais por preços imperdíveis</p>
+					</figcaption>
+				</figure>
+
+				<figure class="carousel-item">
+					<img class="d-block w-100" src="assets/img/2.jpg" alt="Segundo Slide">
+					<figcaption class="c-carousel carousel-caption d-none d-md-block opacity-75 ms-5 me-5">
+						<h3>Estúdio</h3>
+						<p class="animated-text">Tatuadores reconhecidos em todo Brasil</p>
+					</figcaption>
+				</figure>
+
+				<figure class="carousel-item">
+					<img class="d-block w-100" src="assets/img/3.jpg" alt="Terceiro Slide">
+					<figcaption class="c-carousel carousel-caption d-none d-md-block opacity-75 ms-5 me-5">
+						<h3>Loja</h3>
+						<p class="animated-text">Roupas, acessórios e produtos para seu estilo e cuidados pessoais!</p>
+					</figcaption>
+				</figure>
+			</div>
+
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!--_________________________↑Carousel↑_________________________-->
 	</header>
-	<!--___________________________↑Menu↑___________________________-->
-
-
-	<!--_________________________↓Carrocel↓_________________________-->
-	<div id="carouselExampleCaptions" class="carousel slide bg-dark" data-bs-ride="carousel">
-		<!-- data-bs-ride="false" -->
-		<div class="carousel-indicators">
-			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-				aria-current="true" aria-label="Slide 1"></button>
-			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-				aria-label="Slide 2"></button>
-			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-				aria-label="Slide 3"></button>
-		</div>
-
-		<div class="carousel-inner">
-			<figure class="carousel-item active">
-				<img class="d-block w-100" src="assets/img/1.jpg" alt="Primeiro Slide">
-				<figcaption class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
-					<h3>Barbearia</h3>
-					<p class="animated-text">Serviços com os melhores profissionais por preços imperdíveis</p>
-				</figcaption>
-			</figure>
-
-			<figure class="carousel-item">
-				<img class="d-block w-100" src="assets/img/2.jpg" alt="Segundo Slide">
-				<figcaption class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
-					<h3>Estúdio</h3>
-					<p class="animated-text">Tatuadores reconhecidos em todo Brasil</p>
-				</figcaption>
-			</figure>
-
-			<figure class="carousel-item">
-				<img class="d-block w-100" src="assets/img/3.jpg" alt="Terceiro Slide">
-				<figcaption class="carousel-caption d-none d-md-block bg-laranja-carousel opacity-75 ms-5 me-5">
-					<h3>Loja</h3>
-					<p class="animated-text">Roupas, acessórios e produtos para seu estilo e cuidados pessoais!</p>
-				</figcaption>
-			</figure>
-		</div>
-
-		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-			data-bs-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Previous</span>
-		</button>
-		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-			data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="visually-hidden">Next</span>
-		</button>
-	</div>
-	<!--_________________________↑Carrocel↑_________________________-->
 
 
 	<main>
-		<!--________________________↓Apresentação↓________________________-->
+		<!--________________________↓Presentation↓________________________-->
 		<!--accessibility → id="accessibility"-->
-		<section class="bg-dark p-5   bottom-edge" id="main-content">
+		<section class="c-presentation bg-dark p-5" id="main-content">
 
-			<div class="row featurette p-5 text-center   color-text-silver">
-				<div class="col-md-7 ">
-					<h2 class="featurette-heading fw-normal lh-1   animated-text neon-gold">A melhor Barbearia. <span
-							class="   color-text-silver animated-text">Uma super Barbearia!</span></h2>
-					<p class="lead   animated-text">Atendimentos especializados para todos os públicos!</p>
-					<span class="   animated-icon" id="b_icon-1"></span>
-					<span class="   animated-icon" id="b_icon-2"></span>
-					<span class="   animated-icon" id="b_icon-3"></span>
-					<span class="   animated-icon" id="b_icon-4"></span>
-					<span class="   animated-icon" id="b_icon-5"></span>
-					<span class="   animated-icon" id="b_icon-6"></span>
-					<span class="   animated-icon" id="b_icon-7"></span>
-					<span class="   animated-icon" id="b_icon-8"></span>
-					<span class="   animated-icon" id="b_icon-9"></span>
+			<div class="c-presentation__animation row featurette text-center p-5">
+				<div class="col-md-7">
+					<h2 class="c-presentation__title featurette-heading fw-normal lh-1">A melhor Barbearia. <span
+							class="c-presentation__title c-presentation__title--silver">Uma super Barbearia!</span></h2>
+					<p class="c-presentation__text lead">Atendimentos especializados para todos os públicos!</p>
+					<span class="c-presentation__icon" id="barb_icon-1"></span>
+					<span class="c-presentation__icon" id="barb_icon-2"></span>
+					<span class="c-presentation__icon" id="barb_icon-3"></span>
+					<span class="c-presentation__icon" id="barb_icon-4"></span>
+					<span class="c-presentation__icon" id="barb_icon-5"></span>
+					<span class="c-presentation__icon" id="barb_icon-6"></span>
+					<span class="c-presentation__icon" id="barb_icon-7"></span>
+					<span class="c-presentation__icon" id="barb_icon-8"></span>
+					<span class="c-presentation__icon" id="barb_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<div class="w-100   conf-img-circle" id="img-circle-A">
+					<div class="c-presentation__circle w-100" id="img-circle-A">
 					</div>
 				</div>
 			</div>
 
 			<hr class="featurette-divider">
 
-			<div class="row featurette p-5 text-center   color-text-silver">
+			<div class="c-presentation__animation row featurette text-center p-5">
 				<div class="col-md-7">
-					<h2 class="featurette-heading fw-normal lh-1   animated-text neon-gold">A melhor Barbearia. <span
-							class="   color-text-silver animated-text">Uma super Barbearia!</span></h2>
-					<p class="lead animated-text">Atendimentos especializados para todos os públicos!</p>
-					<span class="   animated-icon" id="t_icon-1"></span>
-					<span class="   animated-icon" id="t_icon-2"></span>
-					<span class="   animated-icon" id="t_icon-3"></span>
-					<span class="   animated-icon" id="t_icon-4"></span>
-					<span class="   animated-icon" id="t_icon-5"></span>
-					<span class="   animated-icon" id="t_icon-6"></span>
-					<span class="   animated-icon" id="t_icon-7"></span>
-					<span class="   animated-icon" id="t_icon-8"></span>
-					<span class="   animated-icon" id="t_icon-9"></span>
+					<h2 class="c-presentation__title featurette-heading fw-normal lh-1">A melhor Barbearia. <span
+							class="c-presentation__title c-presentation__title--silver">Uma super Barbearia!</span></h2>
+					<p class="c-presentation__text lead">Atendimentos especializados para todos os públicos!</p>
+					<span class="c-presentation__icon" id="tatt_icon-1"></span>
+					<span class="c-presentation__icon" id="tatt_icon-2"></span>
+					<span class="c-presentation__icon" id="tatt_icon-3"></span>
+					<span class="c-presentation__icon" id="tatt_icon-4"></span>
+					<span class="c-presentation__icon" id="tatt_icon-5"></span>
+					<span class="c-presentation__icon" id="tatt_icon-6"></span>
+					<span class="c-presentation__icon" id="tatt_icon-7"></span>
+					<span class="c-presentation__icon" id="tatt_icon-8"></span>
+					<span class="c-presentation__icon" id="tatt_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<div class="w-100   conf-img-circle" id="img-circle-B">
+					<div class="c-presentation__circle w-100" id="img-circle-B">
 					</div>
 				</div>
 			</div>
 
 			<hr class="featurette-divider">
 
-			<div class="row featurette p-5 text-center   color-text-silver">
+			<div class="c-presentation__animation row featurette text-center p-5">
 				<div class="col-md-7">
-					<h2 class="featurette-heading fw-normal lh-1 animated-text neon-gold">A melhor Barbearia. <span
-							class="animated-text   color-text-silver">Uma super Barbearia!</span></h2>
-					<p class="lead animated-text">Atendimentos especializados para todos os públicos!</p>
-					<span class="   animated-icon" id="l_icon-1"></span>
-					<span class="   animated-icon" id="l_icon-2"></span>
-					<span class="   animated-icon" id="l_icon-3"></span>
-					<span class="   animated-icon" id="l_icon-4"></span>
-					<span class="   animated-icon" id="l_icon-5"></span>
-					<span class="   animated-icon" id="l_icon-6"></span>
-					<span class="   animated-icon" id="l_icon-7"></span>
-					<span class="   animated-icon" id="l_icon-8"></span>
-					<span class="   animated-icon" id="l_icon-9"></span>
+					<h2 class="c-presentation__title featurette-heading fw-normal lh-1">A melhor Barbearia. <span
+							class="c-presentation__title c-presentation__title--silver">Uma super Barbearia!</span></h2>
+					<p class="c-presentation__text lead">Atendimentos especializados para todos os públicos!</p>
+					<span class="c-presentation__icon" id="stor_icon-1"></span>
+					<span class="c-presentation__icon" id="stor_icon-2"></span>
+					<span class="c-presentation__icon" id="stor_icon-3"></span>
+					<span class="c-presentation__icon" id="stor_icon-4"></span>
+					<span class="c-presentation__icon" id="stor_icon-5"></span>
+					<span class="c-presentation__icon" id="stor_icon-6"></span>
+					<span class="c-presentation__icon" id="stor_icon-7"></span>
+					<span class="c-presentation__icon" id="stor_icon-8"></span>
+					<span class="c-presentation__icon" id="stor_icon-9"></span>
 				</div>
 				<div class="col-md-5 order-md-1">
-					<div class="w-100   conf-img-circle" id="img-circle-C">
+					<div class="c-presentation__circle w-100" id="img-circle-C">
 					</div>
 				</div>
 			</div>
+
 		</section>
-		<!--________________________↑Apresentação↑________________________-->
+		<!--________________________↑Presentation↑________________________-->
 
 
-		<!--_________________________↓Serviços↓_________________________-->
-		<section class="pb-5 pt-5 bg-preto">
-			<!--______↓Serviços Barbearia↓______-->
-			<div class="container p-4">
-				<h2 class="pt-2 pb-4 secaoDestaque-titulo align-items-center text-center neon-roxo display-1">
+		<!--_________________________↓Featured Services↓_________________________-->
+		<section class="c-services pb-5 pt-5">
+
+			<div class="c-services__title">
+				<h2 class="secaoDestaque-titulo align-items-center text-center display-1 pt-2 pb-4">
 					Serviços em alta</h2>
-				<div class="text-center align-items-center">
-					<ul class="barbearia pt-4">
-						<li class="cards" id="imagens-cabelo">
-							<h2>Cabelo</h2>
-							<p class="barbearia-descricao">Cortes profissionais</p>
-							<p class="barbearia-preco">R$ 0,00</p>
+			</div>
+
+			<!--______↓Barber Shop↓______-->
+			<div class="container p-4">
+				<div class="align-items-center text-center">
+					<ul class="c-services__barber pt-4">
+						<li class="c-services__barber-cards" id="images-hair">
+							<h2 class="c-services__barber-hair">Cabelo</h2>
+							<p class="c-services__barber-description">Cortes profissionais</p>
+							<p class="c-services__barber-price">R$ 0,00</p>
 						</li>
-						<li class="cards" id="imagens-barba">
-							<h2>Barba</h2>
-							<p class="barbearia-descricao">Corte e reparo de barba</p>
-							<p class="barbearia-preco">R$ 0,00</p>
+						<li class="c-services__barber-cards" id="images-beard">
+							<h2 class="c-services__barber-hair">Barba</h2>
+							<p class="c-services__barber-description">Corte e reparo de barba</p>
+							<p class="c-services__barber-price">R$ 0,00</p>
 						</li>
-						<li class="cards" id="imagens-completo">
-							<h2>Cabelo + Barba</h2>
-							<p class="barbearia-descricao">Pacote completo</p>
-							<p class="barbearia-preco">R$ 0,00</p>
+						<li class="c-services__barber-cards" id="images-full">
+							<h2 class="c-services__barber-hair">Cabelo + Barba</h2>
+							<p class="c-services__barber-description">Pacote completo</p>
+							<p class="c-services__barber-price">R$ 0,00</p>
 						</li>
 					</ul>
 				</div>
 			</div>
-			<!--______↑Serviços Barbearia↑______-->
+			<!--______↑Barber Shop↑______-->
 
-			<!--______↓Serviços Estúdio↓______-->
-			<div class="album pb-5 bg-preto">
+			<!--______↓Tattoo Studio↓______-->
+			<div class="album pb-5">
 				<div class="container">
 					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/01.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -256,7 +261,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/02.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -270,7 +275,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/03.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -284,7 +289,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/04.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -299,7 +304,7 @@
 						</div>
 
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/05.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -313,7 +318,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/06.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -327,7 +332,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/07.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -341,7 +346,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/08.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -356,7 +361,7 @@
 						</div>
 
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/09.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -370,7 +375,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/10.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -384,7 +389,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/11.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -398,7 +403,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/12.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -413,7 +418,7 @@
 						</div>
 
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/13.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -427,7 +432,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/14.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -441,7 +446,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/15.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -455,7 +460,7 @@
 							</figure>
 						</div>
 						<div class="col">
-							<figure class="card neon-cards gradient-roxo">
+							<figure class="c-services__studio card">
 								<img src="assets/img/tattoo/16.jpg" class="card-img-top" alt="...">
 								<figcaption class="card-body">
 									<div class="d-flex justify-content-between align-items-center">
@@ -471,21 +476,21 @@
 					</div>
 				</div>
 			</div>
-			<!--______↑Serviços Estúdio↑______-->
+			<!--______↑Tattoo Studio↑______-->
 		</section>
-		<!--_________________________↑Serviços↑_________________________-->
+		<!--_________________________↑Featured Services↑_________________________-->
 
 
-		<!--___________________↓Produtos em destaque↓___________________-->
-		<section class="p-0 bg-preto">
-			<div>
-				<h2 class="pt-4 pb-5 secaoDestaque-titulo align-items-center text-center neon-laranja display-1">
+		<!--___________________↓Featured Products↓___________________-->
+		<section class="c-products pb-5">
+			<div class="c-products__title">
+				<h2 class="secaoDestaque-titulo align-items-center text-center display-1 pt-4 pb-5">
 					Produtos mais vendidos</h2>
 			</div>
 			<div class="container">
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 justify-content-center">
 					<div>
-						<figure class="card mt-3 mb-3 bg-dark cardpointer">
+						<figure class="c-products__cards card bg-dark mt-3 mb-3">
 							<img src="assets/img/loja/5.jpg" class="card-img-top" alt="...">
 							<figcaption class="card-body text-end">
 								<p class="card-text text-light text-start">Boné Liso Preto Básico Fitão Aba Curva...
@@ -496,7 +501,7 @@
 						</figure>
 					</div>
 					<div>
-						<figure class="card mt-3 mb-3 bg-dark cardpointer">
+						<figure class="c-products__cards card bg-dark mt-3 mb-3">
 							<img src="assets/img/loja/6.jpg" class="card-img-top" alt="...">
 							<figcaption class="card-body text-end">
 								<p class="card-text text-light text-start">Pomada Modeladora Fixadora Studio Hair...
@@ -507,7 +512,7 @@
 						</figure>
 					</div>
 					<div>
-						<figure class="card mt-3 mb-3 bg-dark cardpointer">
+						<figure class="c-products__cards card bg-dark mt-3 mb-3">
 							<img src="assets/img/loja/7.jpg" class="card-img-top" alt="...">
 							<figcaption class="card-body text-end">
 								<p class="card-text text-light text-start">Par de brincos de aço inoxidável anodizado...
@@ -518,7 +523,7 @@
 						</figure>
 					</div>
 					<div>
-						<figure class="card mt-3 mb-3 bg-dark cardpointer">
+						<figure class="c-products__cards card bg-dark mt-3 mb-3">
 							<img src="assets/img/loja/8.jpg" class="card-img-top" alt="...">
 							<figcaption class="card-body text-end">
 								<p class="card-text text-light text-start">GOLDEN HOUR Relógio digital analógico de...
@@ -534,7 +539,7 @@
 			<div class="container">
 				<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 justify-content-center">
 					<div>
-						<figure class="card mt-3 mb-3 bg-dark cardpointer">
+						<figure class="c-products__cards card bg-dark mt-3 mb-3">
 							<img src="assets/img/loja/1.jpg" class="card-img-top" alt="...">
 							<figcaption class="card-body text-end">
 								<p class="card-text text-light text-start">Jaqueta Masculina Casual Couro Legítimo...
@@ -545,7 +550,7 @@
 						</figure>
 					</div>
 					<div>
-						<figure class="card mt-3 mb-3 bg-dark cardpointer">
+						<figure class="c-products__cards card bg-dark mt-3 mb-3">
 							<img src="assets/img/loja/2.jpg" class="card-img-top" alt="...">
 							<figcaption class="card-body text-end">
 								<p class="card-text text-light text-start">Kit 3 Camisas Gola Polo Masculina Marin...
@@ -556,7 +561,7 @@
 						</figure>
 					</div>
 					<div>
-						<figure class="card mt-3 mb-3 bg-dark cardpointer">
+						<figure class="c-products__cards card bg-dark mt-3 mb-3">
 							<img src="assets/img/loja/3.jpg" class="card-img-top" alt="...">
 							<figcaption class="card-body text-end">
 								<p class="card-text text-light text-start">Cinto masculino de couro preto fivela...
@@ -567,7 +572,7 @@
 						</figure>
 					</div>
 					<div>
-						<figure class="card mt-3 mb-3 bg-dark cardpointer">
+						<figure class="c-products__cards card bg-dark mt-3 mb-3">
 							<img src="assets/img/loja/4.jpg" class="card-img-top" alt="...">
 							<figcaption class="card-body text-end">
 								<p class="card-text text-light text-start">Oakley Solar OO9208 920857 Branco...
@@ -580,21 +585,21 @@
 				</div>
 			</div>
 		</section>
-		<!--___________________↑Produtos em destaque↑___________________-->
+		<!--___________________↑Featured Products↑___________________-->
 
 
-		<!--________________________↓Seja Vip↓________________________-->
-		<section class="pt-4 pb-4 bg-preto bottom-edge">
-			<div class="gradient-roxo" id="seja-vip">
+		<!--________________________↓Customer Plan↓________________________-->
+		<section class="c-plan pt-5 pb-4">
+			<div class="c-plan__box">
 				<div class="container px-4 py-5" id="hanging-icons">
-					<h2 class="mt-4 mb-4 pb-3 border-bottom secaoDestaque-titulo neon-gold display-3"><img
-							class="neon-logo" src="assets/img/logo.png" alt="Logo marca VipStyle" width="60"> Seja
+					<h2 class="c-plan__title border-bottom secaoDestaque-titulo display-3 mt-4 mb-4 pb-3"><img
+							class="c-plan__logo" src="assets/img/logo.png" alt="Logo marca VipStyle" width="60"> Seja
 						Vip</h2>
 
-					<div class="row g-4 py-5 row-cols-1 row-cols-lg-4   color-text-silver">
-						<div class="col  pb-5 d-flex align-items-start">
+					<div class="c-plan__about row row-cols-1 row-cols-lg-4 g-4 py-5">
+						<div class="col d-flex align-items-start">
 							<div
-								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-gold">
+								class="c-plan__about--icons icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-2 mt-1">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-calendar-week-fill" viewBox="0 0 16 16">
 									<path
@@ -602,7 +607,7 @@
 								</svg>
 							</div>
 							<div>
-								<h2 class="fs-1 neon-gold">Atendimento</h2>
+								<h2 class="c-plan__about--subtitle fs-2">Atendimento</h2>
 								<p>Converse, combine preços e agende serviços com os melhores profissionais on-line e
 									tenha
 									descontos exclusivos.</p>
@@ -610,7 +615,7 @@
 						</div>
 						<div class="col d-flex align-items-start">
 							<div
-								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-gold">
+								class="c-plan__about--icons icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-2 mt-1">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
 									<path
@@ -618,14 +623,14 @@
 								</svg>
 							</div>
 							<div>
-								<h2 class="fs-1 neon-gold">Localização</h2>
+								<h2 class="c-plan__about--subtitle fs-2">Localização</h2>
 								<p>Estamos cituados em locais de fácil localização nas maiores capitais do país com
 									estacionamento próprio para nossos clientes.</p>
 							</div>
 						</div>
 						<div class="col d-flex align-items-start">
 							<div
-								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-gold">
+								class="c-plan__about--icons icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-2 mt-1">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-cart-check-fill" viewBox="0 0 16 16">
 									<path
@@ -633,7 +638,7 @@
 								</svg>
 							</div>
 							<div>
-								<h2 class="fs-1 neon-gold">Praticidade</h2>
+								<h2 class="c-plan__about--subtitle fs-2">Praticidade</h2>
 								<p>Faça suas compras online e entregaremos para qualquer lugar do Brasil com frete
 									grátis ou
 									retire na loja mais próxima a você.</p>
@@ -641,7 +646,7 @@
 						</div>
 						<div class="col d-flex align-items-start">
 							<div
-								class="icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3 neon-gold">
+								class="c-plan__about--icons icon-square bg-dark-opacity-100 d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-2 mt-1">
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 									class="bi bi-award-fill" viewBox="0 0 16 16">
 									<path
@@ -650,7 +655,7 @@
 								</svg>
 							</div>
 							<div>
-								<h2 class="fs-1 neon-gold">Exclusividade</h2>
+								<h2 class="c-plan__about--subtitle fs-2">Exclusividade</h2>
 								<p>Faça seu cadastro e receba mais benefícios, participe de sorteios, concorra a vários
 									prêmios e ganhe muitos descontos!</p>
 							</div>
@@ -658,22 +663,18 @@
 					</div>
 				</div>
 
-
-				<!--_________↓Planos↓_________-->
-				<div class="pricing-header pt-2 pb-2 md-4 mx-auto text-center neon-laranja">
-					<h2 class="display-4">Cadastre-se</h2>
-				</div>
-
-				<div class="row row-cols-1 row-cols-md-3 m-5 pt-1 pb-5 text-center">
+				<!--______↓Signature↓______-->
+				<div class="row row-cols-1 row-cols-md-3 text-center pt-1 pb-5 m-5 mt-0">
 					<div class="col">
-						<div class="card mb-4 rounded-3 border-dark neon-planos desfoca-planos">
-							<div class="card-header py-3 text-bg-secondary neon-laranja border-dark gradient-menu">
-								<h3 class="my-0 fw-normal">Vip Standard</h3>
+						<div class="c-plan__signatures card rounded-3 border-dark mb-4">
+							<div class="c-plan__type card-header text-bg-secondary border-dark py-3">
+								<h3 class="fw-normal my-0">Vip Standard</h3>
 							</div>
-							<div class="card-body bg-preto">
-								<h3 class="card-title neon-gold">R$ 0<small class="text-muted fw-light">/mês</small>
+							<div class="c-plan__benefits card-body">
+								<h3 class="c-plan__price card-title">R$ 0<small
+										class="c-plan__price--mount fw-light">/mês</small>
 								</h3>
-								<ul class="list-unstyled mt-3 mb-4 text-start   color-text-silver">
+								<ul class="c-plan__list list-unstyled text-start mt-3 mb-4">
 									<li>✓ Agende sem prioridade em Barbearia</li>
 									<li>✓ Até 20% de desconto em uma tattoo</li>
 									<li>✓ Preços por serviço em Barbearia</li>
@@ -685,15 +686,15 @@
 						</div>
 					</div>
 					<div class="col">
-						<div class="card mb-4 rounded-3 border-dark neon-planos desfoca-planos">
-							<div class="card-header py-3 text-bg-secondary neon-laranja border-dark gradient-menu">
-								<h3 class="my-0 fw-normal">Vip Pro</h3>
+						<div class="c-plan__signatures card rounded-3 border-dark mb-4">
+							<div class="c-plan__type card-header text-bg-secondary border-dark py-3">
+								<h3 class="fw-normal my-0">Vip Pro</h3>
 							</div>
-							<div class="card-body bg-preto">
-								<h3 class="card-title neon-gold">R$ 189,90<small
-										class="text-muted fw-light">/mês</small>
+							<div class="c-plan__benefits card-body">
+								<h3 class="c-plan__price card-title">R$ 189,90<small
+										class="c-plan__price--mount fw-light">/mês</small>
 								</h3>
-								<ul class="list-unstyled mt-3 mb-4 text-start   color-text-silver">
+								<ul class="c-plan__list list-unstyled text-start mt-3 mb-4">
 									<li>✓ Agende com prioridade em Barbearia</li>
 									<li>✓ Sorteio em uma tattoo 100% gratuita</li>
 									<li>✓ Até 3 pacotes completos de Barbearia</li>
@@ -705,15 +706,15 @@
 						</div>
 					</div>
 					<div class="col">
-						<div class="card mb-4 rounded-3 border-dark neon-planos desfoca-planos">
-							<div class="card-header py-3 text-bg-secondary neon-laranja border-dark gradient-menu">
-								<h3 class="my-0 fw-normal">Vip Premium</h3>
+						<div class="c-plan__signatures card rounded-3 border-dark mb-4">
+							<div class="c-plan__type card-header text-bg-secondary border-dark py-3">
+								<h3 class="fw-normal my-0">Vip Premium</h3>
 							</div>
-							<div class="card-body bg-preto">
-								<h3 class="card-title neon-gold">R$ 229,90<small
-										class="text-muted fw-light">/mês</small>
+							<div class="c-plan__benefits card-body">
+								<h3 class="c-plan__price card-title">R$ 229,90<small
+										class="c-plan__price--mount fw-light">/mês</small>
 								</h3>
-								<ul class="list-unstyled mt-3 mb-4 text-start   color-text-silver">
+								<ul class="c-plan__list list-unstyled text-start mt-3 mb-4">
 									<li>✓ Agende com prioridade em Barbearia</li>
 									<li>✓ Sorteio em duas tattoo 100% gratuitas</li>
 									<li>✓ Serviços ilimitados de Barbearia</li>
@@ -725,21 +726,21 @@
 						</div>
 					</div>
 				</div>
+				<!--______↑Signature↑______-->
 			</div>
 		</section>
-		<!--_________↑Planos↑_________-->
-		<!--________________________↑Seja Vip↑________________________-->
+		<!--________________________↑Customer Plan↑________________________-->
 
 
-		<!--_______________________↓Localização↓_______________________-->
-		<section class="pt-4 pb-5 bg-dark bottom-edge">
+		<!--_______________________↓Localization↓_______________________-->
+		<section class="c-localization bg-dark pt-4 pb-5">
 			<div>
-				<h2 class="p-5 secaoDestaque-titulo neon-gold">
-					<img class="neon-logo" src="assets/img/logo.png" alt="Logo marca VipStyle" width="50"> Venha nos
+				<h2 class="c-localization__title secaoDestaque-titulo p-5">
+					<img class="c-localization__logo" src="assets/img/logo.png" alt="Logo marca VipStyle" width="50"> Venha nos
 					conhecer
 				</h2>
 			</div>
-			<div class="localizacao">
+			<div class="text-center">
 				<iframe class="m-1" style="width: 470px; height: 265px;" src="https://www.youtube.com/embed/Ff68WwJxmg4"
 					title="360° Gire para uma melhor experiência | Burj Khalifa - Top Terrace, Dubai, United Arab Emirates"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -757,41 +758,45 @@
 				</iframe>
 			</div>
 		</section>
-		<!--_______________________↑Localização↑______________________-->
+		<!--_______________________↑Localization↑______________________-->
 	</main>
 
 
-	<!--___________________________↓Rodapé↓__________________________-->
-	<footer class="bg-preto p-5">
-		<div class="d-flex align-items-center">
-			<a class="mb-3 me-2 mb-md-0 text-decoration-none lh-1   color-text-silver">
+	<!--___________________________↓Footer↓__________________________-->
+	<footer class="c-footer p-5">
+		<div class="d-flex">
+			<a class="c-footer__social text-decoration-none lh-1 mb-3 me-3" href="#">
 				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 					class="bi bi-instagram" viewBox="0 0 16 16">
 					<path
 						d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
 				</svg>
+			</a>
+			<a class="c-footer__social text-decoration-none lh-1 mb-3 me-3" href="#">
 				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 					class="bi bi-facebook" viewBox="0 0 16 16">
 					<path
 						d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
 				</svg>
+			</a>
+			<a class="c-footer__social text-decoration-none lh-1 mb-3 me-3" href="#">
 				<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
 					class="bi bi-pinterest" viewBox="0 0 16 16">
 					<path
 						d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z" />
 				</svg>
 			</a>
-			<span class="mb-3 mb-md-0 text-light">©2022 VipStyle</span>
+			<span class="c-footer__copy mb-3">©2023 VipStyle</span>
 		</div>
-		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-			<li class="nav-item"><a href="#" class="nav-link px-2 text-light">Home</a></li>
-			<li class="nav-item"><a href="#" class="nav-link px-2 text-light">Colabore</a></li>
-			<li class="nav-item"><a href="#" class="nav-link px-2 text-light">FAQs</a></li>
-			<li class="nav-item"><a href="#" class="nav-link px-2 text-light">Sobre</a></li>
+		<ul class="nav justify-content-center border-bottom pb-3 mb-2">
+			<li class="nav-item"><a href="#" class="c-footer__useful nav-link px-2 text-light">Home</a></li>
+			<li class="nav-item"><a href="#" class="c-footer__useful nav-link px-2 text-light">Colabore</a></li>
+			<li class="nav-item"><a href="#" class="c-footer__useful nav-link px-2 text-light">FAQs</a></li>
+			<li class="nav-item"><a href="#" class="c-footer__useful nav-link px-2 text-light">Sobre</a></li>
 		</ul>
-		<img class="pt-5 neon-logo" src="assets/img/logo-principal.png" alt="Logo marca VipStyle" width="100">
+		<img class="c-footer__logo pt-5" src="assets/img/logo-principal.png" alt="Logo marca VipStyle" width="100">
 	</footer>
-	<!--___________________________↑Rodapé↑__________________________-->
+	<!--___________________________↑Footer↑__________________________-->
 
 </body>
 
