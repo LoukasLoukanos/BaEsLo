@@ -4,14 +4,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>PseudoSite: VipStyle - Loja, Barbearia & Estúdio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script language="javascript" src="assets/js/main.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.js"></script>
+	<script language="javascript" src="assets/js/main.js"></script>
 
 	<!--_______________________↓Bootstrap↓_______________________-->
 	<meta name="Ver fotosport" content="width=device-width, initial-scale=1">
@@ -25,18 +25,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
-<body class="fonte-letras-google">
+<body class="google-fonts">
 
-	<a href="#conteudoPrincipal" class="pularNavegacao">Pular para conteúdo principal</a>
-	<!--Acessibilidade-->
+	<!--accessibility-->
+	<a href="#main-content" class="accessibility">Pular para conteúdo principal</a>
 
-	<!--___________________________↓Menu↓___________________________-->
 	<header>
-		<nav class="navbar navbar-expand-lg gradient-menu menu-neon">
+		<!--___________________________↓Menu↓___________________________-->
+		<nav class="c-menu navbar navbar-expand-lg">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html">
-					<img class="neon-logo" src="images/logo-menu.png"
-						alt="logo-menu VipStyle - Loja, Barbearia & Estúdio"></img>
+					<img class="c-menu__logo" src="assets/img/logo-menu.png"
+						alt="logo-menu VipStyle - Loja, Barbearia & Estúdio">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
 					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,10 +45,10 @@
 				<div class="collapse navbar-collapse" id="navbarScroll">
 					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="index.html"><b>Home</b></a>
+							<a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="barbearia.html"><b>Barbearia</b></a>
+							<a class="nav-link" aria-current="page" href="barbearia.html"><b>Barbearia</b></a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" aria-current="page" href="#"><b>Estúdio</b></a>
@@ -77,17 +77,15 @@
 				</div>
 			</div>
 		</nav>
-	</header>
-	<!--___________________________↑Menu↑___________________________-->
+		<!--___________________________↑Menu↑___________________________-->
 
-	<main>
-		<!--_________________________↓Serviços↓_________________________-->
-		<section class="pb-5 pt-5 bg-preto borda-inferior">
+		<main>
+
+
 			<!--Botão do modal de aviso PseudoSite-->
 			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
 				Launch static backdrop modal
 			</button>
-
 			<!--↓Modal de aviso PseudoSite↓-->
 			<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
 				aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -110,114 +108,115 @@
 			<!--↑Modal de aviso PseudoSite↑-->
 
 
-			<!--______↓Serviços Barbearia↓______-->
-			<div class="container p-4">
-				<h1 class="pt-2 pb-4 secaoDestaque-titulo align-items-center text-center neon-roxo display-1">
-					Serviços</h1>
-				<div class="text-center align-items-center">
-					<ul class="barbearia pt-4">
-						<li class="cards" id="imagens-cabelo">
-							<h2>Cabelo</h2>
-							<p class="barbearia-descricao">Cortes profissionais</p>
-							<p class="barbearia-preco">R$ 0,00</p>
-						</li>
-						<li class="cards" id="imagens-barba">
-							<h2>Barba</h2>
-							<p class="barbearia-descricao">Corte e reparo de barba</p>
-							<p class="barbearia-preco">R$ 0,00</p>
-						</li>
-						<li class="cards" id="imagens-completo">
-							<h2>Cabelo + Barba</h2>
-							<p class="barbearia-descricao">Pacote completo</p>
-							<p class="barbearia-preco">R$ 0,00</p>
-						</li>
-					</ul>
+			<!--_________________________↓Services↓_________________________-->
+			<section class="c-services pb-5 pt-5">
+				<!--______↓Barber Shop↓______-->
+				<div class="container p-4">
+					<div class="align-items-center text-center">
+						<ul class="c-services__barber pt-4">
+							<li class="c-services__barber-cards" id="images-hair">
+								<h2 class="c-services__barber-hair">Cabelo</h2>
+								<p class="c-services__barber-description">Cortes profissionais</p>
+								<p class="c-services__barber-price">R$ 0,00</p>
+							</li>
+							<li class="c-services__barber-cards" id="images-beard">
+								<h2 class="c-services__barber-hair">Barba</h2>
+								<p class="c-services__barber-description">Corte e reparo de barba</p>
+								<p class="c-services__barber-price">R$ 0,00</p>
+							</li>
+							<li class="c-services__barber-cards" id="images-full">
+								<h2 class="c-services__barber-hair">Cabelo + Barba</h2>
+								<p class="c-services__barber-description">Pacote completo</p>
+								<p class="c-services__barber-price">R$ 0,00</p>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<!--______↑Serviços Barbearia↑______-->
-		</section>
+				<!--______↑Barber Shop↑______-->
+			</section>
+			<!--_________________________↑Services↑_________________________-->
 
-		<form>
-			<!-- quando label não encapsula, precisa de for e o que está sendo encapsulado de id para que o 'click' no label se relacione ao seu elemento-->
-			<label for="nomesobrenome">Nome e sobrenome</label>
-			<input type="text" id="nomesobrenome" class="input-padrao" placeholder="Nome Sobrenome" required>
+			<form>
+				<!-- quando label não encapsula, precisa de for e o que está sendo encapsulado de id para que o 'click' no label se relacione ao seu elemento-->
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" placeholder="Nome Sobrenome" required>
 
-			<label for="email">Email</label>
-			<input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required>
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required>
 
-			<label for="telefone">Telefone</label>
-			<input type="tel" id="telefone" class="input-padrao" placeholder="(xx) xxxxx-xxxx"
-				pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" placeholder="(xx) xxxxx-xxxx"
+					pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
 
-			<label for="Mensagem">Mensagem</label>
-			<textarea cols="70" rows="10" id="Mensagem" class="input-padrao" required></textarea>
+				<label for="Mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="Mensagem" class="input-padrao" required></textarea>
 
-			<fieldset>
-				<!-- como uma div, porém fieldset é de voltado ao uso específico para delimitar um campo que contenha elementos que inserem dados complementares a um formulário. -->
-				<legend>Como prefere o nosso contato?</legend> <!-- define uma legenda para o elemento fieldset -->
-				<label>
-					<!-- label encapsula, :. não precisa de for nem o que está sendo encapsulado de id -->
-					<input type="radio" name="contato" value="email">
-					Email
+				<fieldset>
+					<!-- como uma div, porém fieldset é de voltado ao uso específico para delimitar um campo que contenha elementos que inserem dados complementares a um formulário. -->
+					<legend>Como prefere o nosso contato?</legend> <!-- define uma legenda para o elemento fieldset -->
+					<label>
+						<!-- label encapsula, :. não precisa de for nem o que está sendo encapsulado de id -->
+						<input type="radio" name="contato" value="email">
+						Email
+					</label>
+
+					<label>
+						<input type="radio" name="contato" value="telefone">
+						Telefone
+					</label>
+
+					<label>
+						<input type="radio" name="contato" value="whatsapp" checked>
+						WhatsApp
+					</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
+					<select>
+						<option>Manhã</option>
+						<option>Tarde</option>
+						<option>Noite</option>
+					</select>
+				</fieldset>
+
+				<label class="checkbox">
+					<input type="checkbox" checked>
+					Gostaria de receber nossas novidades por email?
 				</label>
 
-				<label>
-					<input type="radio" name="contato" value="telefone">
-					Telefone
-				</label>
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
 
-				<label>
-					<input type="radio" name="contato" value="whatsapp" checked>
-					WhatsApp
-				</label>
-			</fieldset>
+			<table>
+				<thead>
+					<tr>
+						<th>Dia</th>
+						<th>Horário</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Segunda</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Quarta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+					<tr>
+						<td>Sexta</td>
+						<td>8h ~ 20h</td>
+					</tr>
+				</tbody>
+			</table>
 
-			<fieldset>
-				<legend>Qual horário prefere ser atendido?</legend>
-				<select>
-					<option>Manhã</option>
-					<option>Tarde</option>
-					<option>Noite</option>
-				</select>
-			</fieldset>
+		</main>
 
-			<label class="checkbox">
-				<input type="checkbox" checked>
-				Gostaria de receber nossas novidades por email?
-			</label>
-
-			<input type="submit" value="Enviar formulário" class="enviar">
-		</form>
-
-		<table>
-			<thead>
-				<tr>
-					<th>Dia</th>
-					<th>Horário</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Segunda</td>
-					<td>8h ~ 20h</td>
-				</tr>
-				<tr>
-					<td>Quarta</td>
-					<td>8h ~ 20h</td>
-				</tr>
-				<tr>
-					<td>Sexta</td>
-					<td>8h ~ 20h</td>
-				</tr>
-			</tbody>
-		</table>
-
-	</main>
-
-	<footer>
-		<img src="images/logo-rodape.png" alt="Logo da Barbearia Alura">
-		<p class="copyright">&copy; Copyright VipStyle - 2022</p>
-	</footer>
+		<footer>
+			<img src="images/logo-rodape.png" alt="Logo da Barbearia Alura">
+			<p class="copyright">&copy; Copyright VipStyle - 2022</p>
+		</footer>
 </body>
 
 </html>
