@@ -1,18 +1,18 @@
 /*_________↓Google fonts↓_________*/
 .google-fonts {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 /*_________↓Acessibilidade↓_________*/
 .accessibility {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 1px;
-  height: 1px;
-  display: block;
   color: transparent;
+  display: block;
+  height: 1px;
+  overflow: hidden;
   position: absolute;
+  text-indent: 100%;
+  width: 1px;
+  white-space: nowrap;
 }
 
 /*_________↓Menu↓_________*/
@@ -47,10 +47,7 @@
 }
 
 .c-presentation__title {
-  animation-duration: 4s;
-  animation-name: title_anim;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation: title_anim 4s infinite alternate;
   color: #b58e70;
   text-shadow: 0px 0px 20px rgba(255, 94, 30, 1);
 }
@@ -77,10 +74,7 @@
 }
 
 .c-presentation__text {
-  animation-duration: 4s;
-  animation-name: texto_anim;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation: texto_anim 4s infinite alternate;
 }
 
 @keyframes texto_anim {
@@ -101,17 +95,14 @@
 }
 
 .c-presentation__icon {
-  padding: 0px;
-  margin: 0px;
-  width: 100%;
-  height: 12%;
+  animation: ico_move 2s ease-in-out infinite alternate;
   background-repeat: no-repeat;
   display: inline-block;
+  height: 12%;
+  margin: 0px;
+  padding: 0px;
   position: relative;
-  animation-name: ico_move;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  width: 100%;
 }
 
 @keyframes ico_move {
@@ -135,93 +126,90 @@
 }
 
 #barb_icon-1 {
-  background-image: url('ico/barber/b_icon1.png');
   animation-timing-function: ease-in-out;
+  background-image: url("ico/barber/b_icon1.png");
 }
 
 #barb_icon-2 {
-  background-image: url('ico/barber/b_icon2.png');
   animation-timing-function: ease;
+  background-image: url("ico/barber/b_icon2.png");
 }
 
 #barb_icon-3 {
-  background-image: url('ico/barber/b_icon3.png');
   animation-timing-function: linear;
+  background-image: url("ico/barber/b_icon3.png");
 }
 
 #barb_icon-4 {
-  background-image: url('ico/barber/b_icon4.png');
   animation-timing-function: ease-in;
+  background-image: url("ico/barber/b_icon4.png");
 }
 
 #barb_icon-5 {
-  background-image: url('ico/barber/b_icon5.png');
   animation-timing-function: ease-out;
+  background-image: url("ico/barber/b_icon5.png");
 }
 
 #tatt_icon-1 {
-  background-image: url('ico/estudio/t_icon1.png');
   animation-timing-function: ease-in-out;
+  background-image: url("ico/estudio/t_icon1.png");
 }
 
 #tatt_icon-2 {
-  background-image: url('ico/estudio/t_icon2.png');
   animation-timing-function: ease;
+  background-image: url("ico/estudio/t_icon2.png");
 }
 
 #tatt_icon-3 {
-  background-image: url('ico/estudio/t_icon3.png');
   animation-timing-function: linear;
+  background-image: url("ico/estudio/t_icon3.png");
 }
 
 #tatt_icon-4 {
-  background-image: url('ico/estudio/t_icon4.png');
   animation-timing-function: ease-in;
+  background-image: url("ico/estudio/t_icon4.png");
 }
 
 #tatt_icon-5 {
-  background-image: url('ico/estudio/t_icon5.png');
   animation-timing-function: ease-out;
+  background-image: url("ico/estudio/t_icon5.png");
 }
 
 #stor_icon-1 {
-  background-image: url('ico/loja/l_icon1.png');
   animation-timing-function: ease-in-out;
+  background-image: url("ico/loja/l_icon1.png");
 }
 
 #stor_icon-2 {
-  background-image: url('ico/loja/l_icon2.png');
   animation-timing-function: ease;
+  background-image: url("ico/loja/l_icon2.png");
 }
 
 #stor_icon-3 {
-  background-image: url('ico/loja/l_icon3.png');
   animation-timing-function: linear;
+  background-image: url("ico/loja/l_icon3.png");
 }
 
 #stor_icon-4 {
-  background-image: url('ico/loja/l_icon4.png');
   animation-timing-function: ease-in;
+  background-image: url("ico/loja/l_icon4.png");
 }
 
 #stor_icon-5 {
-  background-image: url('ico/loja/l_icon5.png');
   animation-timing-function: ease-out;
+  background-image: url("ico/loja/l_icon5.png");
 }
 
 .c-presentation__circle {
-  width: 500px;
-  height: 500px;
-  scale: 0.8;
+  animation: images_circle 2s ease-in-out infinite alternate;
   background-repeat: no-repeat;
   border-radius: 100%;
   display: inline-block;
+  height: 500px;
   position: relative;
+  scale: 0.8;
   vertical-align: top;
-  animation-name: images_circle;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  width: 500px;
 }
 
 @keyframes images_circle {
@@ -265,15 +253,15 @@
 }
 
 #img-circle-A {
-  background-image: url('images/circuloA.jpg');
+  background-image: url("images/circuloA.jpg");
 }
 
 #img-circle-B {
-  background-image: url('images/circuloB.jpg');
+  background-image: url("images/circuloB.jpg");
 }
 
 #img-circle-C {
-  background-image: url('images/circuloC.jpg');
+  background-image: url("images/circuloC.jpg");
 }
 
 /*_________↓Featured Services↓_________*/
@@ -283,9 +271,9 @@
 }
 
 .c-services__title {
+  animation: neon-roxo 2s ease-in-out infinite alternate;
   color: #9900ff;
   font-weight: bold;
-  animation: neon-roxo 2s ease-in-out infinite alternate;
 }
 
 @keyframes neon-roxo {
@@ -300,58 +288,56 @@
 
 /*___↓Barber Shop↓___*/
 .c-services__barber-cards {
-  height: 360px;
-  width: 315px;
   background-repeat: no-repeat;
   background-size: 105% 105%;
+  height: 360px;
+  width: 315px;
 }
 
 #images-hair {
-  background-image: url('images/corte_front.jpg');
+  background-image: url("images/corte_front.jpg");
 }
 
 #images-hair:hover {
-  background-image: url('images/corte_back.jpg');
+  background-image: url("images/corte_back.jpg");
 }
 
 #images-beard {
-  background-image: url('images/barba_front.jpg');
+  background-image: url("images/barba_front.jpg");
 }
 
 #images-beard:hover {
-  background-image: url('images/barba_back.jpg');
+  background-image: url("images/barba_back.jpg");
 }
 
 #images-full {
-  background-image: url('images/completo_front.jpg');
+  background-image: url("images/completo_front.jpg");
 }
 
 #images-full:hover {
-  background-image: url('images/completo_back.jpg');
+  background-image: url("images/completo_back.jpg");
 }
 
 .c-services__barber li {
-  display: inline-block;
-  text-align: center;
-  vertical-align: top;
-  padding: 0px;
-  margin: 15px;
   border: 0.5px solid #9900ff;
   border-radius: 12px;
-  box-sizing: border-box;
-  color: #000000;
   box-shadow: 0px 0px 6px #9900ff;
+  box-sizing: border-box; /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
+  color: #000000;
+  display: inline-block;
+  margin: 15px;
+  padding: 0px;
+  text-align: center;
+  vertical-align: top;
 }
 
-/*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
-
 .c-services__barber li:hover {
-  color: #ff3a09;
   box-shadow: 0px 0px 30px #9900ff;
+  color: #ff3a09;
+  cursor: pointer;
   text-shadow: 3px 3px 6px #000000;
   transform: scale(1.04);
   transition: 0.5s all;
-  cursor: pointer;
 }
 
 .c-services__barber li:active {
@@ -360,8 +346,8 @@
 
 .c-services__barber-hair {
   font-size: 30px;
-  padding-top: 5px;
   font-weight: bold;
+  padding-top: 5px;
 }
 
 .c-services__barber-description {
@@ -403,9 +389,9 @@
 }
 
 .c-products__title {
+  animation: neon-orange 2s ease-in-out infinite alternate;
   color: rgba(255, 94, 30, 1);
   font-weight: bold;
-  animation: neon-orange 2s ease-in-out infinite alternate;
 }
 
 @keyframes neon-orange {
@@ -433,16 +419,16 @@
 }
 
 .c-plan__box {
-  margin: 30px;
-  border: 0.5px solid #ffffff;
-  box-shadow: 0px 0px 6px #f0f0f0;
-  border-radius: 20px;
   background: linear-gradient(
     90deg,
     rgba(21, 0, 36, 1) 0%,
     rgba(68, 0, 115, 1) 63%,
     rgba(119, 0, 204, 1) 100%
   );
+  border: 0.5px solid #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px #f0f0f0;
+  margin: 30px;
 }
 
 .c-plan__title {
@@ -470,11 +456,11 @@
 
 /*___↓Signature↓___*/
 .c-plan__signatures {
+  animation: plan-signatures 3s ease-in-out infinite;
   box-shadow: 1px 1px 15px #000000;
+  color: #a0a0a0;
   filter: blur(2.1px);
   scale: 0.9;
-  color: #a0a0a0;
-  animation: plan-signatures 3s ease-in-out infinite;
 }
 @keyframes plan-signatures {
   0% {
@@ -486,24 +472,24 @@
   30% {
     transform: rotateY(0deg);
   }
-  100%{
+  100% {
     transform: rotateY(12deg);
   }
 }
 .c-plan__signatures:hover {
   animation: none;
+  box-shadow: 1px 1px 15px rgba(255, 94, 30, 1);
   color: #b0b0b0;
   filter: blur(0px);
-  box-shadow: 1px 1px 15px rgba(255, 94, 30, 1);
-  transition: 0.3s all;
   transform: scale(1.17);
+  transition: 0.3s all;
 }
 .c-plan__signatures--active {
-  color: #b0b0b0;
-  scale: 0.936;
-  filter: blur(0px);
-  box-shadow: 1px 1px 15px rgba(255, 94, 30, 1);
   animation: signatures-active 3s ease-in-out infinite;
+  box-shadow: 1px 1px 15px rgba(255, 94, 30, 1);
+  color: #b0b0b0;
+  filter: blur(0px);
+  scale: 0.936;
 }
 @keyframes signatures-active {
   from {
@@ -516,6 +502,7 @@
 }
 
 .c-plan__type {
+  animation: plan-type 2s ease-in-out infinite alternate;
   background: linear-gradient(
     90deg,
     rgba(39, 0, 65, 1) 0%,
@@ -526,7 +513,6 @@
     rgba(52, 6, 85, 1) 100%
   );
   font-weight: bold;
-  animation: plan-type 2s ease-in-out infinite alternate;
 }
 @keyframes plan-type {
   from {
@@ -555,9 +541,9 @@
 }
 
 .c-plan__btn {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .c-plan__center {
@@ -565,31 +551,29 @@
 }
 
 .c-plan__button {
-  border-radius: 6px;
-  width: 150px;
-  height: 40px;
-  cursor: pointer;
   background: transparent;
+  border: solid 0.3px #1f1f1f;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 40px;
   outline: none;
   transition: 0.5s ease-in-out;
-  border: solid 0.3px #1f1f1f;
+  width: 150px;
 }
 
 .c-plan__button svg {
   border-radius: 6px;
-  position: absolute;
-  left: 0;
-  top: 0;
   fill: none;
+  left: 0;
+  position: absolute;
   stroke: #b58e70;
   stroke-dasharray: 180 540;
   stroke-dashoffset: 180;
   transition: 0.5s ease-in-out;
+  top: 0;
 }
 
 .c-plan__button:hover {
-  transition: 0.5s ease-in-out;
-  border: solid 0.3px #000000;
   background: linear-gradient(
     90deg,
     rgba(39, 0, 65, 1) 0%,
@@ -598,6 +582,8 @@
     rgba(52, 6, 85, 1) 85%,
     rgba(39, 0, 65, 1) 100%
   );
+  border: solid 0.3px #000000;
+  transition: 0.5s ease-in-out;
 }
 
 .c-plan__button:active {
@@ -645,8 +631,8 @@
 
 /*_________↓Footer↓_________*/
 .c-footer {
-  text-align: center;
   background: #0f0f0f;
+  text-align: center;
 }
 
 .c-footer__social,
@@ -673,8 +659,8 @@
 /*____________↓Área de formulário geral para serviços↓____________*/
 /*_______↓contato↓_______*/
 form {
-  padding: 10px 0 20px 0;
   color: #f0f0f0;
+  padding: 10px 0 20px 0;
 }
 
 form label,
@@ -685,13 +671,13 @@ form legend {
 }
 
 .input-padrao {
+  background: #000000;
+  border-radius: 10px;
+  color: #f0f0f0;
   display: block;
   margin: 0 0 20px;
   padding: 10px 25px;
   width: 50%;
-  background: #000000;
-  color: #f0f0f0;
-  border-radius: 10px;
 }
 
 .checkbox {
