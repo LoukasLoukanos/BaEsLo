@@ -30,7 +30,41 @@
 }
 
 .c-menu__logo {
-  filter: drop-shadow(0px 0px 6px rgba(255, 94, 30, 1));
+  animation: menu_logo 2s infinite alternate;
+}
+
+@keyframes menu_logo {
+  0% {
+    filter: drop-shadow(0px 0px 4px rgb(255, 180, 160));
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 12px #ffffff);
+  }
+}
+
+.c-menu__link {
+  color: #d1b092;
+  filter: drop-shadow(0px 0px 9px rgb(255, 180, 160));
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+.c-menu__link:hover {
+  color: #d0d0d0;
+  filter: drop-shadow(0px 0px 12px #ffffff);
+}
+
+.c-menu__link--active {
+  color: #d0d0d0;
+  filter: drop-shadow(0px 0px 9px #ffffff);
+  text-decoration: none;
+  transition: 0.5s all;
+}
+
+.c-menu__link--active:hover {
+  color: #e0e0e0;
+  filter: drop-shadow(0px 0px 9px #ffffff);
 }
 
 .c-carousel {

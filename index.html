@@ -46,16 +46,16 @@
 				<div class="collapse navbar-collapse" id="navbarScroll">
 					<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="index.html"><b>Home</b></a>
+							<a class="c-menu__link--active pe-2" aria-current="page" href="index.html"><b>Home</b></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="barbearia.html"><b>Barbearia</b></a>
+							<a class="c-menu__link pe-2" aria-current="page" href="barbearia.html"><b>Barbearia</b></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#"><b>Estúdio</b></a>
+							<a class="c-menu__link pe-2" aria-current="page" href="#"><b>Estúdio</b></a>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+							<a class="c-menu__link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
 								aria-expanded="false">
 								<b>Loja</b>
 							</a>
@@ -70,11 +70,38 @@
 							</ul>
 						</li>
 					</ul>
-					<form class="d-flex" role="search">
-						<input class="form-control me-2 bg-dark text-light" type="search" placeholder="Search"
+					<form class="d-flex mt-2" role="search">
+						<input class="form-control bg-transparent text-light me-2" type="search" placeholder="Search"
 							aria-label="Search">
-						<button class="btn btn-dark" type="submit">Search</button>
+						<button class="btn btn-outline-light" type="submit">Search</button>
 					</form>
+
+					<!--↓Modal of login↓-->
+					<button type="button" class="btn btn-outline-transparent rounded-circle ms-2" data-bs-toggle="modal"
+						data-bs-target="#staticBackdrop">
+						<img src="assets/img/login.png" alt="Conectar-se" width="40">
+						<br> <span class="text-light">Log in</span>
+					</button>
+					<div class="modal fade my-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+						tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">
+									...
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary"
+										data-bs-dismiss="modal">Cancelar</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--↑Modal of login↑-->
 				</div>
 			</div>
 		</nav>
