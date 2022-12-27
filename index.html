@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>PseudoSite: VipStyle - Loja, Barbearia & Estúdio</title>
+	<title>VipStyle: Home - Loja, Barbearia & Estúdio → PseudoSite</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="assets/css/normalize.css">
@@ -79,20 +79,21 @@
 					<!--↓Modal of login↓-->
 					<button type="button" class="btn btn-outline-transparent rounded-circle ms-2" data-bs-toggle="modal"
 						data-bs-target="#staticBackdrop">
-						<img src="assets/img/login.png" alt="Conectar-se" width="40">
+						<img src="assets/img/login.png" alt="Conectar-se" width="40" id="c-menu__id-login">
 						<br> <span class="text-light">Log in</span>
 					</button>
-					<div class="modal fade my-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+					<div class="modal fade bg-dark my-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
 						tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
 						<div class="modal-dialog">
 							<div class="modal-content">
 								<div class="modal-header">
-									<h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+									<h1 class="modal-title fs-5" id="staticBackdropLabel">Log in</h1>
 									<button type="button" class="btn-close" data-bs-dismiss="modal"
 										aria-label="Close"></button>
 								</div>
-								<div class="modal-body">
-									...
+								<div class="modal-body text-center">
+									<a type="button" href="signin.html" class="btn btn-outline-dark me-2">Sign in</a>
+									<a type="button" href="signup.html" class="btn btn-outline-dark ms-2">Sign up</a>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary"
