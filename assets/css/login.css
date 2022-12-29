@@ -1,4 +1,4 @@
-.c-signin {
+.c-signin, .c-signup {
   background: linear-gradient(
     90deg,
     rgba(21, 0, 36, 1) 0%,
@@ -7,12 +7,19 @@
   );
 }
 
+.c-signin__logo, .c-signup__logo {
+  filter: drop-shadow(0px 0px 60px rgba(255, 94, 30, 1));
+}
+
 .c-signin__box {
-  box-shadow: 1px 1px 3px #0f0f0f;
+  box-shadow: 1px 1px 4px #0f0f0f;
   color: rgba(255, 94, 30, 1);
   transition: 0.3s all;
 }
 
 .c-signin__box:hover {
-  box-shadow: 3px 3px 6px #0f0f0f;
+  box-shadow: 1px 1px 9px #0f0f0f;
 }
+
+
+/*___________↓sign out↓___________*/
