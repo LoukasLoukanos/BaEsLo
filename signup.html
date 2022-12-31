@@ -29,181 +29,181 @@
 </head>
 
 <body class="c-signup google-fonts text-light">
-    <div class="container">
-        <main>
-            <div class="py-5 text-center">
-                <a class="navbar-brand" href="index.html">
-                    <img class="c-signup__logo mt-1 mb-1" src="assets/img/logo-menu.png"
-                        alt="logo VipStyle - Loja, Barbearia & Estúdio">
-                </a>
-                <h2>Formulário de cadastro</h2>
-                <p class="lead">Selecine um plano e preencha o formulário
-                </p>
-            </div>
+    <main>
+        <div class="c-signup__text text-center py-5">
+            <a class="navbar-brand" href="index.html">
+                <img class="c-signup__logo mt-1 mb-1" src="assets/img/logo-menu.png"
+                    alt="logo VipStyle - Loja, Barbearia & Estúdio">
+            </a>
+            <h2>Formulário de cadastro</h2>
+            <p class="lead">Selecine um plano e preencha o formulário
+            </p>
+        </div>
 
-            <div class="row g-5">
-                <div class="col-md-7 col-lg-8">
-                    <h4 class="mb-3">Billing address</h4>
-                    <form class="needs-validation" novalidate>
-                        <div class="row g-3">
-                            <div class="col-sm-6">
-                                <label for="firstName" class="form-label">Primeiro nome</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    Seu primeiro nome é obrigatório.
-                                </div>
-                            </div>
-
-                            <div class="col-sm-6">
-                                <label for="lastName" class="form-label">Sobrenome</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                                <div class="invalid-feedback">
-                                    Seu sobrenome nome é obrigatório.
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="username" class="form-label">Apelido</label>
-                                <div class="input-group has-validation">
-                                    <span class="input-group-text">@</span>
-                                    <input type="text" class="form-control" id="username" placeholder="Lukinhas"
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Seu nome de usuário é obrigatório.
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="email" class="form-label">Email <span
-                                        class="text-muted">(Opcional)</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="user@example.com">
-                                <div class="invalid-feedback">
-                                    Insira um endereço de e-mail válido para atualizações de envio.
-                                </div>
-                            </div>
-
-                            <div class="col-12">
-                                <label for="address" class="form-label">Endereço</label>
-                                <input type="text" class="form-control" id="address" placeholder="Wall Street, 432"
-                                    required>
-                                <div class="invalid-feedback">
-                                    Por favor insira seu endereço de entrega.
-                                </div>
-                            </div>
-
-
-                            <div class="col-md-5">
-                                <label for="country" class="form-label">Country</label>
-                                <select class="form-select" id="country" required>
-                                    <option value="">Selecione...</option>
-                                    <option>Brasil</option>
-                                    <option>Canadá</option>
-                                    <option>Estados Unidos</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Selecione um país.
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <label for="state" class="form-label">State</label>
-                                <select class="form-select" id="state" required>
-                                    <option value="">Selecione...</option>
-                                    <option>São Paulo</option>
-                                    <option>Paraná</option>
-                                    <option>Piauí</option>
-                                </select>
-                                <div class="invalid-feedback">
-                                    Selecione um estado.
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="zip" class="form-label">CEP</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Código de Endereçamento Postal (CEP) necessário.
-                                </div>
+        <!--______↓Signature↓______-->
+        <div class="row row-cols-1 row-cols-md-3 text-center pt-1 p-5" id="signature">
+            <!-- #id:signature → accessibility-jump -->
+            <span class="accessibility-text">Conheça nossos planos: </span>
+            <div class="col">
+                <div class="c-plan__signatures--active card rounded-3 border-dark mb-4">
+                    <div class="c-plan__type card-header text-bg-secondary border-dark py-3">
+                        <h3 class="fw-normal my-0"><span class="accessibility-text">Plano</span>Vip Standard
+                        </h3>
+                    </div>
+                    <div class="c-plan__benefits card-body">
+                        <h3 class="c-plan__price card-title"><span class="accessibility-text">Preço do plano Vip
+                                Standard:</span>R$ 0<small class="c-plan__price--mount fw-light">/mês</small>
+                        </h3>
+                        <ul class="c-plan__list list-unstyled text-start mt-3 mb-4">
+                            <li><span class="accessibility-text">Benefício n° 1 Vip Standard:</span>✓ Agende sem
+                                prioridade em Barbearia</li>
+                            <li><span class="accessibility-text">Benefício n° 2 Vip Standard:</span>✓ Até 20% de
+                                desconto em uma tattoo</li>
+                            <li><span class="accessibility-text">Benefício n° 3 Vip Standard:</span>✓ Preços por
+                                serviço em Barbearia</li>
+                            <li><span class="accessibility-text">Benefício n° 4 Vip Standard:</span>✓ Preços por
+                                serviço em Estúdio</li>
+                            <li><span class="accessibility-text">Benefício n° 5 Vip Standard:</span>✓ Frete
+                                grátis a partir de R$ 89,90</li>
+                        </ul>
+                        <div class="c-plan__btn">
+                            <div class="c-plan__center">
+                                <button class="c-plan__button">
+                                    <svg width="150px" height="40px" viewBox="0 0 160 40" class="c-plan__border">
+                                        <polyline points="159,1 159,39 1,39 1,1 149,1" class="hl-line" />
+                                        <polyline points="159,1 159,39 1,39 1,1 149,1" class="bg-line" />
+                                    </svg>
+                                    <p>Cadastrar-se<span class="accessibility-text">no plano Vip Standard</span>
+                                    </p>
+                                </button>
                             </div>
                         </div>
-
-                        <hr class="my-4">
-
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="same-address">
-                            <label class="form-check-label" for="same-address">O endereço de entrega é o mesmo do meu endereço de cobrança</label>
-                        </div>
-
-                        <div class="form-check">
-                            <input type="checkbox" class="form-check-input" id="save-info">
-                            <label class="form-check-label" for="save-info">Salve esta informação para a próxima vez</label>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <h4 class="mb-3">Pagamento</h4>
-
-                        <div class="my-3">
-                            <div class="form-check">
-                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked
-                                    required>
-                                <label class="form-check-label" for="credit">Cartão de crédito</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                                <label class="form-check-label" for="debit">Cartão de débito</label>
-                            </div>
-                            <div class="form-check">
-                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                                <label class="form-check-label" for="paypal">PayPal</label>
-                            </div>
-                        </div>
-
-                        <div class="row gy-3">
-                            <div class="col-md-6">
-                                <label for="cc-name" class="form-label">Nome no cartão</label>
-                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                                <small class="text-muted">Nome completo conforme exibido no cartão</small>
-                                <div class="invalid-feedback">
-                                    O nome no cartão é obrigatório.
-                                </div>
-                            </div>
-
-                            <div class="col-md-6">
-                                <label for="cc-number" class="form-label">Número do Cartão de Crédito</label>
-                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    O número do cartão de crédito é obrigatório.
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="cc-expiration" class="form-label">Validade</label>
-                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Data de validade necessária.
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="cc-cvv" class="form-label">CVV</label>
-                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                                <div class="invalid-feedback">
-                                    Código de segurança necessário.
-                                </div>
-                            </div>
-                        </div>
-
-                        <hr class="my-4">
-
-                        <button class="w-100 btn btn-primary btn-lg" type="submit">Confirmar</button>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </main>
-    </div>
-    <script language="javascript" src="assets/js/signup.js"></script>
-</body>
+            <div class="col">
+                <div class="c-plan__signatures card rounded-3 border-dark mb-4">
+                    <div class="c-plan__type card-header text-bg-secondary border-dark py-3">
+                        <h3 class="fw-normal my-0"><span class="accessibility-text">Plano</span>Vip Pro</h3>
+                    </div>
+                    <div class="c-plan__benefits card-body">
+                        <h3 class="c-plan__price card-title"><span class="accessibility-text">Preço do plano Vip
+                                Pro:</span>R$ 189,90<small class="c-plan__price--mount fw-light">/mês</small>
+                        </h3>
+                        <ul class="c-plan__list list-unstyled text-start mt-3 mb-4">
+                            <li><span class="accessibility-text">Benefício n° 1 Vip Pro:</span> ✓ Agende com
+                                prioridade em Barbearia</li>
+                            <li><span class="accessibility-text">Benefício n° 2 Vip Pro:</span> ✓ Sorteio em uma
+                                tattoo 100% gratuita</li>
+                            <li><span class="accessibility-text">Benefício n° 3 Vip Pro:</span> ✓ Até 3 pacotes
+                                completos de Barbearia</li>
+                            <li><span class="accessibility-text">Benefício n° 4 Vip Pro:</span> ✓ Qualquer tatoo
+                                com 10% de desconto</li>
+                            <li><span class="accessibility-text">Benefício n° 5 Vip Pro:</span> ✓ Frete grátis a
+                                partir de R$ 29,90</li>
+                        </ul>
+                        <div class="c-plan__btn">
+                            <div class="c-plan__center">
+                                <button class="c-plan__button">
+                                    <svg width="150px" height="40px" viewBox="0 0 160 40" class="c-plan__border">
+                                        <polyline points="159,1 159,39 1,39 1,1 149,1" class="hl-line" />
+                                        <polyline points="159,1 159,39 1,39 1,1 149,1" class="bg-line" />
+                                    </svg>
+                                    <p>Assinar<span class="accessibility-text">plano Vip Pro</span></p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="c-plan__signatures card rounded-3 border-dark mb-4">
+                    <div class="c-plan__type card-header text-bg-secondary border-dark py-3">
+                        <h3 class="fw-normal my-0"><span class="accessibility-text">Plano</span>Vip Premium</h3>
+                    </div>
+                    <div class="c-plan__benefits card-body">
+                        <h3 class="c-plan__price card-title"><span class="accessibility-text">Preço do plano Vip
+                                Premium:</span>R$ 229,90<small class="c-plan__price--mount fw-light">/mês</small>
+                        </h3>
+                        <ul class="c-plan__list list-unstyled text-start mt-3 mb-4">
+                            <li><span class="accessibility-text">Benefício n° 1 Vip Premium:</span> ✓ Agende com
+                                prioridade em Barbearia</li>
+                            <li><span class="accessibility-text">Benefício n° 2 Vip Premium:</span> ✓ Sorteio em
+                                duas tattoo 100% gratuitas</li>
+                            <li><span class="accessibility-text">Benefício n° 3 Vip Premium:</span> ✓ Serviços
+                                ilimitados de Barbearia</li>
+                            <li><span class="accessibility-text">Benefício n° 4 Vip Premium:</span> ✓ Qualquer
+                                tatoo com 25% de desconto</li>
+                            <li><span class="accessibility-text">Benefício n° 5 Vip Premium:</span> ✓ Frete
+                                grátis em nossa Loja</li>
+                        </ul>
+                        <div class="c-plan__btn">
+                            <div class="c-plan__center">
+                                <button class="c-plan__button">
+                                    <svg width="150px" height="40px" viewBox="0 0 160 40" class="c-plan__border">
+                                        <polyline points="159,1 159,39 1,39 1,1 149,1" class="hl-line" />
+                                        <polyline points="159,1 159,39 1,39 1,1 149,1" class="bg-line" />
+                                    </svg>
+                                    <p>Assinar<span class="accessibility-text">plano Vip Premium</span></p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--______↑Signature↑______-->
 
-</html>
+        <div class="c-signup__text container col-xl-10 col-xxl-8">
+            <div class="col-9 col-md-9 col-lg-11 mx-auto">
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Seu primeiro nome é obrigatório.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Sobrenome</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Seu sobrenome nome é obrigatório.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="username" class="form-label">Apelido</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="username" placeholder="Lukinhas" required>
+                                <div class="invalid-feedback">
+                                    Seu nome de usuário é obrigatório.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span
+                                    class="text-muted">(Opcional)</span></label>
+                            <input type="email" class="form-control" id="email" placeholder="user@example.com">
+                            <div class="invalid-feedback">
+                                Insira um endereço de e-mail válido para atualizações de envio.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="address" placeholder="Wall Street, 432"
+                                required>
+                            <div class="invalid-feedback">
+                                Por favor insira seu endereço de entrega.
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Country</label>
+       
