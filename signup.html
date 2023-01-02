@@ -35,7 +35,7 @@
                 <img class="c-signup__logo mt-1 mb-1" src="assets/img/logo-menu.png"
                     alt="logo VipStyle - Loja, Barbearia & Estúdio">
             </a>
-            <h2>Formulário de cadastro</h2>
+            <h2 class="display-5 pt-5">Formulário de cadastro</h2>
             <p class="lead">Selecine um plano e preencha o formulário
             </p>
         </div>
@@ -154,31 +154,33 @@
         </div>
         <!--______↑Signature↑______-->
 
-        <div class="c-signup__text container col-xl-10 col-xxl-8">
-            <div class="col-9 col-md-9 col-lg-11 mx-auto">
+        <div class="container col-xl-10 col-xxl-8">
+            <div class="col-8 col-md-8 col-lg-10 mx-auto">
                 <form class="needs-validation" novalidate>
-                    <div class="row">
+                    <div class="row gy-4">
                         <div class="col-sm-6">
-                            <label for="firstName" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <label for="firstName" class="c-signup__text form-label">Nome</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light" id="firstName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Seu primeiro nome é obrigatório.
                             </div>
                         </div>
 
                         <div class="col-sm-6">
-                            <label for="lastName" class="form-label">Sobrenome</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <label for="lastName" class="c-signup__text form-label">Sobrenome</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light"
+                                id="lastName" placeholder="" value="" required>
                             <div class="invalid-feedback">
                                 Seu sobrenome nome é obrigatório.
                             </div>
                         </div>
 
                         <div class="col-12">
-                            <label for="username" class="form-label">Apelido</label>
+                            <label for="username" class="c-signup__text form-label">Apelido</label>
                             <div class="input-group has-validation">
                                 <span class="input-group-text">@</span>
-                                <input type="text" class="form-control" id="username" placeholder="Lukinhas" required>
+                                <input type="text" class="form-control bg-transparent border-secondary text-light"
+                                    id="username" placeholder="Lukinhas" required>
                                 <div class="invalid-feedback">
                                     Seu nome de usuário é obrigatório.
                                 </div>
@@ -186,18 +188,19 @@
                         </div>
 
                         <div class="col-12">
-                            <label for="email" class="form-label">Email <span
+                            <label for="email" class="c-signup__text form-label">Email <span
                                     class="text-muted">(Opcional)</span></label>
-                            <input type="email" class="form-control" id="email" placeholder="user@example.com">
+                            <input type="email" class="form-control bg-transparent border-secondary text-light"
+                                id="email" placeholder="user@example.com">
                             <div class="invalid-feedback">
                                 Insira um endereço de e-mail válido para atualizações de envio.
                             </div>
                         </div>
 
                         <div class="col-12">
-                            <label for="address" class="form-label">Endereço</label>
-                            <input type="text" class="form-control" id="address" placeholder="Wall Street, 432"
-                                required>
+                            <label for="address" class="c-signup__text form-label">Endereço</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light"
+                                id="address" placeholder="Wall Street, 432" required>
                             <div class="invalid-feedback">
                                 Por favor insira seu endereço de entrega.
                             </div>
@@ -205,5 +208,117 @@
 
 
                         <div class="col-md-5">
-                            <label for="country" class="form-label">Country</label>
-       
+                            <label for="country" class="c-signup__text form-label">Country</label>
+                            <select class="form-select bg-transparent border-secondary text-light" id="country" required>
+                                <option value="">Selecione...</option>
+                                <option>Brasil</option>
+                                <option>Canadá</option>
+                                <option>Estados Unidos</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Selecione um país.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="c-signup__text form-label">State</label>
+                            <select class="form-select bg-transparent border-secondary text-light" id="state" required>
+                                <option value="">Selecione...</option>
+                                <option>São Paulo</option>
+                                <option>Paraná</option>
+                                <option>Piauí</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Selecione um estado.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="c-signup__text form-label">CEP</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Código de Endereçamento Postal (CEP) necessário.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input bg-transparent border-secondary text-light" id="same-address">
+                        <label class="c-signup__text form-check-label" for="same-address">O endereço de entrega é o mesmo do meu
+                            endereço de cobrança</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input bg-transparent border-secondary text-light" id="save-info">
+                        <label class="c-signup__text form-check-label" for="save-info">Salve esta informação para a próxima vez</label>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="c-signup__text mb-3">Pagamento</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input bg-transparent border-secondary text-light" checked
+                                required>
+                            <label class="c-signup__text form-check-label" for="credit">Cartão de crédito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input bg-transparent border-secondary text-light" required>
+                            <label class="c-signup__text form-check-label" for="debit">Cartão de débito</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="paypal" name="paymentMethod" type="radio" class="form-check-input bg-transparent border-secondary text-light" required>
+                            <label class="c-signup__text form-check-label" for="paypal">PayPal</label>
+                        </div>
+                    </div>
+
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <label for="cc-name" class="c-signup__text form-label">Nome no cartão</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light" id="cc-name" placeholder="" required>
+                            <small class="text-muted">Nome completo conforme exibido no cartão</small>
+                            <div class="invalid-feedback">
+                                O nome no cartão é obrigatório.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="cc-number" class="c-signup__text form-label">Número do Cartão</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light" id="cc-number" placeholder="" required>
+                            <div class="invalid-feedback">
+                                O número do cartão é obrigatório.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-expiration" class="c-signup__text form-label">Validade</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light" id="cc-expiration" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Data de validade necessária.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="c-signup__text form-label">CVV</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light" id="cc-cvv" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Código de segurança necessário.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="w-100 btn btn-dark btn-lg" type="submit">Confirmar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    </div>
+    <script language="javascript" src="assets/js/signup.js"></script>
+</body>
+
+</html>
