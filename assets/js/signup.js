@@ -17,3 +17,11 @@
     }, false)
   })
 })()
+
+
+
+// Substituir JQuery por React ↓ (cirar novo arquivo .js so para isso)
+$("#select-1, #select-2").click(function(){
+  alert("ao clicar, mudar a estilização do card e fazer aparecer o campo de pagamento. → usar React, não com JQuery...");
+  // code
+})
