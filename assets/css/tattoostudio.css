@@ -1,0 +1,25 @@
+/*_________↓Featured Services↓_________*/
+/* → arquivo style.css*/
+
+/*___↓Barber Shop↓___*/
+/* → arquivo barbershop.css*/
+/*___↑Barber Shop↑___*/
+
+/*___↓Tattoo Studio↓___*/
+.c-services__studio {
+  background: linear-gradient(
+    90deg,
+    rgba(21, 0, 36, 1) 0%,
+    rgba(68, 0, 115, 1) 53%,
+    rgba(119, 0, 204, 1) 100%
+  );
+}
+
+.c-services__studio:hover {
+  border: 0.5px solid #9900ff;
+  box-shadow: 0px 0px 10px #9900ff;
+  transition: 0.5s all;
+}
+
+/*___↑Tattoo Studio↑___*/
+/*_________↑Featured Services↑_________*/

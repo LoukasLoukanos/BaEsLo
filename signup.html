@@ -33,6 +33,13 @@
 </head>
 
 <body class="c-signup google-fonts text-light">
+
+    <!-- accessibility-jump -->
+    <a href="signin.html" class="accessibility-jump">Ir para a seção de sign in (caso ja seja cadastrado)</a>
+    <a href="barbershop.html" class="accessibility-jump">Ir para a página da barbearia</a>
+    <a href="tattoostudio.html" class="accessibility-jump">Ir para a página da tatuagem</a>
+    <a href="store.html" class="accessibility-jump">Ir para a página da loja</a>
+
     <main>
         <div class="text-center pt-5 pb-5">
             <a class="navbar-brand" href="index.html">
@@ -45,7 +52,8 @@
         </div>
 
         <!--______↓Signature↓______-->
-        <div class="row row-cols-1 row-cols-md-3 text-center px-lg-5 mx-lg-5 px-md-3 mx-md-3 px-sm-5 mx-sm-5" id="signature">
+        <div class="row row-cols-1 row-cols-md-3 text-center px-lg-5 mx-lg-5 px-md-3 mx-md-3 px-sm-5 mx-sm-5 mb-4"
+            id="signature">
             <!-- #id:signature → accessibility-jump -->
             <span class="accessibility-text">Conheça nossos planos: </span>
             <div class="col">
@@ -225,7 +233,7 @@
                     <!--______↑Form of payment↑ (Fazer aparecer apenas quando se escolher um card de assinatura)______-->
 
                     <hr class="my-5">
-                    
+
                     <div class="row gy-4">
                         <div class="col-sm-4">
                             <label for="firstName" class="c-signup__text form-label">Nome</label>
@@ -247,7 +255,7 @@
 
                         <div class="col-sm-4">
                             <label for="username" class="c-signup__text form-label">Apelido <span
-                                class="text-muted">(Opcional)</span></label>
+                                    class="text-muted">(Opcional)</span></label>
                             <div class="input-group has-validation">
                                 <span class="input-group-text text-light bg-dark border-secondary">@</span>
                                 <input type="text" class="form-control bg-transparent border-secondary text-light"
@@ -267,8 +275,8 @@
                         <div class="col-md-6">
                             <label for="phone" class="c-signup__text form-label">Telefone <span
                                     class="text-muted">(Opcional)</span></label>
-                            <input type="tel" class="form-control bg-transparent border-secondary text-light"
-                                id="phone" placeholder="(xx) xxxxx-xxxx" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+                            <input type="tel" class="form-control bg-transparent border-secondary text-light" id="phone"
+                                placeholder="(xx) xxxxx-xxxx" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
                             <div class="invalid-feedback">
                                 Insira um número de telefone válido para atualizações de envio.
                             </div>

@@ -1,0 +1,28 @@
+/*_________↓Featured Products↓_________*/
+.c-products {
+  background: #0f0f0f;
+}
+
+.c-products__title {
+  animation: neon-orange 2s ease-in-out infinite alternate;
+  color: rgba(255, 94, 30, 1);
+  font-weight: bold;
+}
+
+@keyframes neon-orange {
+  from {
+    text-shadow: 0px 0px 30px rgba(255, 94, 30, 1),
+      0px 0px 18px rgba(255, 94, 30, 1);
+  }
+
+  to {
+    text-shadow: 0 0 6px rgba(255, 94, 30, 1), 0 0 6px rgba(255, 94, 30, 1),
+      0 0 6px rgba(255, 94, 30, 1);
+  }
+}
+
+.c-products__cards {
+  cursor: pointer;
+}
+
+/*_________↑Featured Products↑_________*/
