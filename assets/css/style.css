@@ -41,24 +41,32 @@
 }
 
 .c-menu__logo {
-  animation: menu-logo 3s infinite alternate;
+  animation: menu-logo 6s infinite alternate;
 }
 
 @keyframes menu-logo {
   0% {
-    filter: drop-shadow(0px 0px 6px rgba(195, 79, 47, 1));
+    filter: drop-shadow(0px 0px 6px rgba(195, 79, 47, 1)) brightness(111%);
+  }
+
+  60% {
+    filter: drop-shadow(0px 0px 30px rgba(255, 94, 30, 1)) brightness(180%);
+  }
+
+  66% {
+    filter: drop-shadow(0px 0px 6px rgba(255, 94, 30, 1)) brightness(132%);
   }
 
   72% {
-    filter: drop-shadow(0px 0px 30px rgba(255, 94, 30, 1));
+    filter: drop-shadow(0px 0px 30px rgba(255, 94, 30, 1)) brightness(180%);
   }
 
   90% {
-    filter: drop-shadow(0px 0px 6px rgba(255, 94, 30, 1));
+    filter: drop-shadow(0px 0px 6px rgba(255, 94, 30, 1)) brightness(132%);
   }
 
   100% {
-    filter: drop-shadow(0px 0px 0px rgb(255, 180, 160));
+    filter: drop-shadow(0px 0px 0px rgb(255, 180, 160)) brightness(210%);
   }
 }
 
