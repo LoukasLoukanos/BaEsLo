@@ -20,6 +20,89 @@
   box-shadow: 0px 0px 10px #9900ff;
   transition: 0.5s all;
 }
-
 /*___↑Tattoo Studio↑___*/
 /*_________↑Featured Services↑_________*/
+
+/*_________↓Form↓_________*/
+/*_______↓retornar da webstorage informações do usuário da área de signup↓_______*/
+
+/*_______↑retornar da webstorage informações do usuário da área de signup↑_______*/
+
+.c-form {
+  background: linear-gradient(
+    90deg,
+    rgba(21, 0, 36, 1) 0%,
+    rgba(68, 0, 115, 1) 63%,
+    rgba(119, 0, 204, 1) 100%
+  );
+}
+
+form {
+  color: #f0f0f0;
+  padding: 10px 0 20px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padrao {
+  background: #000000;
+  border-radius: 10px;
+  color: #f0f0f0;
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  background: #5f5f5f;
+  width: 27%;
+  padding: 9px 0;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 18px;
+  transition: 1s all;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  color: #c78c19;
+  text-shadow: 2px 2px 5px #c78c19;
+  background: #000000;
+  );
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0 3px 30px #ffffff;
+
+  /*animação do gradiente*/
+  animation: animateBg 9s infinite linear;
+  background-size: 120% 100%;
+}
+
+table {
+  margin: 0px 0 0px;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
+/*_________↑Form↑_________*/
