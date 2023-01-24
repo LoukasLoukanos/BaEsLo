@@ -3,9 +3,9 @@
 
 /*___↓Barber Shop↓___*/
 .c-services__barber li {
-  border: 0.5px solid #9900ff;
+  border: 0.5px solid var(--color06);
   border-radius: 12px;
-  box-shadow: 0px 0px 6px #9900ff;
+  box-shadow: 0px 0px 6px var(--color06);
   box-sizing: border-box;
   /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
   display: inline-block;
@@ -16,15 +16,15 @@
 }
 
 .c-services__barber li:hover {
-  box-shadow: 0px 0px 30px #9900ff;
+  box-shadow: 0px 0px 30px var(--color06);
   cursor: pointer;
-  text-shadow: 3px 3px 6px #000000;
+  text-shadow: 3px 3px 6px var(--color11);
   transform: scale(1.04);
   transition: 0.5s all;
 }
 
 .c-services__barber li:active {
-  border-color: green;
+  border-color: var(--color08);
 }
 
 .services__barber a {
@@ -34,7 +34,7 @@
 .c-services__barber-cards {
   background-repeat: no-repeat;
   background-size: 105% 105%;
-  color: #000000;
+  color: var(--color11);
   height: 360px;
   width: 315px;
 }
@@ -44,27 +44,27 @@
 }
 
 #images-hair {
-  background-image: url("images/corte_front.jpg");
+  background-image: url("../img/barber/corte_front.jpg");
 }
 
 #images-hair:hover {
-  background-image: url("images/corte_back.jpg");
+  background-image: url("../img/barber/corte_back.jpg");
 }
 
 #images-beard {
-  background-image: url("images/barba_front.jpg");
+  background-image: url("../img/barber/barba_front.jpg");
 }
 
 #images-beard:hover {
-  background-image: url("images/barba_back.jpg");
+  background-image: url("../img/barber/barba_back.jpg");
 }
 
 #images-full {
-  background-image: url("images/completo_front.jpg");
+  background-image: url("../img/barber/completo_front.jpg");
 }
 
 #images-full:hover {
-  background-image: url("images/completo_back.jpg");
+  background-image: url("../img/barber/completo_back.jpg");
 }
 
 .c-services__barber-hair {
@@ -100,14 +100,14 @@
 .c-form {
   background: linear-gradient(
     90deg,
-    rgba(21, 0, 36, 1) 0%,
-    rgba(68, 0, 115, 1) 63%,
-    rgba(119, 0, 204, 1) 100%
+    var(--color01) 0%,
+    var(--color04) 63%,
+    var(--color05) 100%
   );
 }
 
 form {
-  color: #f0f0f0;
+  color: var(--color17);
   padding: 10px 0 20px 0;
 }
 
@@ -119,9 +119,9 @@ form legend {
 }
 
 .input-padrao {
-  background: #000000;
+  background: var(--color11);
   border-radius: 10px;
-  color: #f0f0f0;
+  color: var(--color17);
   display: block;
   margin: 0 0 20px;
   padding: 10px 25px;
@@ -269,7 +269,7 @@ thead {
 
 td,
 th {
-  border: 1px solid #000000;
+  border: 1px solid var(--color11);
   padding: 8px 15px;
 }
 
