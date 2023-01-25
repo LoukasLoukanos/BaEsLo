@@ -1,7 +1,7 @@
 .c-signin,
 .c-signup {
   background: linear-gradient(
-    120deg,
+    135deg,
     var(--color08) 0%,
     var(--color07) 3%,
     var(--color04) 33%,
@@ -11,7 +11,17 @@
 
 .c-signin__logo,
 .c-signup__logo {
-  filter: drop-shadow(0px 0px 45px var(--color08));
+  animation: login-logo 1.5s infinite alternate;
+}
+
+@keyframes login-logo {
+  0% {
+    filter: drop-shadow(0px 0px 3px var(--color07)) brightness(150%);
+  }
+
+  100% {
+    filter: drop-shadow(0px 0px 0px var(--color07)) brightness(210%);
+  }
 }
 
 .c-signin__box {
@@ -30,7 +40,7 @@
 
 .c-signup__title {
   color: var(--color09);
-  text-shadow: 0px 0px 69px var(--color08);
+  text-shadow: 0px 0px 60px var(--color08);
 }
 
 /*_________↓Customer Plan↓_________*/
@@ -76,6 +86,7 @@
   opacity: 1;
   transform: scale(1.17);
   transition: 0.3s all;
+  z-index:1;
 }
 
 .c-plan__signatures--active {
@@ -84,6 +95,7 @@
   color: var(--color13);
   filter: blur(0px);
   scale: 0.936;
+  z-index:1;
 }
 
 @keyframes signatures-active {

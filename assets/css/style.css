@@ -134,6 +134,10 @@
   background: var(--color11);
 }
 
+.c-carousel__text {
+  color: var(--color17);
+}
+
 /*_________↓Presentation↓_________*/
 .c-presentation {
   background: var(--color11);
@@ -481,11 +485,14 @@
 }
 
 .c-footer__social,
+.c-footer__contact,
 .c-footer__copy {
   color: var(--color15);
+  text-decoration: none;
 }
 
-.c-footer__social:hover {
+.c-footer__social:hover,
+.c-footer__contact:hover {
   color: var(--color09);
   filter: drop-shadow(0px 0px 3px var(--color08));
   scale: 1.3;
