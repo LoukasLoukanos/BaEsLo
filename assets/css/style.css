@@ -137,6 +137,7 @@
 .c-carousel__text {
   color: var(--color17);
 }
+/*_________↑Menu↑_________*/
 
 /*_________↓Presentation↓_________*/
 .c-presentation {
@@ -201,37 +202,6 @@
   100% {
     margin-left: 0%;
     width: 100%;
-  }
-}
-
-.c-presentation__icon {
-  animation: ico_move 2s ease-in-out infinite alternate;
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 12%;
-  margin: 0px;
-  padding: 0px;
-  position: relative;
-  width: 100%;
-}
-
-@keyframes ico_move {
-  0% {
-    left: 550px;
-    height: 0%;
-    opacity: 0;
-  }
-
-  20% {
-    left: 550px;
-    height: 8%;
-    opacity: 0;
-  }
-
-  100% {
-    left: 400px;
-    height: 12%;
-    opacity: 0.5;
   }
 }
 
@@ -310,62 +280,6 @@
   background-image: url("../img/ico/store_ico/l_icon5.png");
 }
 
-.c-presentation__circle {
-  animation: images_circle 2s ease-in-out infinite alternate;
-  background-repeat: no-repeat;
-  border-radius: 100%;
-  display: inline-block;
-  height: 500px;
-  position: relative;
-  scale: 0.8;
-  vertical-align: top;
-  width: 500px;
-}
-
-@keyframes images_circle {
-  0% {
-    filter: brightness(111%);
-    left: -200px;
-    transform: scale(1) rotate(6deg) rotateY(-18deg);
-    opacity: 1;
-    border: 6px solid var(--color09);
-    box-shadow: inset 0 0 40px var(--color09), 0 0 40px var(--color09);
-    outline: 1px solid;
-    outline-color: var(--color09);
-    outline-offset: 40px;
-  }
-
-  25% {
-    filter: brightness(95%);
-    left: -200px;
-    transform: scale(0.9) rotate(6deg) rotateY(18deg);
-    opacity: 1;
-    border: 1px solid var(--color17);
-    box-shadow: inset 0 0 20px var(--color17), 0 0 20px var(--color17);
-    outline-color: var(--color17);
-    outline-offset: 15px;
-  }
-
-  60% {
-    filter: brightness(90%);
-    left: -50px;
-    transform: scale(0.8) rotate(0deg);
-    opacity: 0.9;
-    border: 2px solid var(--color17);
-  }
-
-  100% {
-    filter: brightness(90%);
-    left: -50px;
-    transform: scale(0.8) rotate(4deg);
-    opacity: 0.9;
-    border: 1px solid var(--color17);
-    outline: 18px solid;
-    outline-color: var(--color17);
-    outline-offset: 12px;
-  }
-}
-
 #img-circle-A {
   background-image: url("../img/circuloA.jpg");
 }
@@ -377,6 +291,113 @@
 #img-circle-C {
   background-image: url("../img/circuloC.jpg");
 }
+
+/*Layout para tela PP: mín <= tela < 576px */
+@media only screen and (max-width: 575px) {
+	/*seletores*/
+}
+
+/*Layout para tela P:  576px <= tela < 768px */
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+	/*seletores*/
+}
+
+/*Layout para tela M:  768px <= tela < 992px */
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	/*seletores*/
+}
+
+/*Layout para tela G:  992px <= tela < ... */
+@media only screen and (min-width: 992px) {
+	.c-presentation__icon {
+    animation: ico_move 2s ease-in-out infinite alternate;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 12%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+  }
+  
+  @keyframes ico_move {
+    0% {
+      left: 550px;
+      height: 0%;
+      opacity: 0;
+    }
+  
+    20% {
+      left: 550px;
+      height: 8%;
+      opacity: 0;
+    }
+  
+    100% {
+      left: 400px;
+      height: 12%;
+      opacity: 0.5;
+    }
+  }
+
+  .c-presentation__circle {
+    animation: images_circle 2s ease-in-out infinite alternate;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    display: inline-block;
+    height: 500px;
+    position: relative;
+    scale: 0.8;
+    vertical-align: top;
+    width: 500px;
+  }
+  
+  @keyframes images_circle {
+    0% {
+      filter: brightness(111%);
+      left: -200px;
+      transform: scale(1) rotate(6deg) rotateY(-18deg);
+      opacity: 1;
+      border: 6px solid var(--color09);
+      box-shadow: inset 0 0 40px var(--color09), 0 0 40px var(--color09);
+      outline: 1px solid;
+      outline-color: var(--color09);
+      outline-offset: 40px;
+    }
+  
+    25% {
+      filter: brightness(95%);
+      left: -200px;
+      transform: scale(0.9) rotate(6deg) rotateY(18deg);
+      opacity: 1;
+      border: 1px solid var(--color17);
+      box-shadow: inset 0 0 20px var(--color17), 0 0 20px var(--color17);
+      outline-color: var(--color17);
+      outline-offset: 15px;
+    }
+  
+    60% {
+      filter: brightness(90%);
+      left: -50px;
+      transform: scale(0.8) rotate(0deg);
+      opacity: 0.9;
+      border: 2px solid var(--color17);
+    }
+  
+    100% {
+      filter: brightness(90%);
+      left: -50px;
+      transform: scale(0.8) rotate(4deg);
+      opacity: 0.9;
+      border: 1px solid var(--color17);
+      outline: 18px solid;
+      outline-color: var(--color17);
+      outline-offset: 12px;
+    }
+  }
+}
+
+/*_________↑Presentation↑_________*/
 
 /*_________↓Featured Services↓_________*/
 
