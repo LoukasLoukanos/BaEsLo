@@ -6,6 +6,56 @@
 /*___↑Barber Shop↑___*/
 
 /*___↓Tattoo Studio↓___*/
+/*↓for index↓*/
+#c-services__carousel {
+  width: 1100px;
+  height: 500px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  background: #000000;
+  border-radius: 100%;
+}
+
+#c-services__slidesContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+}
+
+.c-services__slide {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+}
+
+.c-services__tattoo {
+    margin: 0px 100px 0px 0px;
+    scale: 0.8;
+    border-radius: 100%;
+    z-index:1;
+}
+
+.c-services__tattoo--back {
+    margin: 0px 100px 0px 0px;
+    position: absolute;
+    scale: 1.2;
+    display: flex;
+    filter: blur(6px);
+}
+
+.c-services__tattoo--back:hover {
+    filter: blur(0px);
+    z-index:1;
+    transition: 1.2s all;
+}
+/*↑for index↑*/
+
 .c-services__studio {
   background: linear-gradient(
     90deg,
