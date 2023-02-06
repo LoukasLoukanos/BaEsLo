@@ -6,7 +6,7 @@
 /*___↑Barber Shop↑___*/
 
 /*___↓Tattoo Studio↓___*/
-/*↓for index↓*/
+/*↓for index.html↓*/
 #c-services__carousel {
   background: var(--color11);
   border-radius: 18% 18% 30% 30%;
@@ -52,13 +52,16 @@
   z-index: 1;
 }
 
-.c-services__tattoo--back:hover {
+.c-services__tattoo:hover, .c-services__tattoo--back:hover {
+  border-radius: 0%;
   filter: blur(0px);
-  transition: 1.2s all;
+  opacity: 1;
+  scale: 1.2;
+  transition: 0.9s all;
   z-index: 3;
 }
 
-/*↑for index↑*/
+/*↑for index.html↑*/
 
 .c-services__studio {
   background: linear-gradient(
