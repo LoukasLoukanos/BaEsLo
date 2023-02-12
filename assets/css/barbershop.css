@@ -2,6 +2,79 @@
 /* → arquivo style.css*/
 
 /*___↓Barber Shop↓___*/
+.c-services__barbershop {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.c-services__main {
+  width: 600px;
+  height: 500px;
+}
+
+.c-services__box {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.c-services__collection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.c-services__cards {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+#radio-card-01:checked ~ .c-services__collection #card-03,
+#radio-card-02:checked ~ .c-services__collection #card-01,
+#radio-card-03:checked ~ .c-services__collection #card-02 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#radio-card-01:checked ~ .c-services__collection #card-02,
+#radio-card-02:checked ~ .c-services__collection #card-03,
+#radio-card-03:checked ~ .c-services__collection #card-01 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#radio-card-01:checked ~ .c-services__collection #card-01,
+#radio-card-02:checked ~ .c-services__collection #card-02,
+#radio-card-03:checked ~ .c-services__collection #card-03 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+#radio-card-01:checked ~ .c-services__collection #card-01 img,
+#radio-card-02:checked ~ .c-services__collection #card-02 img,
+#radio-card-03:checked ~ .c-services__collection #card-03 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
 .c-services__barber li {
   border: 0.5px solid var(--color06);
   border-radius: 12px;
