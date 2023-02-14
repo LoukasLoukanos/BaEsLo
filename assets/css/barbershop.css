@@ -8,19 +8,10 @@
   justify-content: center;
 }
 
-.c-services__main {
-  width: 600px;
-  height: 500px;
-}
-
 .c-services__box {
-  width: 100%;
-  height: 100%;
+  height: 500px;
+  width: 600px;
   transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 input[type="radio"] {
@@ -28,22 +19,27 @@ input[type="radio"] {
 }
 
 .c-services__collection {
-  position: relative;
   width: 100%;
   height: 100%;
-  margin-bottom: 10px;
-  margin-top: 10px;
 }
 
 .c-services__cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   width: 60%;
   height: 100%;
+  top: 0;
   left: 0;
   right: 0;
   margin: auto;
-  transition: transform 0.4s ease;
   cursor: pointer;
+}
+
+.c-services__collection:hover {
+  color: #ff3a09;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-03,
@@ -52,6 +48,7 @@ input[type="radio"] {
   transform: translatex(-40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
+  transition: transform 0.4s ease;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-02,
@@ -60,6 +57,7 @@ input[type="radio"] {
   transform: translatex(40%) scale(0.8);
   opacity: 0.4;
   z-index: 0;
+  transition: transform 0.4s ease;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-01,
@@ -68,6 +66,7 @@ input[type="radio"] {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
+  transition: transform 0.4s ease;
 }
 #radio-card-01:checked ~ .c-services__collection #card-01 img,
 #radio-card-02:checked ~ .c-services__collection #card-02 img,
@@ -75,36 +74,13 @@ input[type="radio"] {
   box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }
 
-.c-services__barber li {
+.c-services__img {
   border: 0.5px solid var(--color06);
   border-radius: 12px;
   box-shadow: 0px 0px 6px var(--color06);
-  box-sizing: border-box;
-  /*box-sizing: border-box; indica que o tamanho levará em conta todo o conteúdo (width será a soma do conteúdo com a borda e o padding)*/
-  display: inline-block;
-  margin: 15px;
   padding: 0px;
   text-align: center;
   vertical-align: top;
-}
-
-.c-services__barber li:hover {
-  box-shadow: 0px 0px 30px var(--color06);
-  cursor: pointer;
-  text-shadow: 3px 3px 6px var(--color11);
-  transform: scale(1.04);
-  transition: 0.5s all;
-}
-
-.c-services__barber li:active {
-  border-color: var(--color08);
-}
-
-.services__barber a {
-  text-decoration: none;
-}
-
-.c-services__barber-cards {
   background-repeat: no-repeat;
   background-size: 105% 105%;
   color: var(--color11);
@@ -112,28 +88,24 @@ input[type="radio"] {
   width: 315px;
 }
 
-.c-services__barber-cards:hover {
-  color: #ff3a09;
+.c-services__img:hover {
+  box-shadow: 0px 0px 30px var(--color06);
+  cursor: pointer;
+  text-shadow: 3px 3px 6px var(--color11);
+  transform: scale(1.04);
+  transition: 0.5s all;
 }
 
-#images-hair {
-  background-image: url("../img/barber/corte_front.jpg");
+.c-services__img:active {
+  border-color: var(--color08);
 }
 
 #images-hair:hover {
   background-image: url("../img/barber/corte_back.jpg");
 }
 
-#images-beard {
-  background-image: url("../img/barber/barba_front.jpg");
-}
-
 #images-beard:hover {
   background-image: url("../img/barber/barba_back.jpg");
-}
-
-#images-full {
-  background-image: url("../img/barber/completo_front.jpg");
 }
 
 #images-full:hover {
@@ -143,19 +115,19 @@ input[type="radio"] {
 .c-services__barber-hair {
   font-size: 30px;
   font-weight: bold;
-  padding-top: 5px;
+  /*padding-top: 5px;*/
 }
 
 .c-services__barber-description {
   font-size: 21px;
   font-weight: bold;
-  margin-top: 190px;
+  /*margin-top: 190px;*/
 }
 
 .c-services__barber-price {
   font-size: 22px;
   font-weight: bold;
-  margin-top: 10px;
+  /*margin-top: 10px;*/
 }
 
 /*___↑Barber Shop↑___*/
