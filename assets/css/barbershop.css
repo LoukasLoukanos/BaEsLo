@@ -1,7 +1,27 @@
 /*_________↓Featured Services↓_________*/
-/* → arquivo style.css*/
 
 /*___↓Barber Shop↓___*/
+.c-services {
+  background: var(--color11);
+}
+
+.c-services__title {
+  animation: neon-roxo 2s ease-in-out infinite alternate;
+  color: var(--color06);
+  font-weight: bold;
+}
+
+@keyframes neon-roxo {
+  from {
+    text-shadow: 0px 0px 30px var(--color06), 0px 0px 18px var(--color06);
+  }
+
+  to {
+    text-shadow: 0 0 6px var(--color06), 0 0 6px var(--color06),
+      0 0 6px var(--color06);
+  }
+}
+
 .c-services__barbershop {
   align-items: center;
   display: flex;
@@ -45,15 +65,7 @@ input[type="radio"] {
   z-index: 0;
   transition: transform 0.6s ease;
   text-indent: -9999px;
-}
-
-#radio-card-01:checked ~ .c-services__collection #card-03 #images-full,
-#radio-card-01:checked ~ .c-services__collection #card-02 #images-beard,
-#radio-card-02:checked ~ .c-services__collection #card-01 #images-hair,
-#radio-card-02:checked ~ .c-services__collection #card-03 #images-full,
-#radio-card-03:checked ~ .c-services__collection #card-02 #images-beard,
-#radio-card-03:checked ~ .c-services__collection #card-01 #images-hair {
-  border-radius: 21px 21px 30% 30%;
+  margin-top: 21px;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-02,
@@ -64,6 +76,19 @@ input[type="radio"] {
   z-index: 0;
   transition: transform 0.6s ease;
   text-indent: -9999px;
+  margin-top: 21px;
+}
+
+#radio-card-01:checked ~ .c-services__collection #card-03 #images-full,
+#radio-card-01:checked ~ .c-services__collection #card-02 #images-beard,
+#radio-card-02:checked ~ .c-services__collection #card-01 #images-hair,
+#radio-card-02:checked ~ .c-services__collection #card-03 #images-full,
+#radio-card-03:checked ~ .c-services__collection #card-02 #images-beard,
+#radio-card-03:checked ~ .c-services__collection #card-01 #images-hair {
+  border-radius: 21px 21px 30% 30%;
+  border: 0.5px solid #ff3a09;
+  border-bottom: 0.5px solid var(--color06);
+  box-shadow: 0px -9px 18px var(--color06), 0px 9px 18px #ff3a09;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-01,
@@ -73,12 +98,14 @@ input[type="radio"] {
   opacity: 1;
   z-index: 1;
   transition: transform 0.6s ease;
-  color: #ff3a09;
-  background: #000000;
+  color: #000000;
   border-radius: 21px 21px 12% 12%;
-  box-shadow: 0px 0px 6px #ff3a09;
-  border: 0.5px solid #ff3a09;
+  background: #ff3a09;
   cursor: pointer;
+  border: 0.5px solid #ff3a09;
+  border-top: 0.5px solid var(--color06);
+  box-shadow: 0px 3px 6px #ff3a09, 0px -3px 9px var(--color06);
+  text-shadow: 0px 0px 3px #000000;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-01:hover,
@@ -86,9 +113,19 @@ input[type="radio"] {
 #radio-card-03:checked ~ .c-services__collection #card-03:hover {
   transform: scale(1.04);
   transition: transform 0.6s ease;
-  color: var(--color06);
-  box-shadow: 1px 1px 18px var(--color06);
-  border: 0.5px solid var(--color06);
+  text-shadow: 1px 1px 3px #000000;
+}
+
+#radio-card-01:checked ~ .c-services__collection #card-01 #images-hair::before,
+#radio-card-02:checked ~ .c-services__collection #card-02 #images-beard::before,
+#radio-card-03:checked ~ .c-services__collection #card-03 #images-full::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 360px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 51%, #ff3a09 100%);
 }
 
 .c-services__img {
