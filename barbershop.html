@@ -134,68 +134,59 @@
 
 					<div class="c-services__collection">
 						<div class="pt-3">
-							<figure>
-								<figcaption class="c-services__cards" id="card-01">
-									<label for="radio-card-01">
-										<img class="c-services__img" src="assets/img/barber/corte_front.jpg"
-											alt="Corte de cabelo masculino" id="images-hair">
-									</label>
+							<!-- Por mais que as tags img e figure sejam úteis para especificar o conteúdo da imagem e seu significado semântico, 
+								elas são mais limitadas em comparação com as tags div e span que são elementos de bloco e de linha, respectivamente, 
+								os quais permitem que se defina a própria estrutura e estilo e, para o contexto a seguir, foi excencial, uma vez que
+							    não é possível usar a propriedade 'content' com a tag <img> para inserir um conteúdo diferente quando um 'hover' 
+								é aplicado com a propriedade 'transition', pois 'content' não faz parte das propriedades animáveis. Também não 
+								se pode usar a propriedade 'background-image' diretamente em uma tag <img>, pois a propriedade background-image é 
+								aplicável a elementos que possuem um "espaço" para preencher com uma imagem de fundo, como <div>, <section>, <article>, 
+								entre outros. Já a tag <img> não possui um espaço de fundo onde uma imagem pode ser exibida como imagem de fundo. -->
+							<div class="c-services__figure" id="card-01"> <!-- no lugar de <figure> -->
+								<label for="radio-card-01">
+									<div class="c-services__img" id="images-hair"></div>
+								</label>
+								<div class="c-services__figcaption"> <!-- no lugar de <figcaption> -->
 									<h2 class="c-services__barber-hair">Cabelo</h2>
 									<p class="c-services__barber-description">Cortes profissionais</p>
-									<p class="c-services__barber-price"><span class="accessibility-text">
-											Preço dos serviços de cortes de cabelo: </span>R$ 32,90
+									<p class="c-services__barber-price">
+										<span class="accessibility-text">
+											Preço dos serviços de cortes de cabelo:
+										</span>
+										R$ 32,90
 									</p>
-								</figcaption>
-							</figure>
-							<figure>
-								<figcaption class="c-services__cards" id="card-02">
-									<label for="radio-card-02">
-										<img class="c-services__img" src="assets/img/barber/barba_front.jpg"
-											alt="Corte de cabelo masculino" id="images-beard">
-									</label>
-									<h2 class="c-services__barber-hair">Cabelo</h2>
-									<p class="c-services__barber-description">Cortes profissionais</p>
-									<p class="c-services__barber-price"><span class="accessibility-text">
-											Preço dos serviços de cortes de cabelo: </span>R$ 32,90
-									</p>
-								</figcaption>
-							</figure>
-							<figure>
-								<figcaption class="c-services__cards" id="card-03">
-									<label for="radio-card-03">
-										<img class="c-services__img" src="assets/img/barber/completo_front.jpg"
-											alt="Corte de cabelo masculino" id="images-full">
-									</label>
-									<h2 class="c-services__barber-hair">Cabelo</h2>
-									<p class="c-services__barber-description">Cortes profissionais</p>
-									<p class="c-services__barber-price"><span class="accessibility-text">
-											Preço dos serviços de cortes de cabelo: </span>R$ 32,90
-									</p>
-								</figcaption>
-							</figure>
-
-
-							<!--
-							<label class="c-services__cards" for="radio-card-02" id="card-02">
-								<div class="c-services__barber-cards" id="images-beard">
+								</div>
+							</div>
+							<div class="c-services__figure" id="card-02">
+								<label for="radio-card-02">
+									<div class="c-services__img" id="images-beard"></div>
+								</label>
+								<div class="c-services__figcaption">
 									<h2 class="c-services__barber-hair">Barba</h2>
 									<p class="c-services__barber-description">Corte e reparo de barba</p>
-									<p class="c-services__barber-price"><span class="accessibility-text">Preço dos
-											serviços
-											de
-											barba: </span>R$ 19,90</p>
+									<p class="c-services__barber-price">
+										<span class="accessibility-text">
+											Preço dos serviços de cortes de barba:
+										</span>
+										R$ 19,90
+									</p>
 								</div>
-							</label>
-							<label class="c-services__cards" for="radio-card-03" id="card-03">
-								<div class="c-services__barber-cards" id="images-full">
-									<h2 class="c-services__barber-hair">Cabelo + Barba</h2>
+							</div>
+							<div class="c-services__figure" id="card-03">
+								<label for="radio-card-03">
+									<div class="c-services__img" id="images-full"></div>
+								</label>
+								<div class="c-services__figcaption">
+									<h2 class="c-services__barber-hair">Cabelo e Barba</h2>
 									<p class="c-services__barber-description">Pacote completo</p>
-									<p class="c-services__barber-price"><span class="accessibility-text">Preço do
-											pacote
-											completo de serviços de cabelo e barba: </span>R$ 39,90</p>
+									<p class="c-services__barber-price">
+										<span class="accessibility-text">
+											Preço dos serviços de cortes de cabelo e barba:
+										</span>
+										R$ 39,90
+									</p>
 								</div>
-							</label>
-							-->
+							</div>
 						</div>
 					</div>
 

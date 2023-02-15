@@ -23,7 +23,7 @@ input[type="radio"] {
   height: 100%;
 }
 
-.c-services__cards {
+.c-services__figure {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -35,29 +35,35 @@ input[type="radio"] {
   left: 0;
   right: 0;
   margin: auto;
-  cursor: pointer;
-}
-
-.c-services__collection:hover {
-  color: #ff3a09;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-03,
 #radio-card-02:checked ~ .c-services__collection #card-01,
 #radio-card-03:checked ~ .c-services__collection #card-02 {
   transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
+  opacity: 0.45;
   z-index: 0;
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
+  text-indent: -9999px;
+}
+
+#radio-card-01:checked ~ .c-services__collection #card-03 #images-full,
+#radio-card-01:checked ~ .c-services__collection #card-02 #images-beard,
+#radio-card-02:checked ~ .c-services__collection #card-01 #images-hair,
+#radio-card-02:checked ~ .c-services__collection #card-03 #images-full,
+#radio-card-03:checked ~ .c-services__collection #card-02 #images-beard,
+#radio-card-03:checked ~ .c-services__collection #card-01 #images-hair {
+  border-radius: 21px 21px 30% 30%;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-02,
 #radio-card-02:checked ~ .c-services__collection #card-03,
 #radio-card-03:checked ~ .c-services__collection #card-01 {
   transform: translatex(40%) scale(0.8);
-  opacity: 0.4;
+  opacity: 0.45;
   z-index: 0;
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
+  text-indent: -9999px;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-01,
@@ -66,68 +72,88 @@ input[type="radio"] {
   transform: translatex(0) scale(1);
   opacity: 1;
   z-index: 1;
-  transition: transform 0.4s ease;
+  transition: transform 0.6s ease;
+  color: #ff3a09;
+  background: #000000;
+  border-radius: 21px 21px 12% 12%;
+  box-shadow: 0px 0px 6px #ff3a09;
+  border: 0.5px solid #ff3a09;
+  cursor: pointer;
 }
-#radio-card-01:checked ~ .c-services__collection #card-01 img,
-#radio-card-02:checked ~ .c-services__collection #card-02 img,
-#radio-card-03:checked ~ .c-services__collection #card-03 img {
-  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+
+#radio-card-01:checked ~ .c-services__collection #card-01:hover,
+#radio-card-02:checked ~ .c-services__collection #card-02:hover,
+#radio-card-03:checked ~ .c-services__collection #card-03:hover {
+  transform: scale(1.04);
+  transition: transform 0.6s ease;
+  color: var(--color06);
+  box-shadow: 1px 1px 18px var(--color06);
+  border: 0.5px solid var(--color06);
 }
 
 .c-services__img {
-  border: 0.5px solid var(--color06);
-  border-radius: 12px;
-  box-shadow: 0px 0px 6px var(--color06);
+  border-radius: 21px 21px 0px 0px;
   padding: 0px;
+  transition: 0.9s;
   text-align: center;
   vertical-align: top;
   background-repeat: no-repeat;
   background-size: 105% 105%;
   color: var(--color11);
-  height: 360px;
-  width: 315px;
-}
-
-.c-services__img:hover {
-  box-shadow: 0px 0px 30px var(--color06);
+  height: 358px;
+  width: 358px;
   cursor: pointer;
-  text-shadow: 3px 3px 6px var(--color11);
-  transform: scale(1.04);
-  transition: 0.5s all;
 }
 
-.c-services__img:active {
-  border-color: var(--color08);
+.c-services__img:not(:hover):not(:focus) {
+  transition: 0.9s;
+}
+
+#images-hair {
+  background-image: url("../img/barber/corte_front.jpg");
 }
 
 #images-hair:hover {
   background-image: url("../img/barber/corte_back.jpg");
 }
 
+#images-beard {
+  background-image: url("../img/barber/barba_front.jpg");
+}
+
 #images-beard:hover {
   background-image: url("../img/barber/barba_back.jpg");
+}
+
+#images-full {
+  background-image: url("../img/barber/completo_front.jpg");
 }
 
 #images-full:hover {
   background-image: url("../img/barber/completo_back.jpg");
 }
 
+.c-services__figcaption {
+  text-align: center;
+}
+
 .c-services__barber-hair {
-  font-size: 30px;
+  font-size: 33px;
   font-weight: bold;
-  /*padding-top: 5px;*/
+  padding-top: 18px;
 }
 
 .c-services__barber-description {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: bold;
-  /*margin-top: 190px;*/
+  margin-top: -6px;
 }
 
 .c-services__barber-price {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: bold;
-  /*margin-top: 10px;*/
+  margin-top: -18px;
+  padding-bottom: 8px;
 }
 
 /*___↑Barber Shop↑___*/
