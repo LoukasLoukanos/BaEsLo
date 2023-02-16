@@ -1,4 +1,12 @@
 /*_________↓Featured Services↓_________*/
+:root {
+  --colorcards01: #ff3a09;
+  --colorcards02: #9900ff;
+  --colorcards03: #000000;
+  --transition_cards: transform 0.6s ease;
+  --text-indent_cards: -9999px ;
+  --margin-top_cards: 45px;
+}
 
 /*___↓Barber Shop↓___*/
 .c-services {
@@ -7,18 +15,18 @@
 
 .c-services__title {
   animation: neon-roxo 2s ease-in-out infinite alternate;
-  color: var(--color06);
+  color: var(--colorcards02);
   font-weight: bold;
 }
 
 @keyframes neon-roxo {
   from {
-    text-shadow: 0px 0px 30px var(--color06), 0px 0px 18px var(--color06);
+    text-shadow: 0px 0px 30px var(--colorcards02), 0px 0px 18px var(--colorcards02);
   }
 
   to {
-    text-shadow: 0 0 6px var(--color06), 0 0 6px var(--color06),
-      0 0 6px var(--color06);
+    text-shadow: 0 0 6px var(--colorcards02), 0 0 6px var(--colorcards02),
+      0 0 6px var(--colorcards02);
   }
 }
 
@@ -30,8 +38,8 @@
 
 .c-services__box {
   height: 500px;
-  width: 600px;
   transform-style: preserve-3d;
+  width: 100%;
 }
 
 input[type="radio"] {
@@ -39,111 +47,156 @@ input[type="radio"] {
 }
 
 .c-services__collection {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .c-services__figure {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  position: absolute;
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
-  top: 0;
   left: 0;
-  right: 0;
   margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 360px;
 }
 
-#radio-card-01:checked ~ .c-services__collection #card-03,
+#radio-card-01:checked ~ .c-services__collection #card-04,
+#radio-card-02:checked ~ .c-services__collection #card-05,
+#radio-card-03:checked ~ .c-services__collection #card-01,
+#radio-card-04:checked ~ .c-services__collection #card-02,
+#radio-card-05:checked ~ .c-services__collection #card-03 {
+  filter: brightness(39%);
+  margin-top: var(--margin-top_cards);
+  text-indent: var(--text-indent_cards);
+  transform: translatex(-90%) scale(0.7);
+  transition: var(--transition_cards);
+  z-index: 1;
+}
+
+#radio-card-01:checked ~ .c-services__collection #card-05,
 #radio-card-02:checked ~ .c-services__collection #card-01,
-#radio-card-03:checked ~ .c-services__collection #card-02 {
-  transform: translatex(-40%) scale(0.8);
-  opacity: 0.45;
-  z-index: 0;
-  transition: transform 0.6s ease;
-  text-indent: -9999px;
-  margin-top: 21px;
+#radio-card-03:checked ~ .c-services__collection #card-02,
+#radio-card-04:checked ~ .c-services__collection #card-03,
+#radio-card-05:checked ~ .c-services__collection #card-04 {
+  filter: brightness(69%);
+  margin-top: var(--margin-top_cards);
+  text-indent: var(--text-indent_cards);
+  transform: translatex(-45%) scale(0.9);
+  transition: var(--transition_cards);
+  z-index: 2;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-02,
 #radio-card-02:checked ~ .c-services__collection #card-03,
-#radio-card-03:checked ~ .c-services__collection #card-01 {
-  transform: translatex(40%) scale(0.8);
-  opacity: 0.45;
-  z-index: 0;
-  transition: transform 0.6s ease;
-  text-indent: -9999px;
-  margin-top: 21px;
+#radio-card-03:checked ~ .c-services__collection #card-04,
+#radio-card-04:checked ~ .c-services__collection #card-05,
+#radio-card-05:checked ~ .c-services__collection #card-01 {
+  filter: brightness(69%);
+  margin-top: var(--margin-top_cards);
+  text-indent: var(--text-indent_cards);
+  transform: translatex(45%) scale(0.9);
+  transition: var(--transition_cards);
+  z-index: 2;
 }
 
-#radio-card-01:checked ~ .c-services__collection #card-03 #images-full,
-#radio-card-01:checked ~ .c-services__collection #card-02 #images-beard,
-#radio-card-02:checked ~ .c-services__collection #card-01 #images-hair,
-#radio-card-02:checked ~ .c-services__collection #card-03 #images-full,
-#radio-card-03:checked ~ .c-services__collection #card-02 #images-beard,
-#radio-card-03:checked ~ .c-services__collection #card-01 #images-hair {
-  border-radius: 21px 21px 30% 30%;
-  border: 0.5px solid #ff3a09;
-  border-bottom: 0.5px solid var(--color06);
-  box-shadow: 0px -9px 18px var(--color06), 0px 9px 18px #ff3a09;
+#radio-card-01:checked ~ .c-services__collection #card-03,
+#radio-card-02:checked ~ .c-services__collection #card-04,
+#radio-card-03:checked ~ .c-services__collection #card-05,
+#radio-card-04:checked ~ .c-services__collection #card-01,
+#radio-card-05:checked ~ .c-services__collection #card-02 {
+  filter: brightness(39%);
+  margin-top: var(--margin-top_cards);
+  text-indent: var(--text-indent_cards);
+  transform: translatex(90%) scale(0.7);
+  transition: var(--transition_cards);
+  z-index: 1;
+}
+
+#radio-card-01:checked ~ .c-services__collection #card-01 #images-child,
+#radio-card-02:checked ~ .c-services__collection #card-02 #images-hair,
+#radio-card-03:checked ~ .c-services__collection #card-03 #images-beard,
+#radio-card-04:checked ~ .c-services__collection #card-04 #images-full,
+#radio-card-05:checked ~ .c-services__collection #card-05 #images-woman {
+  border: none;
+  border-radius: 21px 21px 0px 0px;
+  box-shadow: none;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-01,
 #radio-card-02:checked ~ .c-services__collection #card-02,
-#radio-card-03:checked ~ .c-services__collection #card-03 {
-  transform: translatex(0) scale(1);
-  opacity: 1;
-  z-index: 1;
-  transition: transform 0.6s ease;
-  color: #000000;
+#radio-card-03:checked ~ .c-services__collection #card-03,
+#radio-card-04:checked ~ .c-services__collection #card-04,
+#radio-card-05:checked ~ .c-services__collection #card-05 {
+  background: var(--colorcards01);
+  border: 0.5px solid var(--colorcards01);
+  border-top: 0.5px solid var(--colorcards02);
   border-radius: 21px 21px 12% 12%;
-  background: #ff3a09;
+  box-shadow: 0px 3px 6px var(--colorcards01), 0px -3px 9px var(--colorcards02);
+  color: var(--colorcards03);
   cursor: pointer;
-  border: 0.5px solid #ff3a09;
-  border-top: 0.5px solid var(--color06);
-  box-shadow: 0px 3px 6px #ff3a09, 0px -3px 9px var(--color06);
-  text-shadow: 0px 0px 3px #000000;
+  opacity: 1;
+  transform: translatex(0) scale(1);
+  transition: var(--transition_cards);
+  text-shadow: 0px 0px 3px var(--colorcards03);
+  z-index: 3;
 }
 
 #radio-card-01:checked ~ .c-services__collection #card-01:hover,
 #radio-card-02:checked ~ .c-services__collection #card-02:hover,
-#radio-card-03:checked ~ .c-services__collection #card-03:hover {
+#radio-card-03:checked ~ .c-services__collection #card-03:hover,
+#radio-card-04:checked ~ .c-services__collection #card-04:hover,
+#radio-card-05:checked ~ .c-services__collection #card-05:hover {
+  transition: var(--transition_cards);
   transform: scale(1.04);
-  transition: transform 0.6s ease;
-  text-shadow: 1px 1px 3px #000000;
+  text-shadow: 1px 1px 3px var(--colorcards03);
 }
 
-#radio-card-01:checked ~ .c-services__collection #card-01 #images-hair::before,
-#radio-card-02:checked ~ .c-services__collection #card-02 #images-beard::before,
-#radio-card-03:checked ~ .c-services__collection #card-03 #images-full::before {
+#radio-card-01:checked ~ .c-services__collection #card-01 #images-child::before,
+#radio-card-02:checked ~ .c-services__collection #card-02 #images-hair::before,
+#radio-card-03:checked ~ .c-services__collection #card-03 #images-beard::before,
+#radio-card-04:checked ~ .c-services__collection #card-04 #images-full::before,
+#radio-card-05:checked ~ .c-services__collection #card-05 #images-woman::before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 51%, var(--colorcards01) 100%);
   content: "";
+  height: 360px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
-  height: 360px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 51%, #ff3a09 100%);
 }
 
 .c-services__img {
-  border-radius: 21px 21px 0px 0px;
-  padding: 0px;
-  transition: 0.9s;
-  text-align: center;
-  vertical-align: top;
   background-repeat: no-repeat;
   background-size: 105% 105%;
+  border: 0.5px solid var(--colorcards01);
+  border-bottom: 0.5px solid var(--colorcards02);
+  border-radius: 21px 21px 30% 30%;
+  box-shadow: 0px -9px 18px var(--colorcards02), 0px 9px 18px var(--colorcards01);
   color: var(--color11);
-  height: 358px;
-  width: 358px;
   cursor: pointer;
+  height: 358px;
+  padding: 0px;
+  text-align: center;
+  transition: 0.9s;
+  vertical-align: top;
+  width: 358px;
 }
 
 .c-services__img:not(:hover):not(:focus) {
   transition: 0.9s;
+}
+
+#images-child {
+  background-image: url("../img/barber/infantil_front.jpg");
+}
+
+#images-child:hover {
+  background-image: url("../img/barber/infantil_back.jpg");
 }
 
 #images-hair {
@@ -170,14 +223,29 @@ input[type="radio"] {
   background-image: url("../img/barber/completo_back.jpg");
 }
 
-.c-services__figcaption {
-  text-align: center;
+#images-woman {
+  background-image: url("../img/barber/feminino_front.png");
 }
 
-.c-services__barber-hair {
+#images-woman:hover {
+  background-image: url("../img/barber/feminino_back.jpg");
+}
+
+.c-services__figcaption a {
+  color: var(--colorcards03);
+  text-align: center;
+  text-decoration: none;
+}
+
+.c-services__figcaption a:hover {
+  color: var(--colorcards02);
+}
+.c-services__barber-type {
   font-size: 33px;
   font-weight: bold;
   padding-top: 18px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .c-services__barber-description {
@@ -272,113 +340,3 @@ form legend {
     rgba(0, 43, 255, 1) 70%,
     rgba(255, 255, 255, 1) 75%,
     rgba(255, 255, 255, 1) 85%,
-    rgba(255, 0, 0, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background: linear-gradient(
-    216deg,
-    rgba(0, 34, 255, 1) 0%,
-    rgba(0, 34, 255, 1) 10%,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 0, 0, 1) 30%,
-    rgba(255, 0, 0, 1) 40%,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(0, 34, 255, 1) 60%,
-    rgba(0, 43, 255, 1) 70%,
-    rgba(255, 255, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 85%,
-    rgba(255, 0, 0, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  width: 27%;
-  padding: 9px 0;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  border: none;
-  border-radius: 18px;
-  transition: 1s all;
-  cursor: pointer;
-}
-
-.enviar:hover {
-  color: #c78c19;
-  text-shadow: 2px 2px 5px #c78c19;
-  background: -moz-linear-gradient(
-    216deg,
-    rgba(0, 34, 255, 1) 0%,
-    rgba(0, 34, 255, 1) 10%,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 0, 0, 1) 30%,
-    rgba(255, 0, 0, 1) 40%,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(0, 34, 255, 1) 60%,
-    rgba(0, 43, 255, 1) 70%,
-    rgba(255, 255, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 85%,
-    rgba(255, 0, 0, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    216deg,
-    rgba(0, 34, 255, 1) 0%,
-    rgba(0, 34, 255, 1) 10%,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 0, 0, 1) 30%,
-    rgba(255, 0, 0, 1) 40%,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(0, 34, 255, 1) 60%,
-    rgba(0, 43, 255, 1) 70%,
-    rgba(255, 255, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 85%,
-    rgba(255, 0, 0, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background: linear-gradient(
-    216deg,
-    rgba(0, 34, 255, 1) 0%,
-    rgba(0, 34, 255, 1) 10%,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 0, 0, 1) 30%,
-    rgba(255, 0, 0, 1) 40%,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(0, 34, 255, 1) 60%,
-    rgba(0, 43, 255, 1) 70%,
-    rgba(255, 255, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 85%,
-    rgba(255, 0, 0, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  transform: rotate(-3deg) scale(1.1);
-  box-shadow: 0 3px 30px #ffffff;
-
-  /*animação do gradiente*/
-  animation: animateBg 9s infinite linear;
-  background-size: 120% 100%;
-}
-
-table {
-  margin: 0px 0 0px;
-}
-
-thead {
-  background: #555555;
-  color: white;
-  font-weight: bold;
-}
-
-td,
-th {
-  border: 1px solid var(--color11);
-  padding: 8px 15px;
-}
-
-/*_________↑Form↑_________*/
