@@ -268,7 +268,7 @@ input[type="radio"] {
 
 /*_______↑retornar da webstorage informações do usuário da área de signup↑_______*/
 
-.c-form {
+.c-scheduling {
   background: linear-gradient(
     90deg,
     var(--color01) 0%,

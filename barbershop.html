@@ -154,7 +154,8 @@
 										<h2 class="c-services__barber-type">Infantil</h2>
 										<p class="c-services__barber-description">Cortes 💇‍♂️ = games 🎮</p>
 										<p class="c-services__barber-price">
-											<span class="accessibility-text">Preço dos serviços de cortes infantis:</span>R$ 27,90
+											<span class="accessibility-text">Preço dos serviços de cortes
+												infantis:</span>R$ 27,90
 										</p>
 									</a>
 								</div>
@@ -168,7 +169,8 @@
 										<h2 class="c-services__barber-type">Cabelo</h2>
 										<p class="c-services__barber-description">Cortes profissionais</p>
 										<p class="c-services__barber-price">
-											<span class="accessibility-text">Preço dos serviços de cortes de cabelo:</span>R$ 32,90
+											<span class="accessibility-text">Preço dos serviços de cortes de
+												cabelo:</span>R$ 32,90
 										</p>
 									</a>
 								</div>
@@ -182,7 +184,8 @@
 										<h2 class="c-services__barber-type">Barba</h2>
 										<p class="c-services__barber-description">Corte e reparo de barba</p>
 										<p class="c-services__barber-price">
-											<span class="accessibility-text">Preço dos serviços de cortes de barba:</span>R$ 19,90
+											<span class="accessibility-text">Preço dos serviços de cortes de
+												barba:</span>R$ 19,90
 										</p>
 									</a>
 								</div>
@@ -196,7 +199,8 @@
 										<h2 class="c-services__barber-type">Cabelo e Barba</h2>
 										<p class="c-services__barber-description">Pacote completo</p>
 										<p class="c-services__barber-price">
-											<span class="accessibility-text">Preço dos serviços de cortes de cabelo e barba:</span>R$ 39,90
+											<span class="accessibility-text">Preço dos serviços de cortes de cabelo e
+												barba:</span>R$ 39,90
 										</p>
 									</a>
 								</div>
@@ -210,7 +214,8 @@
 										<h2 class="c-services__barber-type">Feminino</h2>
 										<p class="c-services__barber-description">Atendimento exclusivo</p>
 										<p class="c-services__barber-price">
-											<span class="accessibility-text">Preço dos serviços de barbearia para mulheres:</span>Serviços especiais
+											<span class="accessibility-text">Preço dos serviços de barbearia para
+												mulheres:</span>Serviços especiais
 										</p>
 									</a>
 								</div>
@@ -225,69 +230,53 @@
 		<!--_________________________↑Services↑_________________________-->
 
 		<!--_________________________↓Form↓_________________________-->
-		<section class="c-form">
-			<table>
-				<thead>
-					<tr>
-						<th>Dia</th>
-						<th>Horário</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Segunda</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tr>
-						<td>Quarta</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tr>
-						<td>Sexta</td>
-						<td>8h ~ 20h</td>
-					</tr>
-				</tbody>
-			</table>
-			<form>
-				<label for="Mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="Mensagem" class="input-padrao" required></textarea>
+		<section class="c-scheduling">
+			<form class="c-scheduling__form">
+
+				<div class="col-md-5">
+					<label for="time" class="c-scheduling__time-label form-label">Período de atendimento <span>(conforme
+							disponibilidade)</span></label>
+					<select class="c-scheduling__time form-select bg-transparent border-secondary text-light" id="time"
+						required>
+						<option class="bg-dark text-light" value="">Manhã: 08:00 às 12:00 h</option>
+						<option class="bg-dark text-light" checked>Tarde: 13:00 às 18:00 h</option>
+						<option class="bg-dark text-light">Noite: 18:00 às 21:00 h</option>
+					</select>
+					<div class="invalid-feedback">
+						Selecione um período para o atendimento.
+					</div>
+				</div>
+
+				<label for="Mensagem">Mensagem<span>(Opcional)</span></label>
+				<textarea cols="30" rows="6" id="Mensagem" class="input-padrao" required></textarea>
 
 				<fieldset>
 					<!-- como uma div, porém fieldset é de voltado ao uso específico para delimitar um campo que contenha elementos que inserem dados complementares a um formulário. -->
 					<legend>Como prefere o nosso contato?</legend>
 					<!-- define uma legenda para o elemento fieldset -->
-					<label>
-						<!-- label encapsula, :. não precisa de for nem o que está sendo encapsulado de id -->
-						<input type="radio" name="contato" value="email">
-						Email
-					</label>
-
-					<label>
-						<input type="radio" name="contato" value="telefone">
-						Telefone
-					</label>
-
-					<label>
-						<input type="radio" name="contato" value="whatsapp" checked>
-						WhatsApp
-					</label>
-				</fieldset>
-
-				<fieldset>
-					<legend>Qual horário prefere ser atendido?</legend>
-					<select>
-						<option>Manhã</option>
-						<option>Tarde</option>
-						<option>Noite</option>
-					</select>
+					<div class="row gy-3">
+						<div class="c-scheduling__check col-md-3">
+							<input id="email" name="paymentMethod" type="radio" class="c-scheduling__input">
+							<label class="c-scheduling__check-label" for="email">Email</label>
+						</div>
+						<div class="c-scheduling__check col-md-3">
+							<input id="tel" name="paymentMethod" type="radio" class="c-scheduling__input" checked>
+							<label class="c-scheduling__check-label" for="tel">Telefone</label>
+						</div>
+						<div class="c-scheduling__check col-md-3">
+							<input id="Whats" name="paymentMethod" type="radio" class="c-scheduling__input">
+							<label class="c-scheduling__check-label" for="Whats">WhatsApp</label>
+						</div>
+					</div>
 				</fieldset>
 
 				<label class="checkbox">
 					<input type="checkbox" checked>
-					Gostaria de receber nossas novidades por email?
+					Receber novidades por Email, WhatsApp e SMS?
 				</label>
 
 				<input type="submit" value="Enviar formulário" class="enviar">
+
 			</form>
 		</section>
 		<!--_________________________↑Form↑_________________________-->
