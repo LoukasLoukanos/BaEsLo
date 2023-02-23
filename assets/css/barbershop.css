@@ -277,108 +277,21 @@ input[type="radio"] {
   );
 }
 
-form {
-  color: var(--color17);
-  padding: 10px 0 20px 0;
+.c-scheduling__form {
+  color: var(--color08);
 }
 
-form label,
-form legend {
-  display: block;
-  font-size: 20px;
-  margin: 0 0 10px;
+.c-scheduling__select {
+  align-items: center;
 }
 
-.input-padrao {
+.c-scheduling__message {
   background: var(--color11);
   border-radius: 10px;
   color: var(--color17);
-  display: block;
   margin: 0 0 20px;
   padding: 10px 25px;
-  width: 50%;
 }
 
-.checkbox {
-  margin: 20px 0;
-}
-
-.enviar:hover {
-  color: #c78c19;
-  text-shadow: 2px 2px 5px #c78c19;
-  background: -moz-linear-gradient(
-    216deg,
-    rgba(0, 34, 255, 1) 0%,
-    rgba(0, 34, 255, 1) 10%,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 0, 0, 1) 30%,
-    rgba(255, 0, 0, 1) 40%,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(0, 34, 255, 1) 60%,
-    rgba(0, 43, 255, 1) 70%,
-    rgba(255, 255, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 85%,
-    rgba(255, 0, 0, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    216deg,
-    rgba(0, 34, 255, 1) 0%,
-    rgba(0, 34, 255, 1) 10%,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 0, 0, 1) 30%,
-    rgba(255, 0, 0, 1) 40%,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(0, 34, 255, 1) 60%,
-    rgba(0, 43, 255, 1) 70%,
-    rgba(255, 255, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 85%,
-    rgba(255, 0, 0, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  background: linear-gradient(
-    216deg,
-    rgba(0, 34, 255, 1) 0%,
-    rgba(0, 34, 255, 1) 10%,
-    rgba(255, 255, 255, 1) 15%,
-    rgba(255, 255, 255, 1) 25%,
-    rgba(255, 0, 0, 1) 30%,
-    rgba(255, 0, 0, 1) 40%,
-    rgba(255, 255, 255, 1) 45%,
-    rgba(255, 255, 255, 1) 55%,
-    rgba(0, 34, 255, 1) 60%,
-    rgba(0, 43, 255, 1) 70%,
-    rgba(255, 255, 255, 1) 75%,
-    rgba(255, 255, 255, 1) 85%,
-    rgba(255, 0, 0, 1) 90%,
-    rgba(255, 0, 0, 1) 100%
-  );
-  transform: rotate(-3deg) scale(1.1);
-  box-shadow: 0 3px 30px #ffffff;
-
-  /*animação do gradiente*/
-  animation: animateBg 9s infinite linear;
-  background-size: 120% 100%;
-}
-
-table {
-  margin: 0px 0 0px;
-}
-
-thead {
-  background: #555555;
-  color: white;
-  font-weight: bold;
-}
-
-td,
-th {
-  border: 1px solid var(--color11);
-  padding: 8px 15px;
-}
 
 /*_________↑Form↑_________*/

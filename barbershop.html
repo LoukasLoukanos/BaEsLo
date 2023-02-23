@@ -231,24 +231,37 @@
 
 		<!--_________________________↓Form↓_________________________-->
 		<section class="c-scheduling">
-			<form class="c-scheduling__form">
+			<form class="c-scheduling__form p-5">
 
-				<div class="col-md-5">
-					<label for="time" class="c-scheduling__time-label form-label">Período de atendimento <span>(conforme
-							disponibilidade)</span></label>
-					<select class="c-scheduling__time form-select bg-transparent border-secondary text-light" id="time"
-						required>
-						<option class="bg-dark text-light" value="">Manhã: 08:00 às 12:00 h</option>
-						<option class="bg-dark text-light" checked>Tarde: 13:00 às 18:00 h</option>
-						<option class="bg-dark text-light">Noite: 18:00 às 21:00 h</option>
-					</select>
-					<div class="invalid-feedback">
-						Selecione um período para o atendimento.
+				<div class="c-scheduling__select container col-8">
+					<div class="row row-cols-md-2 row-cols-sm-1">
+						<div class="col">
+							<label for="service" class="c-scheduling__service-label form-label">Tipo de serviço</label>
+							<select class="c-scheduling__service form-select bg-transparent border-secondary text-light"
+								id="service" required>
+								<option class="bg-dark text-light" value="">Infantil</option>
+								<option class="bg-dark text-light" checked>Cabelo</option>
+								<option class="bg-dark text-light">Barba</option>
+								<option class="bg-dark text-light">Cabelo e Barba</option>
+								<option class="bg-dark text-light">Feminino</option>
+							</select>
+							<label for="time" class="c-scheduling__time-label form-label">Período de atendimento
+								<span>(conforme
+									disponibilidade)</span></label>
+							<select class="c-scheduling__time form-select bg-transparent border-secondary text-light"
+								id="time" required>
+								<option class="bg-dark text-light" value="">Manhã: 08:00 às 12:00 h</option>
+								<option class="bg-dark text-light" checked>Tarde: 13:00 às 18:00 h</option>
+								<option class="bg-dark text-light">Noite: 18:00 às 21:00 h</option>
+							</select>
+						</div>
+						<div class="col">
+							<label for="Mensagem">Mensagem<span>(Opcional)</span></label>
+							<textarea cols="30" rows="6" id="Mensagem" class="c-scheduling__message"
+								required></textarea>
+						</div>
 					</div>
 				</div>
-
-				<label for="Mensagem">Mensagem<span>(Opcional)</span></label>
-				<textarea cols="30" rows="6" id="Mensagem" class="input-padrao" required></textarea>
 
 				<fieldset>
 					<!-- como uma div, porém fieldset é de voltado ao uso específico para delimitar um campo que contenha elementos que inserem dados complementares a um formulário. -->
@@ -275,7 +288,7 @@
 					Receber novidades por Email, WhatsApp e SMS?
 				</label>
 
-				<input type="submit" value="Enviar formulário" class="enviar">
+				<button class="w-100 btn btn-dark btn-lg" type="submit">Confirmar</button>
 
 			</form>
 		</section>
