@@ -231,65 +231,68 @@
 
 		<!--_________________________↓Form↓_________________________-->
 		<section class="c-scheduling">
-			<form class="c-scheduling__form p-5">
+			<form class="c-scheduling__form p-5 container">
 
-				<div class="c-scheduling__select container col-8">
-					<div class="row row-cols-md-2 row-cols-sm-1">
-						<div class="col">
-							<label for="service" class="c-scheduling__service-label form-label">Tipo de serviço</label>
-							<select class="c-scheduling__service form-select bg-transparent border-secondary text-light"
-								id="service" required>
-								<option class="bg-dark text-light" value="">Infantil</option>
-								<option class="bg-dark text-light" checked>Cabelo</option>
-								<option class="bg-dark text-light">Barba</option>
-								<option class="bg-dark text-light">Cabelo e Barba</option>
-								<option class="bg-dark text-light">Feminino</option>
-							</select>
-							<label for="time" class="c-scheduling__time-label form-label">Período de atendimento
-								<span>(conforme
-									disponibilidade)</span></label>
-							<select class="c-scheduling__time form-select bg-transparent border-secondary text-light"
-								id="time" required>
-								<option class="bg-dark text-light" value="">Manhã: 08:00 às 12:00 h</option>
-								<option class="bg-dark text-light" checked>Tarde: 13:00 às 18:00 h</option>
-								<option class="bg-dark text-light">Noite: 18:00 às 21:00 h</option>
-							</select>
-						</div>
-						<div class="col">
-							<label for="Mensagem">Mensagem<span>(Opcional)</span></label>
-							<textarea cols="30" rows="6" id="Mensagem" class="c-scheduling__message"
-								required></textarea>
-						</div>
+				<div class="row c-scheduling__select">
+
+					<div class="col-md-5 cols-sm-12">
+						<label class="c-scheduling__title form-label" for="service">Tipo de serviço</label>
+						<select class="c-scheduling__service form-select bg-transparent border-secondary text-light"
+							id="service" required>
+							<option class="bg-dark text-light" value="">Infantil</option>
+							<option class="bg-dark text-light" checked>Cabelo</option>
+							<option class="bg-dark text-light">Barba</option>
+							<option class="bg-dark text-light">Cabelo e Barba</option>
+							<option class="bg-dark text-light">Feminino</option>
+						</select>
+
+						<label class="c-scheduling__title form-label" for="time">Período de atendimento
+							<span>(conforme
+								disponibilidade)</span></label>
+						<select class="c-scheduling__service form-select bg-transparent border-secondary text-light"
+							id="time" required>
+							<option class="bg-dark text-light" value="">Manhã: 08:00 às 12:00 h</option>
+							<option class="bg-dark text-light" checked>Tarde: 13:00 às 18:00 h</option>
+							<option class="bg-dark text-light">Noite: 18:00 às 21:00 h</option>
+						</select>
 					</div>
+					<div class="col-md-7 cols-sm-12">
+						<label class="c-scheduling__message-label" for="Mensagem">Mensagem<span>(Opcional)</span></label>
+						<textarea id="Mensagem" class="c-scheduling__message"></textarea>
+					</div>
+
 				</div>
 
-				<fieldset>
-					<!-- como uma div, porém fieldset é de voltado ao uso específico para delimitar um campo que contenha elementos que inserem dados complementares a um formulário. -->
-					<legend>Como prefere o nosso contato?</legend>
-					<!-- define uma legenda para o elemento fieldset -->
-					<div class="row gy-3">
-						<div class="c-scheduling__check col-md-3">
-							<input id="email" name="paymentMethod" type="radio" class="c-scheduling__input">
-							<label class="c-scheduling__check-label" for="email">Email</label>
+				<div class="row">
+					<fieldset class="col-md-12">
+						<!-- como uma div, porém fieldset é de voltado ao uso específico para delimitar um campo que contenha elementos que inserem dados complementares a um formulário. -->
+						<legend class="c-scheduling__title">Como prefere o nosso contato?</legend>
+						<!-- define uma legenda para o elemento fieldset -->
+						<div class="row">
+							<div class="c-scheduling__check col-md-1">
+								<label class="c-scheduling__title-small" for="email">Email</label>
+								<input class="c-scheduling__input" name="" type="radio" id="email">
+							</div>
+							<div class="c-scheduling__check col-md-1">
+								<label class="c-scheduling__title-small" for="tel">Telefone</label>
+								<input class="c-scheduling__input" name="" type="radio" id="tel" checked>
+							</div>
+							<div class="c-scheduling__check col-md-1">
+								<label class="c-scheduling__title-small" for="Whats">WhatsApp</label>
+								<input class="c-scheduling__input" name="" type="radio" id="Whats">
+							</div>
 						</div>
-						<div class="c-scheduling__check col-md-3">
-							<input id="tel" name="paymentMethod" type="radio" class="c-scheduling__input" checked>
-							<label class="c-scheduling__check-label" for="tel">Telefone</label>
-						</div>
-						<div class="c-scheduling__check col-md-3">
-							<input id="Whats" name="paymentMethod" type="radio" class="c-scheduling__input">
-							<label class="c-scheduling__check-label" for="Whats">WhatsApp</label>
-						</div>
-					</div>
-				</fieldset>
+					</fieldset>
+				</div>
 
-				<label class="checkbox">
+				<label class="c-scheduling__title-small">
 					<input type="checkbox" checked>
 					Receber novidades por Email, WhatsApp e SMS?
 				</label>
 
-				<button class="w-100 btn btn-dark btn-lg" type="submit">Confirmar</button>
-
+				<div class="row">
+					<button class="col-md-12 btn btn-dark btn-lg" type="submit">Confirmar</button>
+				</div>
 			</form>
 		</section>
 		<!--_________________________↑Form↑_________________________-->
