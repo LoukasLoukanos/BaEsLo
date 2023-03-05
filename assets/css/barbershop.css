@@ -10,8 +10,13 @@
 /*___↓Barber Shop↓___*/
 .c-services {
   background: var(--color11);
+  background: linear-gradient(to bottom, var(--colorcards03) 81%, var(--color04) 100%);
 }
 
+.c-services--home {
+  background: var(--color11);
+  background: linear-gradient(none);
+}
 .c-services__title {
   animation: neon-roxo 2s ease-in-out infinite alternate;
   color: var(--colorcards02);
@@ -41,7 +46,7 @@
   width: 100%;
 }
 
-input[type="radio"] {
+.c-services__box input[type="radio"] {
   display: none;
 }
 
@@ -269,12 +274,7 @@ input[type="radio"] {
 /*_______↑retornar da webstorage informações do usuário da área de signup↑_______*/
 
 .c-scheduling {
-  background: linear-gradient(
-    90deg,
-    var(--color01) 0%,
-    var(--color04) 63%,
-    var(--color05) 100%
-  );
+  background: var(--color04);
 }
 
 .c-scheduling__form {
@@ -288,7 +288,7 @@ input[type="radio"] {
 .c-scheduling__message {
   border-radius: 10px;
   width: 100%;
-  height: 140px;
+  height: 100px;
 }
 
 /*_________↑Form↑_________*/

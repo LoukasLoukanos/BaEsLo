@@ -23,6 +23,12 @@
 
 .c-products__cards {
   cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    var(--color01) 0%,
+    var(--color04) 53%,
+    var(--color05) 100%
+  );
 }
 
 /*_________↑Featured Products↑_________*/

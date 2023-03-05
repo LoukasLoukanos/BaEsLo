@@ -237,9 +237,8 @@
 
 					<div class="col-md-5 cols-sm-12">
 						<label class="form-label" for="service">Tipo de serviço</label>
-						<select
-							class="form-select bg-transparent border-secondary text-light text-center"
-							id="service" required>
+						<select class="form-select bg-transparent border-secondary text-light text-center" id="service"
+							required>
 							<option class="bg-light text-dark" value="">Selecione...</option>
 							<option class="bg-dark text-light">Infantil</option>
 							<option class="bg-dark text-light">Cabelo</option>
@@ -251,9 +250,8 @@
 						<label class="form-label mt-3" for="time">Período de atendimento
 							<span>(conforme
 								disponibilidade)</span></label>
-						<select
-							class="form-select bg-transparent border-secondary text-light text-center"
-							id="time" required>
+						<select class="form-select bg-transparent border-secondary text-light text-center" id="time"
+							required>
 							<option class="bg-dark text-light" value="">Selecione...</option>
 							<option class="bg-dark text-light">Manhã: 08:00 às 12:00 h</option>
 							<option class="bg-dark text-light">Tarde: 13:00 às 18:00 h</option>
@@ -261,16 +259,20 @@
 						</select>
 					</div>
 					<div class="col-md-7 cols-sm-12">
-						<div class="col-md-3">
-                            <input id="opcao1" name="paymentMethod" type="radio"
-                                class="form-check-input bg-transparent border-secondary text-light" name="opcoes" value="opcao1" checked>
-                            <label class="form-check-label" for="opcao1">Para mim</label>
-                        </div>
-                        <div class="col-md-3">
-                            <input id="opcao2" name="paymentMethod" type="radio"
-                                class="form-check-input bg-transparent border-secondary text-light" name="opcoes" value="opcao2">
-                            <label class="form-check-label" for="opcao2">Para outra pessoa</label>
-                        </div>
+						<div class="c-scheduling__select mb-2">
+							<div class="col-md-2">
+								<input id="opcao1" name="paymentMethod" type="radio"
+									class="form-check-input bg-transparent border-secondary text-light" name="opcoes"
+									value="opcao1" checked>
+								<label class="form-check-label" for="opcao1">Para mim</label>
+							</div>
+							<div class="col-md-4 ms-2">
+								<input id="opcao2" name="paymentMethod" type="radio"
+									class="form-check-input bg-transparent border-secondary text-light" name="opcoes"
+									value="opcao2">
+								<label class="form-check-label" for="opcao2">Para outra pessoa</label>
+							</div>
+						</div>
 						<label class="c-scheduling__message-label"
 							for="Mensagem">Mensagem<span>(Opcional)</span></label>
 						<textarea id="Mensagem" class="c-scheduling__message bg-transparent text-light"></textarea>
@@ -279,7 +281,7 @@
 				</div>
 
 
-				<fieldset class="col-md-8 mt-4">
+				<fieldset class="col-md-8 mt-5">
 					<!-- como uma div, porém fieldset é de voltado ao uso específico para delimitar um campo que contenha elementos que inserem dados complementares a um formulário. -->
 					<legend class="h5">Como prefere o nosso contato?</legend>
 					<!-- define uma legenda para o elemento fieldset -->
@@ -309,7 +311,7 @@
 					</div>
 				</fieldset>
 
-				<div class="row mt-5">
+				<div class="row m-5">
 					<button class="col-md-12 btn btn-dark btn-lg" type="submit">Confirmar</button>
 				</div>
 			</form>
