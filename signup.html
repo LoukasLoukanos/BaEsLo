@@ -233,53 +233,6 @@
                     <hr class="my-5">
 
                     <div class="row gy-4">
-                        <div class="col-sm-4">
-                            <label for="firstName" class="c-signup__text form-label">Nome</label>
-                            <input type="text" class="form-control bg-transparent border-secondary text-light"
-                                id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Seu nome é obrigatório.
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <label for="lastName" class="c-signup__text form-label">Sobrenome</label>
-                            <input type="text" class="form-control bg-transparent border-secondary text-light"
-                                id="lastName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Seu sobrenome é obrigatório.
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <label for="username" class="c-signup__text form-label">Apelido <span
-                                    class="text-muted">(Opcional)</span></label>
-                            <div class="input-group has-validation">
-                                <span class="input-group-text text-light bg-dark border-secondary">@</span>
-                                <input type="text" class="form-control bg-transparent border-secondary text-light"
-                                    id="username" placeholder="Lukinhas">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="email" class="c-signup__text form-label">Email </label>
-                            <input type="email" class="form-control bg-transparent border-secondary text-light"
-                                id="email" placeholder="user@example.com" required>
-                            <div class="invalid-feedback">
-                                Insira um endereço de e-mail válido para atualizações de envio.
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="phone" class="c-signup__text form-label">Telefone <span
-                                    class="text-muted">(Opcional)</span></label>
-                            <input type="tel" class="form-control bg-transparent border-secondary text-light" id="phone"
-                                placeholder="(xx) xxxxx-xxxx" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
-                            <div class="invalid-feedback">
-                                Insira um número de telefone válido para atualizações de envio.
-                            </div>
-                        </div>
-
                         <div class="col-md-3">
                             <label for="zip" class="c-signup__text form-label">CEP</label>
                             <input type="text" class="form-control bg-transparent border-secondary text-light" id="zip"
@@ -367,21 +320,84 @@
                                 Por favor insira seu endereço de entrega.
                             </div>
                         </div>
+
+                        <div class="form-check pt-3">
+                            <input type="checkbox" class="form-check-input bg-transparent border-secondary text-light"
+                                id="same-address" checked>
+                            <label class="c-signup__text form-check-label" for="same-address">O endereço de entrega é o
+                                mesmo do meu
+                                endereço de cobrança</label>
+                        </div>
+
+                        <hr class="my-5">
+
+                        <div class="col-sm-4">
+                            <label for="firstName" class="c-signup__text form-label">Nome</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light"
+                                id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Seu nome é obrigatório.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label for="lastName" class="c-signup__text form-label">Sobrenome</label>
+                            <input type="text" class="form-control bg-transparent border-secondary text-light"
+                                id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Seu sobrenome é obrigatório.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <label for="username" class="c-signup__text form-label">Apelido <span
+                                    class="text-muted">(Opcional)</span></label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text text-light bg-dark border-secondary">@</span>
+                                <input type="text" class="form-control bg-transparent border-secondary text-light"
+                                    id="username" placeholder="Lukinhas">
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="email" class="c-signup__text form-label">Email </label>
+                            <input type="email" class="form-control bg-transparent border-secondary text-light"
+                                id="email" placeholder="user@example.com" required>
+                            <div class="invalid-feedback">
+                                Insira um endereço de e-mail válido para atualizações de envio.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="phone" class="c-signup__text form-label">Telefone <span
+                                    class="text-muted">(Opcional)</span></label>
+                            <input type="tel" class="form-control bg-transparent border-secondary text-light" id="phone"
+                                placeholder="(xx) xxxxx-xxxx">
+                            <div class="invalid-feedback">
+                                Insira um número de telefone válido para atualizações de envio.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="senha" class="c-signup__text form-label">Senha </label>
+                            <input type="password" class="form-control bg-transparent border-secondary text-light"
+                                id="senha" minlength="8" required>
+                            <div class="invalid-feedback">
+                                Insira uma senha válida (números e/ou letras).
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="confirma_senha" class="c-signup__text form-label">Confirme a senha </label>
+                            <input type="password" class="form-control bg-transparent border-secondary text-light"
+                                id="confirma_senha" minlength="8" required>
+                            <div class="invalid-feedback">
+                                As senhas não coincidem.
+                            </div>
+                        </div>
                     </div>
 
-                    <hr class="my-5">
-
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input bg-transparent border-secondary text-light"
-                            id="same-address" checked>
-                        <label class="c-signup__text form-check-label" for="same-address">O endereço de entrega é o
-                            mesmo do meu
-                            endereço de cobrança</label>
-                    </div>
-
-                    <hr class="my-5">
-
-                    <button class="w-100 btn btn-dark btn-lg" type="submit">Confirmar</button>
+                    <button class="w-100 btn btn-dark btn-lg mt-5" type="submit">Cadastrar-se</button>
                 </form>
             </div>
         </div>
