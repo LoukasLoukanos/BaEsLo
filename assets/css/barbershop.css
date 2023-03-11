@@ -10,7 +10,7 @@
 /*___↓Barber Shop↓___*/
 .c-services {
   background: var(--color11);
-  background: linear-gradient(to bottom, var(--colorcards03) 81%, var(--color04) 100%);
+  background: linear-gradient(to bottom, var(--colorcards03) 9%, var(--color04) 100%);
 }
 
 .c-services--home {
@@ -281,6 +281,17 @@
   color: var(--color08);
 }
 
+.c-scheduling__box {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 1500px 900px var(--color08);
+  transition: 1.8s all;
+}
+
+.c-scheduling__box:hover {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 1px 1px 15px var(--color05);
+}
+
 .c-scheduling__select {
   display: flex;
 }
@@ -288,7 +299,7 @@
 .c-scheduling__message {
   border-radius: 10px;
   width: 100%;
-  height: 100px;
+  height: 105px;
 }
 
 /*_________↑Form↑_________*/

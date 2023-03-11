@@ -1,12 +1,6 @@
 .c-signin,
 .c-signup {
-  background: linear-gradient(
-    135deg,
-    var(--color08) 0%,
-    var(--color07) 3%,
-    var(--color04) 33%,
-    var(--color05) 100%
-  );
+  background: var(--color04);
 }
 
 .c-signin__logo,
@@ -25,12 +19,14 @@
 }
 
 .c-signin__box {
-  box-shadow: 0px 800px 900px var(--color08);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 1500px 900px var(--color08);
   color: var(--color08);
-  transition: 1.2s all;
+  transition: 1.8s all;
 }
 
 .c-signin__box:hover {
+  background: rgba(0, 0, 0, 0.9);
   box-shadow: 1px 1px 15px var(--color05);
 }
 
@@ -40,7 +36,7 @@
 
 .c-signup__title {
   color: var(--color09);
-  text-shadow: 0px 0px 60px var(--color08);
+  text-shadow: 0px 0px 21px var(--color08);
 }
 
 /*_________↓Customer Plan↓_________*/
@@ -49,7 +45,7 @@
 /*___↓Signature↓___*/
 .c-plan__signatures {
   animation: plan-signatures 3s ease-in-out infinite;
-  box-shadow: 0px 60px 300px var(--color08);
+  box-shadow: 0px 3px 21px var(--color08);
   color: #a0a0a0;
   filter: blur(3.69px) brightness(90%);
   opacity: 0.9;
@@ -78,7 +74,7 @@
   }
 }
 
-.c-plan__signatures:hover {
+.c-plan__signatures:hover, .c-plan__signatures--shadow:hover {
   animation: none;
   box-shadow: 1px 1px 15px var(--color05);
   color: var(--color13);
@@ -89,6 +85,15 @@
   z-index:1;
 }
 
+.c-plan__signatures--shadow {
+  animation: plan-signatures 3s ease-in-out infinite;
+  box-shadow: 0px 60px 300px var(--color08);
+  color: #a0a0a0;
+  filter: blur(3.69px) brightness(90%);
+  opacity: 0.9;
+  scale: 0.9;
+}
+
 .c-plan__signatures--active {
   animation: signatures-active 3s ease-in-out infinite;
   box-shadow: 1px 1px 15px var(--color08);
@@ -97,6 +102,7 @@
   scale: 0.936;
   z-index:1;
 }
+
 
 @keyframes signatures-active {
   from {

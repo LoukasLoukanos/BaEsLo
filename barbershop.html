@@ -230,13 +230,13 @@
 		<!--_________________________↑Services↑_________________________-->
 
 		<!--_________________________↓Form↓_________________________-->
-		<section class="c-scheduling">
-			<form class="c-scheduling__form p-5 container">
+		<section class="c-scheduling p-5 pt-3">
+			<form class="c-scheduling__form c-scheduling__box p-4 rounded-5 container">
 
-				<div class="row c-scheduling__select">
+				<div class="row c-scheduling__select mt-3">
 
 					<div class="col-md-5 cols-sm-12">
-						<label class="form-label" for="service">Tipo de serviço</label>
+						<label class="form-label h4" for="service">Tipo de serviço</label>
 						<select class="form-select bg-transparent border-secondary text-light text-center" id="service"
 							required>
 							<option class="bg-light text-dark" value="">Selecione...</option>
@@ -247,8 +247,8 @@
 							<option class="bg-dark text-light">Feminino</option>
 						</select>
 
-						<label class="form-label mt-3" for="time">Período de atendimento
-							<span>(conforme
+						<label class="form-label h4 mt-3" for="time">Período
+							<span class="h5">(conforme
 								disponibilidade)</span></label>
 						<select class="form-select bg-transparent border-secondary text-light text-center" id="time"
 							required>
@@ -259,7 +259,7 @@
 						</select>
 					</div>
 					<div class="col-md-7 cols-sm-12">
-						<div class="c-scheduling__select mb-2">
+						<div class="c-scheduling__select mb-2 mt-1">
 							<div class="col-md-2">
 								<input id="opcao1" name="paymentMethod" type="radio"
 									class="form-check-input bg-transparent border-secondary text-light" name="opcoes"
@@ -273,7 +273,7 @@
 								<label class="form-check-label" for="opcao2">Para outra pessoa</label>
 							</div>
 						</div>
-						<label class="c-scheduling__message-label"
+						<label class="c-scheduling__message-label ps-2"
 							for="Mensagem">Mensagem<span>(Opcional)</span></label>
 						<textarea id="Mensagem" class="c-scheduling__message bg-transparent text-light"></textarea>
 					</div>
@@ -311,7 +311,7 @@
 					</div>
 				</fieldset>
 
-				<div class="row m-5">
+				<div class="row m-5 mb-4">
 					<button class="col-md-12 btn btn-dark btn-lg" type="submit">Confirmar</button>
 				</div>
 			</form>
