@@ -377,69 +377,104 @@
 		<!--_________________________↑Services↑_________________________-->
 
 		<!--_________________________↓Form↓_________________________-->
-		<section class="c-form">
-			<table>
-				<thead>
-					<tr>
-						<th>Dia</th>
-						<th>Horário</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Segunda</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tr>
-						<td>Quarta</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tr>
-						<td>Sexta</td>
-						<td>8h ~ 20h</td>
-					</tr>
-				</tbody>
-			</table>
-			<form>
-				<label for="Mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="Mensagem" class="input-padrao" required></textarea>
+		<section class="c-scheduling p-5 pt-5">
+			<form class="c-scheduling__form c-scheduling__box p-4 rounded-5 container">
 
-				<fieldset>
+				<div class="row c-scheduling__select mt-3">
+
+					<div class="col-md-5 cols-sm-12">
+						<label class="form-label h4" for="service">Tipo de tatuagem</label>
+						<select class="form-select bg-transparent border-secondary text-light text-center" id="service"
+							required>
+							<option class="bg-light text-dark" value="">Selecione...</option>
+							<option class="bg-dark text-light">AINDA NÃO SEI QUAL QUERO FAZER</option>
+							<option class="bg-dark text-light">Tatuagem tradicional ou Old School</option>
+							<option class="bg-dark text-light">Tatuagem realista</option>
+							<option class="bg-dark text-light">Tatuagem aquarela</option>
+							<option class="bg-dark text-light">Tatuagem pontilhismo ou Dotwork</option>
+							<option class="bg-dark text-light">Tatuagem geométrica</option>
+							<option class="bg-dark text-light">Tatuagem escrita ou lettering</option>
+							<option class="bg-dark text-light">Tatuagem oriental ou japonesa</option>
+							<option class="bg-dark text-light">Tatuagem de animais</option>
+							<option class="bg-dark text-light">Tatuagem de retratos</option>
+							<option class="bg-dark text-light">Tatuagem de tribais</option>
+							<option class="bg-dark text-light">Tatuagem de new school</option>
+							<option class="bg-dark text-light">Tatuagem de sombreado ou sombreada</option>
+							<option class="bg-dark text-light">Outro tipo de tatuagem</option>
+						</select>
+
+						<label class="form-label h4 mt-3" for="time">Período
+							<span class="h5">(conforme
+								disponibilidade)</span></label>
+						<select class="form-select bg-transparent border-secondary text-light text-center" id="time"
+							required>
+							<option class="bg-dark text-light" value="">Selecione...</option>
+							<option class="bg-dark text-light">Manhã: 08:00 às 12:00 h</option>
+							<option class="bg-dark text-light">Tarde: 13:00 às 18:00 h</option>
+							<option class="bg-dark text-light">Noite: 18:00 às 21:00 h</option>
+						</select>
+					</div>
+					<div class="col-md-7 cols-sm-12">
+						<div class="c-scheduling__select mb-2 mt-1">
+							<div class="col-md-2">
+								<input id="opcao1" name="paymentMethod" type="radio"
+									class="form-check-input bg-transparent border-secondary text-light" name="opcoes"
+									value="opcao1" checked>
+								<label class="form-check-label" for="opcao1">Para mim</label>
+							</div>
+							<div class="col-md-4 ms-2">
+								<input id="opcao2" name="paymentMethod" type="radio"
+									class="form-check-input bg-transparent border-secondary text-light" name="opcoes"
+									value="opcao2">
+								<label class="form-check-label" for="opcao2">Para outra pessoa</label>
+							</div>
+						</div>
+						<label class="c-scheduling__message-label ps-2"
+							for="Mensagem">Mensagem<span>(Opcional)</span></label>
+						<textarea id="Mensagem" class="c-scheduling__message bg-transparent text-light"></textarea>
+						<div class="form-group m-4 mb-0 d-flex flex-column">
+							<label for="imagem">Selecione uma imagem:</label>
+							<input type="file" class="form-control-file mt-2 mb-2" id="imagem" name="imagem">
+							<button type="submit" class="btn btn-outline-secondary col-2">Enviar</button>
+						</div>
+					</div>
+
+				</div>
+
+
+				<fieldset class="col-md-8 mt-2">
 					<!-- como uma div, porém fieldset é de voltado ao uso específico para delimitar um campo que contenha elementos que inserem dados complementares a um formulário. -->
-					<legend>Como prefere o nosso contato?</legend>
+					<legend class="h5">Como prefere o nosso contato?</legend>
 					<!-- define uma legenda para o elemento fieldset -->
-					<label>
-						<!-- label encapsula, :. não precisa de for nem o que está sendo encapsulado de id -->
-						<input type="radio" name="contato" value="email">
-						Email
-					</label>
-
-					<label>
-						<input type="radio" name="contato" value="telefone">
-						Telefone
-					</label>
-
-					<label>
-						<input type="radio" name="contato" value="whatsapp" checked>
-						WhatsApp
-					</label>
+					<div class="row">
+						<div class="form-check col-2 ms-3">
+							<input class="form-check-input bg-transparent border-secondary text-light" type="checkbox"
+								id="email" checked>
+							<label for="email">Email</label>
+						</div>
+						<div class="form-check col-2">
+							<input class="form-check-input bg-transparent border-secondary text-light" type="checkbox"
+								id="tel" checked>
+							<label for="tel">Telefone</label>
+						</div>
+						<div class="form-check col-4">
+							<input class="form-check-input bg-transparent border-secondary text-light" type="checkbox"
+								id="Whats" checked>
+							<label for="Whats">WhatsApp</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-check col-8 ms-3">
+							<input class="form-check-input bg-transparent border-secondary text-light" type="checkbox"
+								id="news" checked>
+							<label for="news">Receber informações sobre nossas novidades</label>
+						</div>
+					</div>
 				</fieldset>
 
-				<fieldset>
-					<legend>Qual horário prefere ser atendido?</legend>
-					<select>
-						<option>Manhã</option>
-						<option>Tarde</option>
-						<option>Noite</option>
-					</select>
-				</fieldset>
-
-				<label class="checkbox">
-					<input type="checkbox" checked>
-					Gostaria de receber nossas novidades por email?
-				</label>
-
-				<input type="submit" value="Enviar formulário" class="enviar">
+				<div class="row m-5 mb-4">
+					<button class="col-md-12 btn btn-dark btn-lg" type="submit">Confirmar</button>
+				</div>
 			</form>
 		</section>
 		<!--_________________________↑Form↑_________________________-->

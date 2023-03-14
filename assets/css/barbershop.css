@@ -10,13 +10,18 @@
 /*___↓Barber Shop↓___*/
 .c-services {
   background: var(--color11);
-  background: linear-gradient(to bottom, var(--colorcards03) 9%, var(--color04) 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--colorcards03) 9%,
+    var(--color04) 100%
+  );
 }
 
 .c-services--home {
   background: var(--color11);
   background: linear-gradient(none);
 }
+
 .c-services__title {
   animation: neon-roxo 2s ease-in-out infinite alternate;
   color: var(--colorcards02);
@@ -25,7 +30,8 @@
 
 @keyframes neon-roxo {
   from {
-    text-shadow: 0px 0px 30px var(--colorcards02), 0px 0px 18px var(--colorcards02);
+    text-shadow: 0px 0px 30px var(--colorcards02),
+      0px 0px 18px var(--colorcards02);
   }
 
   to {
@@ -160,8 +166,15 @@
 #radio-card-02:checked ~ .c-services__collection #card-02 #images-hair::before,
 #radio-card-03:checked ~ .c-services__collection #card-03 #images-beard::before,
 #radio-card-04:checked ~ .c-services__collection #card-04 #images-full::before,
-#radio-card-05:checked ~ .c-services__collection #card-05 #images-woman::before {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 51%, var(--colorcards01) 100%);
+#radio-card-05:checked
+  ~ .c-services__collection
+  #card-05
+  #images-woman::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 51%,
+    var(--colorcards01) 100%
+  );
   content: "";
   height: 360px;
   left: 0;
@@ -176,7 +189,8 @@
   border: 0.5px solid var(--colorcards01);
   border-bottom: 0.5px solid var(--colorcards02);
   border-radius: 21px 21px 30% 30%;
-  box-shadow: 0px -9px 18px var(--colorcards02), 0px 9px 18px var(--colorcards01);
+  box-shadow: 0px -9px 18px var(--colorcards02),
+    0px 9px 18px var(--colorcards01);
   color: var(--color11);
   cursor: pointer;
   height: 358px;
