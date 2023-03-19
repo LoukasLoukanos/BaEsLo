@@ -144,6 +144,14 @@
   background: var(--color11);
 }
 
+.c-plan__benefits:hover {
+  background: #000000;
+}
+
+.c-plan__benefits--active {
+  background: #000000;
+}
+
 .c-plan__price {
   color: var(--color09);
   text-shadow: 0px 0px 20px var(--color08);

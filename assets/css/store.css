@@ -1,5 +1,9 @@
 /*_________↓Featured Products↓_________*/
 .c-products {
+  background: #000000;
+}
+
+.c-products--index {
   background: var(--color11);
 }
 

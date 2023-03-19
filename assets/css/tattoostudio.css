@@ -65,6 +65,11 @@
 
 .c-services {
   background: var(--color11);
+  background: linear-gradient(
+    to bottom,
+    #000000 1%,
+    var(--color04) 100%
+  );
 }
 
 .c-services__title--tattoo {
