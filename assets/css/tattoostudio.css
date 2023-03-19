@@ -67,21 +67,21 @@
   background: var(--color11);
 }
 
-.c-services__title {
+.c-services__title--tattoo {
   animation: neon-orange 2s ease-in-out infinite alternate;
-  color: var(--color08);
+  color: var(--color06);
   font-weight: bold;
 }
 
 @keyframes neon-orange {
   from {
-    text-shadow: 0px 0px 30px var(--color08),
-      0px 0px 18px var(--color08);
+    text-shadow: 0px 0px 30px var(--color06),
+      0px 0px 18px var(--color06);
   }
 
   to {
-    text-shadow: 0 0 6px var(--color08), 0 0 6px var(--color08),
-      0 0 6px var(--color08);
+    text-shadow: 0 0 6px var(--color06), 0 0 6px var(--color06),
+      0 0 6px var(--color06);
   }
 }
 

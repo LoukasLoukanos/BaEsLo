@@ -1,7 +1,6 @@
 /*_________↓Featured Services↓_________*/
 :root {
   --colorcards01: #ff3a09;
-  --colorcards02: #9900ff;
   --colorcards03: #000000;
   --transition_cards: transform 0.6s ease;
   --text-indent_cards: -9999px;
@@ -23,20 +22,20 @@
 }
 
 .c-services__title {
-  animation: neon-roxo 2s ease-in-out infinite alternate;
-  color: var(--colorcards02);
+  animation: neon-serv 2s ease-in-out infinite alternate;
+  color: var(--color06);
   font-weight: bold;
 }
 
-@keyframes neon-roxo {
+@keyframes neon-serv {
   from {
-    text-shadow: 0px 0px 30px var(--colorcards02),
-      0px 0px 18px var(--colorcards02);
+    text-shadow: 0px 0px 30px var(--color06),
+      0px 0px 18px var(--color06);
   }
 
   to {
-    text-shadow: 0 0 6px var(--colorcards02), 0 0 6px var(--colorcards02),
-      0 0 6px var(--colorcards02);
+    text-shadow: 0 0 6px var(--color06), 0 0 6px var(--color06),
+      0 0 6px var(--color06);
   }
 }
 
@@ -140,9 +139,9 @@
 #radio-card-05:checked ~ .c-services__collection #card-05 {
   background: var(--colorcards01);
   border: 0.5px solid var(--colorcards01);
-  border-top: 0.5px solid var(--colorcards02);
+  border-top: 0.5px solid var(--color06);
   border-radius: 21px 21px 18% 18%;
-  box-shadow: 0px 3px 6px var(--colorcards01), 0px -3px 9px var(--colorcards02);
+  box-shadow: 0px 3px 6px var(--colorcards01), 0px -3px 9px var(--color06);
   color: var(--colorcards03);
   cursor: pointer;
   opacity: 1;
@@ -187,9 +186,9 @@
   background-repeat: no-repeat;
   background-size: 105% 105%;
   border: 0.5px solid var(--colorcards01);
-  border-bottom: 0.5px solid var(--colorcards02);
+  border-bottom: 0.5px solid var(--color06);
   border-radius: 21px 21px 30% 30%;
-  box-shadow: 0px -9px 18px var(--colorcards02),
+  box-shadow: 0px -9px 18px var(--color06),
     0px 9px 18px var(--colorcards01);
   color: var(--color11);
   cursor: pointer;
@@ -252,7 +251,7 @@
 }
 
 .c-services__figcaption a:hover {
-  color: var(--colorcards02);
+  color: var(--color06);
 }
 .c-services__barber-type {
   font-size: 33px;
