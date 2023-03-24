@@ -166,9 +166,9 @@
 
         <div class="container col-xl-10 col-xxl-8">
             <div class="col-8 col-md-8 col-lg-10 mx-auto">
-                
+
                 <form class="c-signin__box needs-validation mb-5 p-5 rounded-4" novalidate>
-                    
+
                     <!--______↓Form of payment↓ (Fazer aparecer apenas quando se escolher um card de assinatura)______-->
                     <h3 class="c-signup__text mb-4">Pagamento</h3>
                     <div class="row gy-3">
@@ -234,79 +234,28 @@
                     <div class="row gy-4">
                         <h3 class="c-signup__text mb-4">Pagamento</h3>
                         <div class="col-md-3">
-                            <label for="zip" class="c-signup__text form-label">CEP</label>
-                            <input type="text" class="form-control bg-transparent border-secondary text-light" id="zip"
-                                placeholder="xxxxx-xxx" pattern="[0-9]{5}-[0-9]{3}" required>
+                            <label for="cep" class="c-signup__text form-label">CEP</label>
+                            <input name="cep" type="text"
+                                class="form-control bg-transparent border-secondary text-light" id="cep"
+                                placeholder="xxxxx-xxx" pattern="[\d]{5}-?[\d]{3}" data-tipo="cep" required>
                             <div class="invalid-feedback">
                                 Código de Endereçamento Postal (CEP) inválido.
                             </div>
                         </div>
                         <div class="col-md-5">
                             <label for="state" class="c-signup__text form-label">Estado</label>
-                            <select class="form-select bg-transparent border-secondary text-light" id="state" required>
-                                <option class="text-muted" value="">Selecione...</option>
-                                <option class="bg-dark text-light">Acre - AC</option>
-                                <option class="bg-dark text-light">Alagoas - AL</option>
-                                <option class="bg-dark text-light">Amapá - AP</option>
-                                <option class="bg-dark text-light">Amazonas - AM</option>
-                                <option class="bg-dark text-light">Bahia - BA</option>
-                                <option class="bg-dark text-light">Ceará - CE</option>
-                                <option class="bg-dark text-light">Espírito Santo - ES</option>
-                                <option class="bg-dark text-light">Goiás - GO</option>
-                                <option class="bg-dark text-light">Maranhão - MA</option>
-                                <option class="bg-dark text-light">Mato Grosso - MT</option>
-                                <option class="bg-dark text-light">Mato Grosso do Sul - MS</option>
-                                <option class="bg-dark text-light">Minas Gerais - MG</option>
-                                <option class="bg-dark text-light">Pará - PA</option>
-                                <option class="bg-dark text-light">Paraíba - PB</option>
-                                <option class="bg-dark text-light">Paraná - PR</option>
-                                <option class="bg-dark text-light">Pernambuco - PE</option>
-                                <option class="bg-dark text-light">Piauí - PI</option>
-                                <option class="bg-dark text-light">Rio de Janeiro - RJ</option>
-                                <option class="bg-dark text-light">Rio Grande do Norte - RN</option>
-                                <option class="bg-dark text-light">Rio Grande do Sul - RS</option>
-                                <option class="bg-dark text-light">Rondônia - RO</option>
-                                <option class="bg-dark text-light">Roraima - RR</option>
-                                <option class="bg-dark text-light">Santa Catarina - SC</option>
-                                <option class="bg-dark text-light">São Paulo - SP</option>
-                                <option class="bg-dark text-light">Sergipe - SE</option>
-                                <option class="bg-dark text-light">Tocantins - TO</option>
-                            </select>
+                            <input name="state" type="text"
+                                class="form-control bg-transparent border-secondary text-light" id="state"
+                                data-tipo="estado" required>
                             <div class="invalid-feedback">
                                 Selecione um Estado.
                             </div>
                         </div>
                         <div class="col-md-4">
                             <label for="city" class="c-signup__text form-label">Cidade</label>
-                            <select class="form-select bg-transparent border-secondary text-light" id="city" required>
-                                <option class="text-muted" value="">Selecione...</option>
-                                <option class="bg-dark text-light">Rio Branco e região</option>
-                                <option class="bg-dark text-light">Maceió e região</option>
-                                <option class="bg-dark text-light">Macapá e região</option>
-                                <option class="bg-dark text-light">Manaus e região</option>
-                                <option class="bg-dark text-light">Salvador e região</option>
-                                <option class="bg-dark text-light">Fortaleza e região</option>
-                                <option class="bg-dark text-light">Vitória e região</option>
-                                <option class="bg-dark text-light">Goiânia e região</option>
-                                <option class="bg-dark text-light">São Luís e região</option>
-                                <option class="bg-dark text-light">Cuiabá e região</option>
-                                <option class="bg-dark text-light">Campo Grande e região</option>
-                                <option class="bg-dark text-light">Belo Horizonte e região</option>
-                                <option class="bg-dark text-light">Belém e região</option>
-                                <option class="bg-dark text-light">João Pessoa e região</option>
-                                <option class="bg-dark text-light">Curitiba e região</option>
-                                <option class="bg-dark text-light">Recife e região</option>
-                                <option class="bg-dark text-light">Teresina e região</option>
-                                <option class="bg-dark text-light">Rio de Janeiro e região</option>
-                                <option class="bg-dark text-light">Natal e região</option>
-                                <option class="bg-dark text-light">Porto Alegre e região</option>
-                                <option class="bg-dark text-light">Porto Velho e região</option>
-                                <option class="bg-dark text-light">Boa Vista e região</option>
-                                <option class="bg-dark text-light">Florianópolis e região</option>
-                                <option class="bg-dark text-light">São Paulo e região</option>
-                                <option class="bg-dark text-light">Aracaju e região</option>
-                                <option class="bg-dark text-light">Palmas e região</option>
-                            </select>
+                            <input name="city" type="text"
+                                class="form-control bg-transparent border-secondary text-light" id="city"
+                                data-tipo="cidade" required>
                             <div class="invalid-feedback">
                                 Selecione uma cidade.
                             </div>
@@ -314,8 +263,8 @@
 
                         <div class="col-12">
                             <label for="address" class="c-signup__text form-label">Endereço</label>
-                            <input type="text" class="form-control bg-transparent border-secondary text-light"
-                                id="address" placeholder="Wall Street, 432" required>
+                            <input name="address" type="text"
+                                class="form-control bg-transparent border-secondary text-light" id="address" placeholder="Wall Street, 432" data-tipo="endereco" required>
                             <div class="invalid-feedback">
                                 Por favor insira seu endereço de entrega.
                             </div>
@@ -393,18 +342,4 @@
                             <input type="password" class="form-control bg-transparent border-secondary text-light"
                                 id="confirma_senha" minlength="8" required>
                             <div class="invalid-feedback">
-                                As senhas não coincidem.
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="w-100 btn btn-dark btn-lg mt-5" type="submit">Cadastrar-se</button>
-                </form>
-            </div>
-        </div>
-    </main>
-    </div>
-    <script language="javascript" src="assets/js/signup.js"></script>
-</body>
-
-</html>
+       

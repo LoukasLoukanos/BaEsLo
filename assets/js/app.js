@@ -1,20 +1,12 @@
-import { valida } from './validacao.js'
+// Importa a função valida do módulo './requisicoes.js'
+import { valida } from './validacao_e_requisicao';
 
-const inputs = document.querySelectorAll('input')
+// Seleciona todos os elementos <input> da página
+const inputs = document.querySelectorAll('input');
 
+// Para cada <input>, adiciona um evento 'blur' que chama a função valida ao perder o foco
 inputs.forEach(input => {
-    if(input.dataset.tipo === 'preco') {
-        SimpleMaskMoney.setMask(input, {
-            prefix: 'R$ ',
-            fixed: true,
-            fractionDigits: 2,
-            decimalSeparator: ',',
-            thousandsSeparator: '.',
-            cursor: 'end'
-        })
-    }
-
     input.addEventListener('blur', (evento) => {
-        valida(evento.target)
-    })
-})
+        valida(evento.target);
+    });
+});
