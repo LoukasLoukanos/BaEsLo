@@ -1,5 +1,6 @@
 /*_________↓Variáveis↓_________*/
 :root {
+  overflow-x: hidden;
   --color01: rgba(21, 0, 36, 1);
   --color02: rgba(39, 0, 65, 1);
   --color03: rgba(52, 6, 85, 1);
@@ -19,7 +20,6 @@
   --color17: #f0f0f0;
   --color18: #ffffff;
 }
-
 /*_________↓Google fonts↓_________*/
 .google-fonts {
   font-family: "Raleway", sans-serif;
@@ -382,45 +382,45 @@
 
 @keyframes images_circle {
   0% {
-    filter: brightness(111%);
-    left: -75%;
-    transform: scale(1) rotate(6deg) rotateY(-18deg);
     border: 6px solid var(--color09);
     box-shadow: inset 0 0 40px var(--color09), 0 0 40px var(--color09);
+    filter: brightness(111%);
+    left: -75%;
     opacity: 1;
     outline: 1px solid;
     outline-color: var(--color09);
     outline-offset: 40px;
+    transform: scale(1) rotate(6deg) rotateY(-18deg);
   }
 
   15% {
-    filter: brightness(95%);
-    left: -75%;
-    transform: scale(0.9) rotate(6deg) rotateY(18deg);
     border: 1px solid var(--color17);
     box-shadow: inset 0 0 20px var(--color17), 0 0 20px var(--color17);
+    filter: brightness(95%);
+    left: -75%;
     opacity: 1;
     outline-color: var(--color17);
     outline-offset: 15px;
+    transform: scale(0.9) rotate(6deg) rotateY(18deg);
   }
 
   39% {
+    border: 2px solid var(--color17);
     filter: brightness(90%);
     left: -30%;
-    transform: scale(0.8) rotate(0deg);
     opacity: 0.6;
-    border: 2px solid var(--color17);
+    transform: scale(0.8) rotate(0deg);
   }
 
   72% {
+    border: 1px solid var(--color17);
     filter: brightness(90%);
     left: -30%;
-    transform: scale(0.8) rotate(4deg);
     opacity: 0;
-    border: 1px solid var(--color17);
     outline: 18px solid;
     outline-color: var(--color17);
     outline-offset: 12px;
+    transform: scale(0.8) rotate(4deg);
   }
 
   100% {
@@ -460,8 +460,8 @@
     margin: 0px;
     padding: 0px;
     position: relative;
-    width: 100%;
     scale: 0.8;
+    width: 100%;
   }
 
   .c-presentation__circle {
@@ -499,45 +499,45 @@
 
   @keyframes images_circle {
     0% {
-      filter: brightness(111%);
-      left: -300px;
-      transform: scale(1) rotate(6deg) rotateY(-18deg);
-      opacity: 1;
       border: 6px solid var(--color09);
       box-shadow: inset 0 0 40px var(--color09), 0 0 40px var(--color09);
+      filter: brightness(111%);
+      left: -300px;
+      opacity: 1;
       outline: 1px solid;
       outline-color: var(--color09);
       outline-offset: 40px;
+      transform: scale(1) rotate(6deg) rotateY(-18deg);
     }
 
     15% {
-      filter: brightness(95%);
-      left: -300px;
-      transform: scale(0.9) rotate(6deg) rotateY(18deg);
-      opacity: 1;
       border: 1px solid var(--color17);
       box-shadow: inset 0 0 20px var(--color17), 0 0 20px var(--color17);
+      filter: brightness(95%);
+      left: -300px;
+      opacity: 1;
       outline-color: var(--color17);
       outline-offset: 15px;
+      transform: scale(0.9) rotate(6deg) rotateY(18deg);
     }
 
     39% {
+      border: 2px solid var(--color17);
       filter: brightness(90%);
       left: -100px;
-      transform: scale(0.8) rotate(0deg);
       opacity: 0.6;
-      border: 2px solid var(--color17);
+      transform: scale(0.8) rotate(0deg);
     }
 
     72% {
+      border: 1px solid var(--color17);
       filter: brightness(90%);
       left: -100px;
-      transform: scale(0.8) rotate(4deg);
       opacity: 0;
-      border: 1px solid var(--color17);
       outline: 18px solid;
       outline-color: var(--color17);
       outline-offset: 12px;
+      transform: scale(0.8) rotate(4deg);
     }
     100% {
       opacity: 0;
@@ -588,45 +588,45 @@
 
   @keyframes images_circle {
     0% {
-      filter: brightness(111%);
-      left: -15px;
-      transform: scale(1) rotate(6deg) rotateY(-18deg);
-      opacity: 1;
       border: 6px solid var(--color09);
       box-shadow: inset 0 0 40px var(--color09), 0 0 40px var(--color09);
+      filter: brightness(111%);
+      left: -15px;
+      opacity: 1;
       outline: 1px solid;
       outline-color: var(--color09);
       outline-offset: 40px;
+      transform: scale(1) rotate(6deg) rotateY(-18deg);
     }
 
     15% {
-      filter: brightness(95%);
-      left: -15px;
-      transform: scale(0.9) rotate(6deg) rotateY(18deg);
-      oopacity: 1;
       border: 1px solid var(--color17);
       box-shadow: inset 0 0 20px var(--color17), 0 0 20px var(--color17);
+      filter: brightness(95%);
+      left: -15px;
+      opacity: 1;
       outline-color: var(--color17);
       outline-offset: 15px;
+      transform: scale(0.9) rotate(6deg) rotateY(18deg);
     }
 
     39% {
+      border: 2px solid var(--color17);
       filter: brightness(90%);
       left: 15px;
-      transform: scale(0.8) rotate(0deg);
       opacity: 0.6;
-      border: 2px solid var(--color17);
+      transform: scale(0.8) rotate(0deg);
     }
 
     72% {
+      border: 1px solid var(--color17);
       filter: brightness(90%);
       left: 15px;
-      transform: scale(0.8) rotate(4deg);
       opacity: 0;
-      border: 1px solid var(--color17);
       outline: 18px solid;
       outline-color: var(--color17);
       outline-offset: 12px;
+      transform: scale(0.8) rotate(4deg);
     }
     100% {
       opacity: 0;
@@ -711,45 +711,45 @@
 
   @keyframes images_circle {
     0% {
+      box-shadow: inset 0 0 40px var(--color09), 0 0 40px var(--color09);
+      border: 6px solid var(--color09);
       filter: brightness(111%);
       left: -15px;
-      transform: scale(1) rotate(6deg) rotateY(-18deg);
       opacity: 1;
-      border: 6px solid var(--color09);
-      box-shadow: inset 0 0 40px var(--color09), 0 0 40px var(--color09);
       outline: 1px solid;
       outline-color: var(--color09);
       outline-offset: 40px;
+      transform: scale(1) rotate(6deg) rotateY(-18deg);
     }
 
     15% {
-      filter: brightness(95%);
-      left: -15px;
-      transform: scale(0.9) rotate(6deg) rotateY(18deg);
-      oopacity: 1;
       border: 1px solid var(--color17);
       box-shadow: inset 0 0 20px var(--color17), 0 0 20px var(--color17);
+      filter: brightness(95%);
+      left: -15px;
+      opacity: 1;
       outline-color: var(--color17);
       outline-offset: 15px;
+      transform: scale(0.9) rotate(6deg) rotateY(18deg);
     }
 
     39% {
+      border: 2px solid var(--color17);
       filter: brightness(90%);
       left: 15px;
       transform: scale(0.8) rotate(0deg);
       opacity: 0.6;
-      border: 2px solid var(--color17);
     }
 
     72% {
+      border: 1px solid var(--color17);
       filter: brightness(90%);
       left: 15px;
-      transform: scale(0.8) rotate(4deg);
       opacity: 0;
-      border: 1px solid var(--color17);
       outline: 18px solid;
       outline-color: var(--color17);
       outline-offset: 12px;
+      transform: scale(0.8) rotate(4deg);
     }
     100% {
       opacity: 0;

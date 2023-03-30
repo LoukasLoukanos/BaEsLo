@@ -145,10 +145,6 @@
 
 /*Layout para tela M: tela <= 1160px */
 @media only screen and (max-width: 1160px) {
-  :root {
-    overflow-x: hidden;
-  }
-
   #c-services__carousel {
     width: 90%;
   }
@@ -157,10 +153,6 @@
 
 /*Layout para tela M: tela <= 945px */
 @media only screen and (max-width: 945px) {
-  :root {
-    overflow-x: hidden;
-  }
-
   #c-services__carousel {
     width: 80%;
   }
